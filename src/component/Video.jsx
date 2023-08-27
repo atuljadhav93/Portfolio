@@ -1,16 +1,12 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import data from "../data/index.json";
+// import data from "../data/index.json";
 import { BoxContainer, PageHeadingText } from "./styles";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-// import LeftArrow from "./icon/LeftArrow";
-// import RightArrow from "./icon/RightArrow";
 
-export default function MySkills() {
+export default function Video() {
   const images = [
     {
       id: "1",
@@ -73,89 +69,28 @@ export default function MySkills() {
       status: "Expert",
     },
   ];
-
-  const CustomNextArrow = (props) => {
-    return (
-      <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
-    );
-  };
-
-  const CustomPrevArrow = (props) => {
-    return (
-      <div
-        className="custom-arrow1 custom-prev-arrow"
-        onClick={props.onClick}
-      />
-    );
-  };
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    pauseOnHover: true,
-    responsive: [
-      // {
-      //   breakpoint: 2560,
-      //   settings: {
-      //     slidesToShow: 12,
-      //   },
-      // },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 6,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          // centerMode: true, 
-          // centerPadding: "54px", 
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true, 
-          centerPadding: "54px", 
-        },
-      },
-    ],
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
-  };
-
   return (
     <>
-      <BoxContainer id="mySkills" style={{}}>
-        <PageHeadingText>My Skills</PageHeadingText>
-        {/* <div className="skills--section--container">
-        {data?.skills?.map((item, index) => (
-          <div key={item.id} className="skills--section--card">
-            <div className="skills--section--img">
-              <img src={item.src} alt="Product Chain" />
-            </div>
-            <div className="skills--section--card--content">
-              <h3 className="skills--section--title">{item.title}</h3>
-              <p className="skills--section--description">{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
-        <Slider {...settings}>
+      <Box id="mySkills" style={{ background: "#fff" }}>
+        <PageHeadingText>My Youtube Videos</PageHeadingText>
+        <Carousel
+          infiniteLoop={true}
+          showArrows={true}
+          showStatus={false}
+          showThumbs={false}
+          emulateTouch={false}
+          selectedItem={0}
+          transitionTime={200}
+          autoPlay={true}
+          interval={2000}
+          dynamicHeight={false}
+          stopOnHover={true}
+          useKeyboardArrows={true}
+          showIndicators={false}
+          style={{
+            border: "1px solid red",
+          }}
+        >
           {images.map((image, index) => (
             <Box key={index}>
               <Card
@@ -165,7 +100,6 @@ export default function MySkills() {
                   height: "auto",
                   width: "13rem",
                   marginBottom: "2rem",
-                  cursor:"pointer"
                 }}
               >
                 <CardContent
@@ -190,8 +124,8 @@ export default function MySkills() {
               </Card>
             </Box>
           ))}
-        </Slider>
-      </BoxContainer>
+        </Carousel>
+      </Box>
     </>
   );
 }

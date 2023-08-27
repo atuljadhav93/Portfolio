@@ -3,27 +3,64 @@
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
-      "title": "Front-End",
+      "title": "1",
       "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
-      "title": "Back-End",
+      "title": "2",
       "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
     },
     {
       "id": "3",
       "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
+      "title": "3",
       "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
     },
     {
       "id": "4",
       "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
+      "title": "4",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "5",
+      "src": "./img/product-chain-1.png",
+      "title": "5",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "6",
+      "src": "./img/tag-1.png",
+      "title": "6",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "7",
+      "src": "./img/feather-pen-2.png",
+      "title": "7",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "8",
+      "src": "./img/feather-pen-1.png",
+      "title": "8",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "9",
+      "src": "./img/product-chain-1.png",
+      "title": "9",
+      "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
+    },
+    {
+      "id": "10",
+      "src": "./img/tag-1.png",
+      "title": "10",
       "description": "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science."
     }
+    
   ],
   "portfolio": [
     {
