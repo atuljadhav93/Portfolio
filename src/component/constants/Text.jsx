@@ -1,0 +1,5 @@
+export const AboutMeText = "About Me";
+export const AboutMeDescriptionFirst =
+  "Contributing to the open-source community has been an enriching experience. I firmly believe in the power of collaboration and giving back to the developer community that has provided me with so much knowledge. By actively contributing to open-source projects, I am continuously learning from and sharing insights with other developers worldwide.";
+export const AboutMeDescriptionSecond = 
+"I'm always excited to connect with fellow developers, designers, and enthusiasts. Whether it's discussing new ideas, collaborating on projects, or exploring opportunities, feel free to reach out to me. Together, we can make the web a more delightful and accessible place. Thank you for visiting my portfolio, and I look forward to sharing my journey with you!"
