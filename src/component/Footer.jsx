@@ -1,12 +1,14 @@
 import { Box, Grid, Typography, Link, Tooltip } from "@mui/material";
 import React from "react";
-import NoCopyRight from "./icon/NoCopyRight";
-import IndiaFlag from "./icon/IndiaFlag";
-import Instagram from "./icon/Instagram";
-import Linkedin from "./icon/Linkedin";
-import WhatsApp from "./icon/WhatsApp";
-import GitHub from "./icon/GitHub";
-import YouTube from "./icon/YouTube";
+import {
+  IndiaFlag,
+  NoCopyRight,
+  Instagram,
+  Linkedin,
+  WhatsApp,
+  GitHub,
+  YouTube,
+} from "./icon/Icons";
 function Footer() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
   const whatsappUrl = process.env.REACT_APP_WHATSAPP_URL;
@@ -119,7 +121,7 @@ function Footer() {
           </Tooltip>
           <Typography
             sx={{
-              display: { sm:"flex", md:"flex", lg: "flex", xl: "flex" },
+              display: { sm: "flex", md: "flex", lg: "flex", xl: "flex" },
               justifyContent: "center",
               alignItems: "center",
               fontFamily: "Poppins",
