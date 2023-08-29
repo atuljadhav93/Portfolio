@@ -71,7 +71,25 @@ export default function Video() {
   ];
   return (
     <>
-      <Box id="mySkills" style={{ background: "#fff" }}>
+      <Box
+        id="mySkills"
+        sx={{
+          background: "#fff",
+          display: "flex",
+          flexDirection: "column",
+          backgroundColor: "#EDE7E1",
+          // border: "1px solid red",
+          padding: {
+            xs: "15px 15px",
+            sm: "15px 15px",
+            md: "15px 85.333px",
+            lg: "15px 85.333px",
+            xl: "15px 85.333px",
+          },
+          textAlign: "center",
+          alignSelf: "stretch",
+        }}
+      >
         <PageHeadingText>My Youtube Videos</PageHeadingText>
         <Carousel
           infiniteLoop={true}
@@ -81,7 +99,7 @@ export default function Video() {
           emulateTouch={false}
           selectedItem={0}
           transitionTime={200}
-          autoPlay={true}
+          autoPlay={false}
           interval={2000}
           dynamicHeight={false}
           stopOnHover={true}
