@@ -1,5 +1,11 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 
+export const DisplayFlexCenter = styled(Box)(() => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
 export const BoxContainer = styled(Box)(() => ({
   backgroundColor: "#EDE7E1",
 }));
@@ -38,3 +44,32 @@ export const ButtonStyle = styled(Button)(
  }
  `
 );
+export const WatchVideoBtn = styled(Button)`
+  background-color: #3087ec;
+  transition: all 0.3s ease;
+  text-transform: none;
+  height: 48px;
+  width: 9rem;
+  font-family: Poppins;
+  font-size: 18px,
+  font-weight: 500;
+  border: none;
+  border-radius:20px;
+  :hover {
+    background-color: #3087ec;
+    opacity: 0.8;
+  }
+`;
+
+export const FindText = styled(Typography)`
+  // background-color: #3087ec;
+  transition: all 0.3s ease;
+  text-transform: none;
+  font-family: Poppins;
+  font-size: 18px,
+  font-weight: 500;
+  cursor:pointer;
+  :hover {
+    color: #3087ec;
+  }
+`;

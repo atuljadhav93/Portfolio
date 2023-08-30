@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Typography, Link, Tooltip } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import {
   IndiaFlag,
   NoCopyRight,
@@ -11,12 +10,7 @@ import {
   YouTube,
 } from "./icon/Icons";
 import confetti from "canvas-confetti";
-
-const useStyles = makeStyles((theme) => ({
-  buttonWrapper: {
-    position: "relative",
-  },
-}));
+import { DisplayFlexCenter, FindText } from "./styles";
 
 function Footer() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
@@ -25,51 +19,42 @@ function Footer() {
   const youtube = process.env.REACT_APP_YOUTUBE_URL;
   const instagram = process.env.REACT_APP_INSTAGRAM_URL;
 
-  const handleConfetti = (event) => {
-    const button = event.currentTarget;
+  const defaults = {
+    origin: { y: 0.5 },
+  };
 
-    const canvas = document.createElement("canvas");
-    // canvas.width = window.innerWidth;
-    // canvas.height = window.innerHeight;
+  const fire = (particleRatio, opts) => {
+    const count = 200;
+    confetti(
+      Object.assign({}, defaults, opts, {
+        particleCount: Math.floor(count * particleRatio),
+      })
+    );
+  };
 
-    const canvasWidth = 400; // Adjust as needed
-    const canvasHeight = 400; // Adjust as needed
-
-    canvas.width = canvasWidth;
-    canvas.height = canvasHeight;
-
-    // Position the canvas at the bottom-right corner of the screen
-    canvas.style.position = "fixed";
-    // canvas.style.display = "flex";
-    // canvas.style.alignSelf = "flex-end";
-    canvas.style.border = "1px solid red";
-    canvas.style.right = 0;
-    canvas.style.bottom = 0;
-
-    // const confettiInstance = confetti.create(canvas);
-    const confettiInstance = confetti.create(canvas, {
-      angle: 180, // Angle in degrees (180 degrees points downwards)
-      spread: 180, // Spread in degrees (180 degrees covers the entire width)
+  const handleRealisticConfetti = () => {
+    fire(0.25, {
+      spread: 26,
+      startVelocity: 55,
     });
-    confettiInstance();
-
-    // Append the canvas to the body when hovering
-    document.body.appendChild(canvas);
-
-    let canvasDisplayed = true; // Flag to track canvas display status
-
-    setTimeout(() => {
-      button.addEventListener("mouseleave", () => {
-        if (canvasDisplayed) {
-          document.body.removeChild(canvas);
-          canvasDisplayed = false;
-        }
-      });
-      if (canvasDisplayed) {
-        document.body.removeChild(canvas); // Remove canvas after 5 seconds
-        canvasDisplayed = false;
-      }
-    }, 800);
+    fire(0.2, {
+      spread: 60,
+    });
+    fire(0.35, {
+      spread: 100,
+      decay: 0.91,
+      scalar: 0.8,
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2,
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
   };
 
   return (
@@ -204,15 +189,20 @@ function Footer() {
           lg={4}
           xl={4}
           style={{
-            // border: "1px solid blue",
             fontFamily: "Poppins",
           }}
         >
-          <Typography
-          // onMouseOver={handleConfetti}
-          >
-            You can find me everywhere.
-          </Typography>
+          <DisplayFlexCenter>
+            <FindText onMouseOver={handleRealisticConfetti}>
+              You can find me&nbsp;
+            </FindText>
+            <FindText
+              onMouseOver={handleRealisticConfetti}
+              className="text-red blink-soft"
+            >
+              everywhere.
+            </FindText>
+          </DisplayFlexCenter>
           <Box
             className="effect jaques"
             style={{
@@ -263,7 +253,6 @@ function Footer() {
               <Tooltip title="Subscribe today and join the journey!" arrow>
                 <Link
                   href={youtube}
-                  // href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="youtube confetti-button"

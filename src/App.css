@@ -118,16 +118,6 @@ h2 {
   align-items: flex-start;
 }
 
-/* Portfolio, Testimonial & Contact Me */
-.sub--title {
-  color: var(--heading-color);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-/* Section Titles Ends */
-
 /* Navbar Style Start */
 .navbar {
   display: flex;
@@ -322,20 +312,6 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
-}
-
-.portfolio--container-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.portfolio--container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.3px;
 }
 
 .portfolio--section--container {
@@ -592,7 +568,6 @@ input[type="checkbox"] {
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
-  .portfolio--container-box,
   /* .footer--link--container, */
   /* .footer--items>ul, */
   .footer--content--container {
@@ -601,7 +576,6 @@ input[type="checkbox"] {
   }
 
   .skills--section,
-  .portfolio--container,
   .hero--section--content,
   .hero--section--content--box {
     align-items: center;
@@ -610,10 +584,6 @@ input[type="checkbox"] {
   .container1 {
     width: auto;
     overflow: hidden;
-  }
-
-  .portfolio--container-box {
-    gap: 30px;
   }
 
   /* .skills--section,
@@ -948,4 +918,16 @@ input[type="checkbox"] {
   cursor: pointer;
   font-size: 18px;
   /* margin-top: 20px; */
+}
+
+.text-red {
+  color: #3087ec;
+}
+.blink-soft {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

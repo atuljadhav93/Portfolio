@@ -1,9 +1,6 @@
 import React from "react";
 import { Box, Button, Link, Typography } from "@mui/material";
 import { ButtonStyle } from "./styles";
-// import Linkedin from "./icon/Linkedin";
-// import WhatsApp from "./icon/WhatsApp";
-// import GitHub from "./icon/GitHub";
 import TypeWriter from "typewriter-effect";
 import { WhatsApp, GitHub, Linkedin } from "./icon/Icons";
 

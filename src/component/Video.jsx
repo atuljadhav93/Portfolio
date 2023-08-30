@@ -1,74 +1,105 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
-// import data from "../data/index.json";
-import { BoxContainer, PageHeadingText } from "./styles";
-import { Carousel } from "react-responsive-carousel";
+import { Box, Link, Typography } from "@mui/material";
+import { PageHeadingText, WatchVideoBtn } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
+import Slider from "react-slick";
+import YouTube from "react-youtube";
 
 export default function Video() {
-  const images = [
+  const videoTutorial = [
     {
       id: "1",
-      src: "./img/product-chain-1.png",
-      language: "React",
-      status: "Expert",
+      videoId: "u-TNKBYQV4M",
+      title: "Complete CSS Course For Beginners to Advanced",
+      videoLink: "https://youtu.be/u-TNKBYQV4M?si=pYi3Ac5A42PXTkXO",
     },
     {
       id: "2",
-      src: "./img/product-chain-1.png",
-      language: "HTML",
-      status: "Expert",
+      videoId: "VZdoe2ShfBU",
+      title: "Complete HTML Course For Beginner To Advanced",
+      videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
     },
     {
       id: "3",
-      src: "./img/product-chain-1.png",
-      language: "CSS",
-      status: "Expert",
-    },
-    {
-      id: "4",
-      src: "./img/product-chain-1.png",
-      language: "Bootstrap",
-      status: "Expert",
-    },
-    {
-      id: "5",
-      src: "./img/product-chain-1.png",
-      language: "Next js",
-      status: "Expert",
-    },
-    {
-      id: "6",
-      src: "./img/product-chain-1.png",
-      language: "HTML5",
-      status: "Expert",
-    },
-    {
-      id: "7",
-      src: "./img/product-chain-1.png",
-      language: "Web 3.0",
-      status: "Expert",
-    },
-    {
-      id: "8",
-      src: "./img/product-chain-1.png",
-      language: "Redux",
-      status: "Expert",
-    },
-    {
-      id: "9",
-      src: "./img/product-chain-1.png",
-      language: "MUI",
-      status: "Expert",
-    },
-    {
-      id: "10",
-      src: "./img/product-chain-1.png",
-      language: "Git",
-      status: "Expert",
+      title: "Check out all the videos on my Youtube Channel",
+      videoLink: "https://youtube.com/@techedumeet",
     },
   ];
+
+  const CustomNextArrow = (props) => {
+    return (
+      <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
+    );
+  };
+
+  const CustomPrevArrow = (props) => {
+    return (
+      <div
+        className="custom-arrow1 custom-prev-arrow"
+        onClick={props.onClick}
+      />
+    );
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    pauseOnHover: true,
+    // display: "flex",
+    // alignItems: "center",
+    // justifyContent: "center",
+    responsive: [
+      // {
+      //   breakpoint: 2560,
+      //   settings: {
+      //     slidesToShow: 12,
+      //   },
+      // },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          // centerMode: true,
+          // centerPadding: "54px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          // centerPadding: "54px",
+        },
+      },
+    ],
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
+  };
+
+  const opts = {
+    height: "270",
+    width: "450",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
+
   return (
     <>
       <Box
@@ -87,62 +118,64 @@ export default function Video() {
             xl: "15px 85.333px",
           },
           textAlign: "center",
-          alignSelf: "stretch",
+          // alignSelf: "stretch",
         }}
       >
         <PageHeadingText>My Youtube Videos</PageHeadingText>
-        <Carousel
-          infiniteLoop={true}
-          showArrows={true}
-          showStatus={false}
-          showThumbs={false}
-          emulateTouch={false}
-          selectedItem={0}
-          transitionTime={200}
-          autoPlay={false}
-          interval={2000}
-          dynamicHeight={false}
-          stopOnHover={true}
-          useKeyboardArrows={true}
-          showIndicators={false}
-          style={{
-            border: "1px solid red",
-          }}
-        >
-          {images.map((image, index) => (
-            <Box key={index}>
-              <Card
+        <Slider {...settings}>
+          {videoTutorial?.map((item, index) => (
+            <Box
+              key={index}
+              style={{
+                // border: "1px solid blue",
+                borderRadius: "10px",
+                height: "auto",
+                width: "100%",
+                marginBottom: "2rem",
+                cursor: "pointer",
+                background: "#EDE7E1",
+              }}
+            >
+              <Box
                 style={{
-                  // border: "1px solid blue",
-                  borderRadius: "10px",
-                  height: "auto",
-                  width: "13rem",
-                  marginBottom: "2rem",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  rowGap: 10,
                 }}
               >
-                <CardContent
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    flexDirection: "column",
-                    rowGap: 10,
-                  }}
-                >
-                  <Box class="profile-picture">
-                    <img src={image.src} alt="lang" />
+                {item?.id === "3" ? (
+                  <Box
+                    style={{
+                      marginTop: "7%",
+                    }}
+                  >
+                    <Typography>There are many more !</Typography>
                   </Box>
-                  <Typography>{image.language}</Typography>
-                  <Stack spacing={2} alignItems="center">
-                    <Stack direction="row" spacing={2}>
-                      <Chip label={image.status} />
-                    </Stack>
-                  </Stack>
-                </CardContent>
-              </Card>
+                ) : (
+                  <YouTube videoId={item?.videoId} opts={opts} />
+                )}
+                <Typography>{item?.title}</Typography>
+                <Link
+                  href={item?.videoLink}
+                  target={item?.id === "3" ? "_blank" : ""}
+                  rel="noopener noreferrer"
+                >
+                  <WatchVideoBtn
+                    id="hireMe"
+                    variant="contained"
+                    disableElevation
+                    type="submit"
+                  >
+                    {item?.id === "3" ? "Visit Now" : "Watch Video"}
+                  </WatchVideoBtn>
+                </Link>
+              </Box>
             </Box>
           ))}
-        </Carousel>
+        </Slider>
+        <Box sx={{ mb: "2rem" }}></Box>
       </Box>
     </>
   );

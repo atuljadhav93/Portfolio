@@ -5,11 +5,6 @@ import { PageHeadingText } from "./styles";
 export default function MyPortfolio() {
   return (
     <Box id="projects">
-      {/* <div className="portfolio--container-box">
-        <div className="portfolio--container">
-          <p className="sub--title">My Projects</p>
-        </div>
-      </div> */}
       <PageHeadingText>My Work</PageHeadingText>
       <Box className="portfolio--section">
         <Box className="portfolio--section--container ">
