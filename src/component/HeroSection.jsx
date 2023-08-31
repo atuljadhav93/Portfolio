@@ -83,13 +83,13 @@ export default function HeroSection() {
             </Typography>
           </Box>
 
-          <p className="hero--section-description">
+          <Typography className="hero--section-description">
             Hello there! I'm Atul Jadhav, a passionate frontend developer and
             open source contributor, on a mission to craft beautiful and
             user-friendly digital experiences. With a deep-rooted love for web
             development, I find joy in bringing creative designs to life through
             code.
-          </p>
+          </Typography>
         </Box>
         <ButtonStyle
           id="hireMe"
@@ -165,9 +165,9 @@ export default function HeroSection() {
           </Box>
         </Box>
       </Box>
-      <div className="hero--section--img">
+      <Box className="hero--section--img">
         <img src="./img/main-logo.svg" alt="main-icon" />
-      </div>
+      </Box>
     </Box>
   );
 }

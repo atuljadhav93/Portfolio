@@ -1,4 +1,5 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import React from "react";
+import { Avatar, Box, Card, CardContent, Typography } from "@mui/material";
 import { BoxContainer, PageHeadingText } from "./styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,87 +7,150 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-// import LeftArrow from "./icon/LeftArrow";
-// import RightArrow from "./icon/RightArrow";
+import {
+  BootstrapIcon,
+  CSSIcon,
+  GitIcon,
+  GithubIcon,
+  JavaScriptIcon,
+  JestIcon,
+  JQueryIcon,
+  MUIIcon,
+  MYSQLIcon,
+  NextJSIcon,
+  PythonIcon,
+  ReactIcon,
+  ReduxIcon,
+  SassIcon,
+  TailwindCSSIcon,
+  TypeScriptIcon,
+  WordPressIcon,
+  AngularIcon,
+} from "./icons/LanguageIcon";
+
+const CustomNextArrow = (props) => {
+  return (
+    <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
+  );
+};
+
+const CustomPrevArrow = (props) => {
+  return (
+    <div className="custom-arrow1 custom-prev-arrow" onClick={props.onClick} />
+  );
+};
 
 export default function MySkills() {
-  const images = [
+  const skills = [
     {
       id: "1",
-      src: "./img/product-chain-1.png",
+      src: <ReactIcon />,
       language: "React",
       status: "Expert",
     },
     {
       id: "2",
-      src: "./img/product-chain-1.png",
-      language: "HTML",
+      src: <TypeScriptIcon />,
+      language: "TypeScript",
       status: "Expert",
     },
     {
       id: "3",
-      src: "./img/product-chain-1.png",
+      src: <CSSIcon />,
       language: "CSS",
       status: "Expert",
     },
     {
       id: "4",
-      src: "./img/product-chain-1.png",
-      language: "Bootstrap",
+      src: <GitIcon />,
+      language: "Git",
       status: "Expert",
     },
     {
       id: "5",
-      src: "./img/product-chain-1.png",
-      language: "Next js",
-      status: "Expert",
+      src: <GithubIcon />,
+      language: "Github",
+      status: "Medium",
     },
     {
       id: "6",
-      src: "./img/product-chain-1.png",
-      language: "HTML5",
-      status: "Expert",
+      src: <JestIcon />,
+      language: "Jest",
+      status: "Junior",
     },
     {
       id: "7",
-      src: "./img/product-chain-1.png",
-      language: "Web 3.0",
+      src: <MUIIcon />,
+      language: "Material UI",
       status: "Expert",
     },
-    // {
-    //   id: "8",
-    //   src: "./img/product-chain-1.png",
-    //   language: "Redux",
-    //   status: "Expert",
-    // },
-    // {
-    //   id: "9",
-    //   src: "./img/product-chain-1.png",
-    //   language: "MUI",
-    //   status: "Expert",
-    // },
-    // {
-    //   id: "10",
-    //   src: "./img/product-chain-1.png",
-    //   language: "Git",
-    //   status: "Expert",
-    // },
+    {
+      id: "8",
+      src: <MYSQLIcon />,
+      language: "MySQL",
+      status: "Medium",
+    },
+    {
+      id: "9",
+      src: <ReduxIcon />,
+      language: "Redux Toolkit",
+      status: "Expert",
+    },
+    {
+      id: "10",
+      src: <SassIcon />,
+      language: "Sass",
+      status: "Beginner",
+    },
+    {
+      id: "11",
+      src: <BootstrapIcon />,
+      language: "Bootstrap",
+      status: "Expert",
+    },
+    {
+      id: "12",
+      src: <NextJSIcon />,
+      language: "Next JS",
+      status: "Beginner",
+    },
+    {
+      id: "13",
+      src: <TailwindCSSIcon />,
+      language: "Tailwind CSS",
+      status: "Medium",
+    },
+    {
+      id: "14",
+      src: <JavaScriptIcon />,
+      language: "JavaScript",
+      status: "Medium",
+    },
+    {
+      id: "15",
+      src: <JQueryIcon />,
+      language: "JQuery",
+      status: "Beginner",
+    },
+    {
+      id: "16",
+      src: <PythonIcon />,
+      language: "Python",
+      status: "Beginner",
+    },
+    {
+      id: "17",
+      src: <WordPressIcon />,
+      language: "WordPress",
+      status: "Medium",
+    },
+    {
+      id: "18",
+      src: <AngularIcon />,
+      language: "Angular",
+      status: "Beginner",
+    },
   ];
-
-  const CustomNextArrow = (props) => {
-    return (
-      <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
-    );
-  };
-
-  const CustomPrevArrow = (props) => {
-    return (
-      <div
-        className="custom-arrow1 custom-prev-arrow"
-        onClick={props.onClick}
-      />
-    );
-  };
 
   const settings = {
     dots: false,
@@ -142,8 +206,8 @@ export default function MySkills() {
       <BoxContainer id="mySkills" style={{}}>
         <PageHeadingText>My Skills</PageHeadingText>
         <Slider {...settings}>
-          {images.map((image, index) => (
-            <Box key={index}>
+          {skills.map((item, index) => (
+            <Box key={item.toString()}>
               <Card
                 style={{
                   // border: "1px solid blue",
@@ -163,13 +227,19 @@ export default function MySkills() {
                     rowGap: 10,
                   }}
                 >
-                  <Box class="profile-picture">
-                    <img src={image.src} alt="lang" />
-                  </Box>
-                  <Typography>{image.language}</Typography>
+                  <Avatar
+                    alt={item.language}
+                    sx={{
+                      width: "4rem",
+                      height: "4rem",
+                    }}
+                  >
+                    {item.src}
+                  </Avatar>
+                  <Typography>{item.language}</Typography>
                   <Stack spacing={2} alignItems="center">
                     <Stack direction="row" spacing={2}>
-                      <Chip label={image.status} />
+                      <Chip label={item.status} />
                     </Stack>
                   </Stack>
                 </CardContent>

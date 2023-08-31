@@ -8,7 +8,7 @@ import {
   WhatsApp,
   GitHub,
   YouTube,
-} from "./icon/Icons";
+} from "./icons/Icons";
 import confetti from "canvas-confetti";
 import { DisplayFlexCenter, FindText } from "./styles";
 
@@ -25,12 +25,13 @@ function Footer() {
 
   const fire = (particleRatio, opts) => {
     const count = 200;
-    confetti(
-      Object.assign({}, defaults, opts, {
+    confetti({
+        ...defaults,
+        ...opts,
         particleCount: Math.floor(count * particleRatio),
-      })
-    );
+    });
   };
+
 
   const handleRealisticConfetti = () => {
     fire(0.25, {

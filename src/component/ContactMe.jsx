@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Alert, Box, Grid, Snackbar, TextField } from "@mui/material";
 import { ButtonStyle, PageHeadingText, ValidationText } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
@@ -133,8 +133,8 @@ export default function ContactMe() {
           <Alert
             onClose={handleSnackbarClose}
             sx={{
-              background: "#2E7D32",
-              color: "#fff",
+              background: "#DDFFDE",
+              color: "#37C977",
             }}
           >
             Contact us details successfully submitted

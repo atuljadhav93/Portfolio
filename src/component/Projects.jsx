@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@mui/material";
 import data from "../data/index.json";
 import { PageHeadingText } from "./styles";

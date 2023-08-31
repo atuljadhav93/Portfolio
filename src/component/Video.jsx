@@ -1,8 +1,21 @@
+import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import { PageHeadingText, WatchVideoBtn } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from "react-slick";
 import YouTube from "react-youtube";
+
+const CustomNextArrow = (props) => {
+  return (
+    <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
+  );
+};
+
+const CustomPrevArrow = (props) => {
+  return (
+    <div className="custom-arrow1 custom-prev-arrow" onClick={props.onClick} />
+  );
+};
 
 export default function Video() {
   const videoTutorial = [
@@ -24,21 +37,6 @@ export default function Video() {
       videoLink: "https://youtube.com/@techedumeet",
     },
   ];
-
-  const CustomNextArrow = (props) => {
-    return (
-      <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
-    );
-  };
-
-  const CustomPrevArrow = (props) => {
-    return (
-      <div
-        className="custom-arrow1 custom-prev-arrow"
-        onClick={props.onClick}
-      />
-    );
-  };
 
   const settings = {
     dots: true,
@@ -125,7 +123,7 @@ export default function Video() {
         <Slider {...settings}>
           {videoTutorial?.map((item, index) => (
             <Box
-              key={index}
+              key={item.toString()}
               style={{
                 // border: "1px solid blue",
                 borderRadius: "10px",
