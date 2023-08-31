@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Link, Typography } from "@mui/material";
 import { ButtonStyle } from "./styles";
 import TypeWriter from "typewriter-effect";
-import { WhatsApp, GitHub, Linkedin } from "./icon/Icons";
+import { WhatsApp, GitHub, Linkedin } from "./icons/Icons";
 
 export default function HeroSection() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;

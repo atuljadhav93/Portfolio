@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { CodeIcon } from "./icon/Icons";
+import { CodeIcon } from "./icons/Icons";
 import SchoolIcon from "@mui/icons-material/School";
 import { Typography } from "@mui/material";
 import { BoxContainer, PageHeadingText } from "./styles";
