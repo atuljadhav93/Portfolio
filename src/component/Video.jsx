@@ -119,7 +119,7 @@ export default function Video() {
           // alignSelf: "stretch",
         }}
       >
-        <PageHeadingText>My Youtube Videos</PageHeadingText>
+        <PageHeadingText>My YouTube Videos</PageHeadingText>
         <Slider {...settings}>
           {videoTutorial?.map((item, index) => (
             <Box
