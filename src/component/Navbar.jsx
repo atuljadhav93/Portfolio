@@ -1,6 +1,14 @@
 import { Box } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import {
+  Home,
+  AboutMe,
+  Journey,
+  MyWork,
+  Skills,
+  ContactMe,
+} from "./constants/Text";
 /* eslint-disable */
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -62,7 +70,7 @@ function Navbar() {
                 to="heroSection"
                 className="navbar--content"
               >
-                Home
+                {Home}
               </Link>
             </li>
             <li>
@@ -76,7 +84,7 @@ function Navbar() {
                 to="aboutMe"
                 className="navbar--content"
               >
-                About Me
+                {AboutMe}
               </Link>
             </li>
 
@@ -91,7 +99,7 @@ function Navbar() {
                 to="timeline"
                 className="navbar--content"
               >
-                Journey
+                {Journey}
               </Link>
             </li>
             <li>
@@ -105,7 +113,7 @@ function Navbar() {
                 to="projects"
                 className="navbar--content"
               >
-                My Work
+                {MyWork}
               </Link>
             </li>
             <li>
@@ -119,7 +127,7 @@ function Navbar() {
                 to="mySkills"
                 className="navbar--content"
               >
-                Skills
+                {Skills}
               </Link>
             </li>
             <li>
@@ -133,7 +141,7 @@ function Navbar() {
                 to="Contact"
                 className="navbar--content"
               >
-                Contact Me
+                {ContactMe}
               </Link>
             </li>
           </ul>

@@ -1,9 +1,80 @@
 import { Box, Button, Typography, styled } from "@mui/material";
+import Chip from "@mui/material/Chip";
 
 export const DisplayFlexCenter = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+}));
+
+export const PoppinsSixteenText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "16px",
+}));
+
+export const PoppinsSixteenBoxText = styled(Box)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "16px",
+}));
+
+export const PoppinsSmallText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "12px",
+}));
+
+export const PoppinsForteenText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "14px",
+}));
+
+export const PoppinsForteenChipText = styled(Chip)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "14px",
+}));
+
+export const PoppinsTenPixelText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "0.76vw",
+}));
+
+export const PoppinsThirtySixText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 600,
+  fontSize: "36px",
+}));
+
+export const PoppinsEighteenText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 600,
+  fontSize: "18px",
+}));
+
+export const PoppinsElevenText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "11px",
+}));
+
+export const PoppinsTwelveText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "12px",
 }));
 
 export const BoxContainer = styled(Box)(() => ({
@@ -66,8 +137,9 @@ export const FindText = styled(Typography)`
   transition: all 0.3s ease;
   text-transform: none;
   font-family: Poppins;
-  font-size: 18px,
+  font-size: 14px,
   font-weight: 500;
+  fontStyle: normal,
   cursor:pointer;
   :hover {
     color: #3087ec;

@@ -3,6 +3,7 @@ import { Alert, Box, Grid, Snackbar, TextField } from "@mui/material";
 import { ButtonStyle, PageHeadingText, ValidationText } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { clearForm, setFieldValue } from "../slice/ContactMe";
+import { EmailSubjectValidatioText, EmailValidatioText, FullNameValidatioText, MessageValidatioText, PhoneNumberValidatioText, Submit } from "./constants/Text";
 
 export default function ContactMe() {
   const dispatch = useDispatch();
@@ -222,7 +223,7 @@ export default function ContactMe() {
             />
             {!isFullNameValid && (
               <ValidationText>
-                Please enter a minimum 3 to 40 character
+                  {FullNameValidatioText}
               </ValidationText>
             )}
           </Grid>
@@ -272,7 +273,7 @@ export default function ContactMe() {
             />
             {!isEmailValid && (
               <ValidationText>
-                Please enter a valid email address.
+                {EmailValidatioText}
               </ValidationText>
             )}
           </Grid>
@@ -320,7 +321,7 @@ export default function ContactMe() {
             />
             {!isPhoneValid && (
               <ValidationText>
-                Please enter mobile number 7 to 15 digits
+                {PhoneNumberValidatioText}
               </ValidationText>
             )}
           </Grid>
@@ -370,7 +371,7 @@ export default function ContactMe() {
             />
             {!isEmailAddressValid && (
               <ValidationText>
-                Please enter a minimum 3 to 40 character
+                {EmailSubjectValidatioText}
               </ValidationText>
             )}
           </Grid>
@@ -416,7 +417,7 @@ export default function ContactMe() {
             />
             {!isMessageValid && (
               <ValidationText>
-                Please enter a minimum 5 to 40 character
+                {MessageValidatioText}
               </ValidationText>
             )}
           </Grid>
@@ -456,7 +457,7 @@ export default function ContactMe() {
                 ) > 0
               }
             >
-              Submit
+              {Submit}
             </ButtonStyle>
           </Grid>
         </Grid>

@@ -2,11 +2,12 @@ import React from "react";
 import { Box } from "@mui/material";
 import data from "../data/index.json";
 import { PageHeadingText } from "./styles";
+import { MyWorkText } from "./constants/Text";
 
 export default function MyPortfolio() {
   return (
     <Box id="projects">
-      <PageHeadingText>My Work</PageHeadingText>
+      <PageHeadingText>{MyWorkText}</PageHeadingText>
       <Box className="portfolio--section">
         <Box className="portfolio--section--container ">
           {data?.portfolio?.map((item, index) => (

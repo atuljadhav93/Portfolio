@@ -1,8 +1,13 @@
 import React from "react";
 import { Box, Button, Link, Typography } from "@mui/material";
-import { ButtonStyle } from "./styles";
+import {
+  ButtonStyle,
+  PoppinsForteenText,
+  PoppinsThirtySixText,
+} from "./styles";
 import TypeWriter from "typewriter-effect";
 import { WhatsApp, GitHub, Linkedin } from "./icons/Icons";
+import { HireMe, LetsTalk, SelfIntoText } from "./constants/Text";
 
 export default function HeroSection() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
@@ -25,21 +30,7 @@ export default function HeroSection() {
     <Box id="heroSection" className="hero--section">
       <Box className="hero--section--content--box">
         <Box className="hero--section--content">
-          <Typography
-            style={{
-              // fontFamily: "'Open Sans', sans-serif",
-              fontFamily: "'Nunito', sans-serif",
-              fontWeight: 400,
-              fontSize: "1.5rem",
-              // fontFamily: "'Sacramento', cursive",
-              // textTransform: "none",
-              // fontWeight: 400,
-              // color: "#dc143c",
-              // fontSize:"3rem"
-            }}
-          >
-            Atul Jadhav
-          </Typography>
+          <PoppinsThirtySixText>Atul Jadhav</PoppinsThirtySixText>
           <Box
             style={{
               display: "flex",
@@ -83,13 +74,9 @@ export default function HeroSection() {
             </Typography>
           </Box>
 
-          <Typography className="hero--section-description">
-            Hello there! I'm Atul Jadhav, a passionate frontend developer and
-            open source contributor, on a mission to craft beautiful and
-            user-friendly digital experiences. With a deep-rooted love for web
-            development, I find joy in bringing creative designs to life through
-            code.
-          </Typography>
+          <PoppinsForteenText className="hero--section-description">
+            {SelfIntoText}
+          </PoppinsForteenText>
         </Box>
         <ButtonStyle
           id="hireMe"
@@ -105,7 +92,7 @@ export default function HeroSection() {
           type="submit"
           onClick={handleHireMeClick}
         >
-          Hire Me
+          {HireMe}
         </ButtonStyle>
         <Button
           style={{
@@ -126,7 +113,7 @@ export default function HeroSection() {
           type="submit"
           onClick={handleLetsTalkClick}
         >
-          Let's Talk
+          {LetsTalk}
         </ButtonStyle>
         <Box
           style={{

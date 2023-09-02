@@ -1,11 +1,15 @@
 import React from "react";
-import { Avatar, Box, Card, CardContent, Typography } from "@mui/material";
-import { BoxContainer, PageHeadingText } from "./styles";
+import { Avatar, Box, Card, CardContent } from "@mui/material";
+import {
+  BoxContainer,
+  PageHeadingText,
+  PoppinsForteenChipText,
+  PoppinsSixteenText,
+} from "./styles";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import {
   BootstrapIcon,
@@ -27,6 +31,7 @@ import {
   WordPressIcon,
   AngularIcon,
 } from "./icons/LanguageIcon";
+import { MySkillsText } from "./constants/Text";
 
 const CustomNextArrow = (props) => {
   return (
@@ -204,7 +209,7 @@ export default function MySkills() {
   return (
     <>
       <BoxContainer id="mySkills" style={{}}>
-        <PageHeadingText>My Skills</PageHeadingText>
+        <PageHeadingText>{MySkillsText}</PageHeadingText>
         <Slider {...settings}>
           {skills.map((item, index) => (
             <Box key={item.toString()}>
@@ -236,10 +241,10 @@ export default function MySkills() {
                   >
                     {item.src}
                   </Avatar>
-                  <Typography>{item.language}</Typography>
+                  <PoppinsSixteenText>{item.language}</PoppinsSixteenText>
                   <Stack spacing={2} alignItems="center">
                     <Stack direction="row" spacing={2}>
-                      <Chip label={item.status} />
+                      <PoppinsForteenChipText label={item.status} />
                     </Stack>
                   </Stack>
                 </CardContent>

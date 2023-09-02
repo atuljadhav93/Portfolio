@@ -1,11 +1,8 @@
-/* Global CSS */
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: "Poppins", sans-serif;
   -moz-osx-font-smoothing: "Poppins", sans-serif;
-  font-style: normal;
 }
 
 :root {
@@ -18,29 +15,6 @@ body {
   --white: #ffffff;
 }
 
-.btn {
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  padding: 14px 32px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -ms-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-}
-
 .btn-outline-primary {
   color: var(--primary);
   background-color: var(--white);
@@ -51,9 +25,6 @@ body {
   color: var(--white);
   background-color: var(--primary);
 }
-
-/* Global CSS Ends */
-/* Main Headings */
 
 /* Pragraphs text large medium small */
 /* Body 2 */
@@ -160,10 +131,7 @@ body {
 }
 
 .hero--section-description {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 .hero--section--img {
@@ -850,8 +818,7 @@ input[type="checkbox"] {
 .download-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
   color: #fff;
   background-color: #3498db;
   border: none;
@@ -863,36 +830,7 @@ input[type="checkbox"] {
 
 .download-button:hover {
   background-color: #2980b9;
-  transform: scale(1.05);
-}
-
-/* Optional: Add an icon */
-.download-icon {
-  margin-right: 8px;
-}
-
-/* Center the button */
-.container5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.download-button1 {
-  display: inline-block;
-  padding: 12px 24px;
-  background: linear-gradient(to bottom, #4CAF50, #45a049);
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.download-button1:hover {
-  background: linear-gradient(to bottom, #45a049, #4CAF50);
+  transform: scale(1.02);
 }
 
 /* cloud btn */
@@ -916,7 +854,7 @@ input[type="checkbox"] {
 .download_button .downloadicon {
   position: relative;
   float: right;
-  margin: 10px;
+  /* margin: 10px; */
   width: 140px;
   height: 50px;
 }
@@ -992,10 +930,10 @@ input[type="checkbox"] {
 .download_button .cloud {
   width: 140px;
   height: 50px;
-  background-color: #4285F4;
+  background-color: #ADECA8;
   border-radius: 30px;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .download_button .cloud:before {
@@ -1005,10 +943,10 @@ input[type="checkbox"] {
   height: 50px;
   top: -30px;
   left: 70px;
-  background-color: #4285F4;
+  background-color: #ADECA8;
   border-radius: 50%;
   position: absolute;
-  box-shadow: -40px 0 0 10px #4285F4;
+  box-shadow: -40px 0 0 10px #ADECA8;
 }
 
 .download_button .cloud .arrowdown {

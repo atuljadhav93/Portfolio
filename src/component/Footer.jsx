@@ -10,7 +10,12 @@ import {
   YouTube,
 } from "./icons/Icons";
 import confetti from "canvas-confetti";
-import { DisplayFlexCenter, FindText } from "./styles";
+import {
+  DisplayFlexCenter,
+  FindText,
+  PoppinsSixteenText,
+} from "./styles";
+import { CopyRightIssueText } from "./constants/Text";
 
 function Footer() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
@@ -26,12 +31,11 @@ function Footer() {
   const fire = (particleRatio, opts) => {
     const count = 200;
     confetti({
-        ...defaults,
-        ...opts,
-        particleCount: Math.floor(count * particleRatio),
+      ...defaults,
+      ...opts,
+      particleCount: Math.floor(count * particleRatio),
     });
   };
-
 
   const handleRealisticConfetti = () => {
     fire(0.25, {
@@ -98,9 +102,8 @@ function Footer() {
             flexDirection: "column",
           }}
         >
-          <Typography
+          <PoppinsSixteenText
             style={{
-              fontFamily: "Poppins",
               // display: { md: "flex", lg: "flex", xl: "flex" },
               display: "flex",
               justifyContent: "center",
@@ -127,11 +130,10 @@ function Footer() {
                 <NoCopyRight />
               </Box>
             </Tooltip>
-            &nbsp;copyright issues.
-          </Typography>
-          <Typography
+            &nbsp;{CopyRightIssueText}
+          </PoppinsSixteenText>
+          <PoppinsSixteenText
             style={{
-              fontFamily: "Poppins",
               display: { lg: "flex", xl: "flex" },
               alignItems: {
                 xs: "center",
@@ -145,7 +147,7 @@ function Footer() {
             Feel free to reach out to me.
             <br />
             I'm here and ready to help, ping me!
-          </Typography>
+          </PoppinsSixteenText>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <Tooltip title="Connect with me on LinkedIn." followCursor>
@@ -161,12 +163,11 @@ function Footer() {
               Atul Jadhav
             </Typography>
           </Tooltip>
-          <Typography
+          <PoppinsSixteenText
             sx={{
               display: { sm: "flex", md: "flex", lg: "flex", xl: "flex" },
               justifyContent: "center",
               alignItems: "center",
-              fontFamily: "Poppins",
             }}
           >
             Designed and Built in&nbsp;
@@ -180,26 +181,30 @@ function Footer() {
               </Box>
             </Tooltip>
             &nbsp;with Pride.
-          </Typography>
+          </PoppinsSixteenText>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={4}
-          lg={4}
-          xl={4}
-          style={{
-            fontFamily: "Poppins",
-          }}
-        >
+        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <DisplayFlexCenter>
-            <FindText onMouseOver={handleRealisticConfetti}>
+            <FindText
+              onMouseOver={handleRealisticConfetti}
+              style={{
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: 500,
+                fontSize: "16px",
+              }}
+            >
               You can find me&nbsp;
             </FindText>
             <FindText
               onMouseOver={handleRealisticConfetti}
               className="text-red blink-soft"
+              style={{
+                fontFamily: "Poppins",
+                fontStyle: "normal",
+                fontWeight: 500,
+                fontSize: "16px",
+              }}
             >
               everywhere.
             </FindText>

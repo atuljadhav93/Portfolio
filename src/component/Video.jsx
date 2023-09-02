@@ -1,9 +1,10 @@
 import React from "react";
-import { Box, Link, Typography } from "@mui/material";
-import { PageHeadingText, WatchVideoBtn } from "./styles";
+import { Box, Link } from "@mui/material";
+import { PageHeadingText, PoppinsSixteenText, WatchVideoBtn } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from "react-slick";
 import YouTube from "react-youtube";
+import { MyYouTubeVideos } from "./constants/Text";
 
 const CustomNextArrow = (props) => {
   return (
@@ -119,7 +120,7 @@ export default function Video() {
           // alignSelf: "stretch",
         }}
       >
-        <PageHeadingText>My YouTube Videos</PageHeadingText>
+        <PageHeadingText>{MyYouTubeVideos}</PageHeadingText>
         <Slider {...settings}>
           {videoTutorial?.map((item, index) => (
             <Box
@@ -149,15 +150,15 @@ export default function Video() {
                       marginTop: "7%",
                     }}
                   >
-                    <Typography>There are many more !</Typography>
+                    <PoppinsSixteenText>There are many more !</PoppinsSixteenText>
                   </Box>
                 ) : (
                   <YouTube videoId={item?.videoId} opts={opts} />
                 )}
-                <Typography>{item?.title}</Typography>
+                <PoppinsSixteenText>{item?.title}</PoppinsSixteenText>
                 <Link
                   href={item?.videoLink}
-                  target={item?.id === "3" ? "_blank" : ""}
+                  target={(item?.id === "3" || item?.id === "2") ? "_blank" : ""}
                   rel="noopener noreferrer"
                 >
                   <WatchVideoBtn

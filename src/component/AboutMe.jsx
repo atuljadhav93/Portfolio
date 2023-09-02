@@ -1,11 +1,18 @@
 import React from "react";
-import { Avatar, Box, Typography } from "@mui/material";
+import { Avatar, Box } from "@mui/material";
 import {
   AboutMeDescriptionFirst,
   AboutMeDescriptionSecond,
   AboutMeText,
+  DownloadMyResume,
+  DownloadResume,
 } from "./constants/Text";
-import { DisplayFlexCenter } from "./styles";
+import {
+  DisplayFlexCenter,
+  PoppinsForteenText,
+  PoppinsSixteenText,
+  PoppinsThirtySixText,
+} from "./styles";
 
 export default function AboutMe() {
   const handleDownloadClick = () => {
@@ -25,6 +32,10 @@ export default function AboutMe() {
     document.body.removeChild(link);
   };
 
+  //based on even and odd date show diff btn
+  const currentDate = new Date();
+  const isEvenDay = currentDate.getDate() % 2 === 0;
+
   return (
     <>
       <section id="aboutMe" className="about--section">
@@ -41,42 +52,39 @@ export default function AboutMe() {
         </DisplayFlexCenter>
         <Box className="hero--section--content--box about--section--box">
           <Box className="hero--section--content">
-            <Typography
-              style={{
-                fontFamily: "Poppins",
-                fontStyle: "normal",
-                fontWeight: 600,
-                fontSize: "36px",
-              }}
-            >
-              {AboutMeText}
-            </Typography>
-            <Typography className="hero--section-description">
+            <PoppinsThirtySixText>{AboutMeText}</PoppinsThirtySixText>
+            <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionFirst}
-            </Typography>
-            <Typography className="hero--section-description">
+            </PoppinsForteenText>
+            <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionSecond}
-            </Typography>
-            {/* <Box
-              // className="container5 download-button"
-              clssName="download-button1"
-            >
-              <span
-                // class="download-icon"
-                className="download-button1"
+            </PoppinsForteenText>
+            {isEvenDay ? (
+              <DisplayFlexCenter
+                className="download-button"
                 onClick={handleDownloadClick}
               >
-                Download File
-              </span>
-            </Box> */}
-            <Box
-              class="downloadicon download_button"
-              onClick={handleDownloadClick}
-            >
-              <Box class="cloud">
-                <Box class="arrowdown"></Box>
-              </Box>
-            </Box>
+                {DownloadResume}
+              </DisplayFlexCenter>
+            ) : (
+              <>
+                <PoppinsSixteenText
+                  sx={{
+                    color: "#3087EC",
+                  }}
+                >
+                  {DownloadMyResume}
+                </PoppinsSixteenText>
+                <Box
+                  class="downloadicon download_button"
+                  onClick={handleDownloadClick}
+                >
+                  <Box class="cloud">
+                    <Box class="arrowdown"></Box>
+                  </Box>
+                </Box>
+              </>
+            )}
           </Box>
         </Box>
       </section>

@@ -8,12 +8,13 @@ import { CodeIcon } from "./icons/Icons";
 import SchoolIcon from "@mui/icons-material/School";
 import { Typography } from "@mui/material";
 import { BoxContainer, PageHeadingText } from "./styles";
+import { MyJourney } from "./constants/Text";
 
 export default function Timeline() {
   return (
     <>
       <BoxContainer id="timeline">
-        <PageHeadingText>My Journey</PageHeadingText>
+        <PageHeadingText>{MyJourney}</PageHeadingText>
         <VerticalTimeline lineColor="#3087EC">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
