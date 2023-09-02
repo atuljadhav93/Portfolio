@@ -3,7 +3,15 @@ import { Alert, Box, Grid, Snackbar, TextField } from "@mui/material";
 import { ButtonStyle, PageHeadingText, ValidationText } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { clearForm, setFieldValue } from "../slice/ContactMe";
-import { EmailSubjectValidatioText, EmailValidatioText, FullNameValidatioText, MessageValidatioText, PhoneNumberValidatioText, Submit } from "./constants/Text";
+import {
+  ContactMeHeadingText,
+  EmailSubjectValidatioText,
+  EmailValidatioText,
+  FullNameValidatioText,
+  MessageValidatioText,
+  PhoneNumberValidatioText,
+  Submit,
+} from "./constants/Text";
 
 export default function ContactMe() {
   const dispatch = useDispatch();
@@ -141,7 +149,7 @@ export default function ContactMe() {
             Contact us details successfully submitted
           </Alert>
         </Snackbar>
-        <PageHeadingText>Let's Work Together</PageHeadingText>
+        <PageHeadingText>{ContactMeHeadingText}</PageHeadingText>
         <Grid
           container
           spacing={1}
@@ -222,9 +230,7 @@ export default function ContactMe() {
               }}
             />
             {!isFullNameValid && (
-              <ValidationText>
-                  {FullNameValidatioText}
-              </ValidationText>
+              <ValidationText>{FullNameValidatioText}</ValidationText>
             )}
           </Grid>
           <Grid
@@ -272,9 +278,7 @@ export default function ContactMe() {
               }}
             />
             {!isEmailValid && (
-              <ValidationText>
-                {EmailValidatioText}
-              </ValidationText>
+              <ValidationText>{EmailValidatioText}</ValidationText>
             )}
           </Grid>
           <Grid
@@ -320,9 +324,7 @@ export default function ContactMe() {
               }}
             />
             {!isPhoneValid && (
-              <ValidationText>
-                {PhoneNumberValidatioText}
-              </ValidationText>
+              <ValidationText>{PhoneNumberValidatioText}</ValidationText>
             )}
           </Grid>
           <Grid
@@ -370,9 +372,7 @@ export default function ContactMe() {
               }}
             />
             {!isEmailAddressValid && (
-              <ValidationText>
-                {EmailSubjectValidatioText}
-              </ValidationText>
+              <ValidationText>{EmailSubjectValidatioText}</ValidationText>
             )}
           </Grid>
           <Grid
@@ -416,9 +416,7 @@ export default function ContactMe() {
               }}
             />
             {!isMessageValid && (
-              <ValidationText>
-                {MessageValidatioText}
-              </ValidationText>
+              <ValidationText>{MessageValidatioText}</ValidationText>
             )}
           </Grid>
           <Grid

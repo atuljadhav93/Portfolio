@@ -22,6 +22,7 @@ export const MyYouTubeVideos = "My YouTube Videos";
 export const MyJourney = "My Journey";
 export const MyWorkText = "My Work";
 export const MySkillsText = "My Skills";
+export const ContactMeHeadingText = "Reach out today, and let's shape the future together.";
 
 export const SelfIntoText =
   "Hello there! I'm Atul Jadhav, a passionate frontend developer and open source contributor, on a mission to craft beautiful and user-friendly digital experiences. With a deep-rooted love for web development, I find joy in bringing creative designs to life through code.";
