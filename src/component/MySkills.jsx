@@ -221,6 +221,7 @@ export default function MySkills() {
                   width: "13rem",
                   marginBottom: "2rem",
                   cursor: "pointer",
+                  color: "#003C2F"
                 }}
               >
                 <CardContent
@@ -241,7 +242,9 @@ export default function MySkills() {
                   >
                     {item.src}
                   </Avatar>
-                  <PoppinsSixteenText>{item.language}</PoppinsSixteenText>
+                  <PoppinsSixteenText>
+                    {item.language}
+                  </PoppinsSixteenText>
                   <Stack spacing={2} alignItems="center">
                     <Stack direction="row" spacing={2}>
                       <PoppinsForteenChipText label={item.status} />

@@ -13,6 +13,8 @@ body {
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
+  --green: #30AD01;
+  --light-green: #65816d;
 }
 
 .btn-outline-primary {
@@ -87,7 +89,8 @@ body {
 
 /* Navbar Content */
 .navbar--content {
-  color: var(--darkblue);
+  /* color: var(--darkblue); */
+  color:var(--light-green);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +99,8 @@ body {
 }
 
 .navbar--active-content {
-  color: var(--primary);
+  /* color: var(--primary); */
+  color:var(--green);
 }
 
 /* Navbar Styler Ends */
@@ -132,6 +136,7 @@ body {
 
 .hero--section-description {
   line-height: 36px;
+  color: #003c2f;
 }
 
 .hero--section--img {

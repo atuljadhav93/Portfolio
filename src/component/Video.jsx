@@ -107,7 +107,7 @@ export default function Video() {
           background: "#fff",
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "#EDE7E1",
+          backgroundColor: "#FAE9DF",
           // border: "1px solid red",
           padding: {
             xs: "15px 15px",
@@ -120,7 +120,9 @@ export default function Video() {
           // alignSelf: "stretch",
         }}
       >
-        <PageHeadingText>{MyYouTubeVideos}</PageHeadingText>
+        <PageHeadingText sx={{ color: "#003C2F" }}>
+          {MyYouTubeVideos}
+        </PageHeadingText>
         <Slider {...settings}>
           {videoTutorial?.map((item, index) => (
             <Box
@@ -150,15 +152,19 @@ export default function Video() {
                       marginTop: "7%",
                     }}
                   >
-                    <PoppinsSixteenText>There are many more !</PoppinsSixteenText>
+                    <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                      There are many more !
+                    </PoppinsSixteenText>
                   </Box>
                 ) : (
                   <YouTube videoId={item?.videoId} opts={opts} />
                 )}
-                <PoppinsSixteenText>{item?.title}</PoppinsSixteenText>
+                <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                  {item?.title}
+                </PoppinsSixteenText>
                 <Link
                   href={item?.videoLink}
-                  target={(item?.id === "3" || item?.id === "2") ? "_blank" : ""}
+                  target={item?.id === "3" || item?.id === "2" ? "_blank" : ""}
                   rel="noopener noreferrer"
                 >
                   <WatchVideoBtn

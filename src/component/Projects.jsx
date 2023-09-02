@@ -7,7 +7,7 @@ import { MyWorkText } from "./constants/Text";
 export default function MyPortfolio() {
   return (
     <Box id="projects">
-      <PageHeadingText>{MyWorkText}</PageHeadingText>
+      <PageHeadingText sx={{color:"#003C2F"}}>{MyWorkText}</PageHeadingText>
       <Box className="portfolio--section">
         <Box className="portfolio--section--container ">
           {data?.portfolio?.map((item, index) => (

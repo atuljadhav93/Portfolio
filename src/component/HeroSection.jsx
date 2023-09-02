@@ -30,7 +30,9 @@ export default function HeroSection() {
     <Box id="heroSection" className="hero--section">
       <Box className="hero--section--content--box">
         <Box className="hero--section--content">
-          <PoppinsThirtySixText>Atul Jadhav</PoppinsThirtySixText>
+          <PoppinsThirtySixText sx={{
+            color:"#003C2F"
+          }}>Atul Jadhav</PoppinsThirtySixText>
           <Box
             style={{
               display: "flex",
@@ -45,6 +47,7 @@ export default function HeroSection() {
                 fontFamily: "'Nunito', sans-serif",
                 fontWeight: 400,
                 fontSize: "1.5rem",
+                color:"#003C2F"
               }}
             >
               I'm a
@@ -56,7 +59,8 @@ export default function HeroSection() {
                 fontFamily: "'Nunito', sans-serif",
                 fontWeight: 400,
                 fontSize: "2rem",
-                color: "#dc143c",
+                // color: "#dc143c",
+                color:"#30AD01"
               }}
             >
               <TypeWriter

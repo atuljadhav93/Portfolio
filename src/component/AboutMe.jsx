@@ -52,7 +52,7 @@ export default function AboutMe() {
         </DisplayFlexCenter>
         <Box className="hero--section--content--box about--section--box">
           <Box className="hero--section--content">
-            <PoppinsThirtySixText>{AboutMeText}</PoppinsThirtySixText>
+            <PoppinsThirtySixText sx={{color:"#003C2F"}}>{AboutMeText}</PoppinsThirtySixText>
             <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionFirst}
             </PoppinsForteenText>

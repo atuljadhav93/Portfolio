@@ -70,7 +70,7 @@ function Footer() {
         sx={{
           display: "flex",
           flexDirection: "row",
-          backgroundColor: "#EDE7E1",
+          backgroundColor: "#FAE9DF",
           // border: "1px solid red",
           padding: {
             xs: "15px 15px",
@@ -115,6 +115,7 @@ function Footer() {
               //   lg: "flex-start",
               //   xl: "flex-start",
               // },
+              color:"#003c2f"
             }}
           >
             No&nbsp;
@@ -142,6 +143,7 @@ function Footer() {
                 lg: "flex-start",
                 xl: "flex-start",
               },
+              color:"#003c2f"
             }}
           >
             Feel free to reach out to me.
@@ -168,6 +170,7 @@ function Footer() {
               display: { sm: "flex", md: "flex", lg: "flex", xl: "flex" },
               justifyContent: "center",
               alignItems: "center",
+              color:"#003c2f"
             }}
           >
             Designed and Built in&nbsp;
@@ -192,6 +195,7 @@ function Footer() {
                 fontStyle: "normal",
                 fontWeight: 500,
                 fontSize: "16px",
+                color:"#003c2f"
               }}
             >
               You can find me&nbsp;
@@ -204,6 +208,7 @@ function Footer() {
                 fontStyle: "normal",
                 fontWeight: 500,
                 fontSize: "16px",
+                color:"#003c2f"
               }}
             >
               everywhere.
@@ -217,7 +222,7 @@ function Footer() {
               justifyContent: "center",
               alignItems: "center",
               alignContent: "center",
-              backgroundColor: "#EDE7E1",
+              backgroundColor: "#FAE9DF",
             }}
           >
             <Box className="buttons">

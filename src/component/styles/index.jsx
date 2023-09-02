@@ -78,7 +78,8 @@ export const PoppinsTwelveText = styled(Typography)(() => ({
 }));
 
 export const BoxContainer = styled(Box)(() => ({
-  backgroundColor: "#EDE7E1",
+  backgroundColor: "#3F70AA",
+  color:"#fff"
 }));
 
 export const ValidationText = styled(Typography)(() => ({

@@ -149,7 +149,9 @@ export default function ContactMe() {
             Contact us details successfully submitted
           </Alert>
         </Snackbar>
-        <PageHeadingText>{ContactMeHeadingText}</PageHeadingText>
+        <PageHeadingText sx={{ color: "#003C2F" }}>
+          {ContactMeHeadingText}
+        </PageHeadingText>
         <Grid
           container
           spacing={1}
@@ -216,6 +218,7 @@ export default function ContactMe() {
                   display: "flex",
                   alignItems: "center",
                   width: "500px",
+                  color: "#003c2f",
                 },
               }}
               inputProps={{
@@ -224,6 +227,7 @@ export default function ContactMe() {
                   fontStyle: "normal",
                   fontWeight: 400,
                   fontSize: "14px",
+                  color: "#003c2f",
                 },
                 minLength: 3,
                 maxLength: 40,
@@ -264,6 +268,7 @@ export default function ContactMe() {
                   display: "flex",
                   alignItems: "center",
                   width: "500px",
+                  color: "#003c2f",
                 },
               }}
               inputProps={{
@@ -272,6 +277,7 @@ export default function ContactMe() {
                   fontStyle: "normal",
                   fontWeight: 400,
                   fontSize: "14px",
+                  color: "#003c2f",
                 },
                 minLength: 3,
                 maxLength: 40,
@@ -310,6 +316,7 @@ export default function ContactMe() {
                   display: "flex",
                   alignItems: "center",
                   width: "500px",
+                  color: "#003c2f",
                 },
               }}
               inputProps={{
@@ -318,6 +325,7 @@ export default function ContactMe() {
                   fontStyle: "normal",
                   fontWeight: 400,
                   fontSize: "14px",
+                  color: "#003c2f",
                 },
                 minLength: 3,
                 maxLength: 40,
@@ -358,6 +366,7 @@ export default function ContactMe() {
                   display: "flex",
                   alignItems: "center",
                   width: "500px",
+                  color: "#003c2f",
                 },
               }}
               inputProps={{
@@ -366,6 +375,7 @@ export default function ContactMe() {
                   fontStyle: "normal",
                   fontWeight: 400,
                   fontSize: "14px",
+                  color: "#003c2f",
                 },
                 minLength: 3,
                 maxLength: 40,
@@ -406,6 +416,7 @@ export default function ContactMe() {
                   fontStyle: "normal",
                   fontWeight: 400,
                   fontSize: "14px",
+                  color: "#003c2f",
                 },
                 maxLength: 400,
               }}
