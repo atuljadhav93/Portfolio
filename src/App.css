@@ -234,7 +234,7 @@ body {
 /* About Us */
 .about--section {
   display: grid;
-  padding: 50px 50px;
+  padding: 45px 45px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
@@ -449,15 +449,12 @@ input[type="checkbox"] {
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
-  /* .footer--link--container, */
-  /* .footer--items>ul, */
   .footer--content--container {
     display: flex;
     flex-direction: column;
   }
 
   .skills--section,
-  .hero--section--content,
   .hero--section--content--box {
     align-items: center;
   }
@@ -574,6 +571,15 @@ input[type="checkbox"] {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
+  /* .download_button {
+    display: block;
+    height: 110px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    display:flex;
+  } */
 }
 
 /* Responsive Screens Ends*/
@@ -815,6 +821,7 @@ input[type="checkbox"] {
   --mask: radial-Gradient(closest-side, red calc(100% - 1.25em - 0.75em - 1px), transparent calc(100% - 1.25em - 0.75em) calc(100% - 1.25em), red calc(100% - 1.25em + 1px) calc(100% - 1px), transparent);
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  margin-top: 10px;
 }
 
 /* cv download code */
@@ -842,7 +849,6 @@ input[type="checkbox"] {
 .download_button {
   margin: 15px;
   display: block;
-  width: 320px;
   height: 110px;
   cursor: pointer;
   border-radius: 10px;
@@ -850,7 +856,7 @@ input[type="checkbox"] {
   -moz-border-radius: 10px;
 }
 
-.download_button .filename {
+ .filename {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,4 +1002,37 @@ input[type="checkbox"] {
   -webkit-transform-origin: 30% 90%;
   transform: rotate(-45deg);
   transform-origin: 30% 90%;
+}
+
+.vertical-timeline-element-date {
+  color: #FFFFFF;
+  opacity: 9 !important; 
+}
+
+.vertical-timeline-element--work {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px !important;
+}
+
+/* Default styles for larger screens */
+/* Default styles for arrows */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Media query to hide arrows on mobile devices */
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
 }

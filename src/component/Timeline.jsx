@@ -17,11 +17,15 @@ export default function Timeline() {
         <PageHeadingText>{MyJourney}</PageHeadingText>
         <VerticalTimeline lineColor="#3087EC">
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#7EBCDC", color: "#000000" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            className="vertical-timeline-element--work vertical-timeline-element-date"
+            contentStyle={{
+              background: "#fff",
+              color: "#003c2f",
+              opacity: 1,
+            }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date="2021 - Present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
             position="right"
           >
@@ -35,8 +39,8 @@ export default function Timeline() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#7EBCDC", color: "#000000" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: "#fff", color: "#003c2f" }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date="2021"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<CodeIcon />}
@@ -53,11 +57,11 @@ export default function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
-              background: "#7EBCDC",
-              color: "#000000",
+              background: "#fff",
+              color: "#003c2f",
               margin: "2px !important",
             }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date="2018 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
@@ -81,8 +85,8 @@ export default function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2014 - 2017"
-            contentStyle={{ background: "#7EBCDC", color: "#000000" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: "#fff", color: "#003c2f" }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
             position="left"
@@ -99,8 +103,8 @@ export default function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2014"
-            contentStyle={{ background: "#7EBCDC", color: "#000000" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: "#fff", color: "#003c2f" }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
             position="right"
@@ -115,8 +119,8 @@ export default function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2012"
-            contentStyle={{ background: "#7EBCDC", color: "#000000" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            contentStyle={{ background: "#fff", color: "#003c2f" }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
             position="left"

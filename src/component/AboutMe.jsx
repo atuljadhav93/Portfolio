@@ -16,9 +16,7 @@ import {
 
 export default function AboutMe() {
   const handleDownloadClick = () => {
-    // Define the path to the file in the public folder
-    const filePath = "./img/Atul Jadhav Resume.pdf"; // Replace with the actual file path
-
+    const filePath = "./img/Atul Jadhav Resume.pdf";
     // Create a link element
     const link = document.createElement("a");
     link.href = process.env.PUBLIC_URL + filePath; // Build the absolute URL
@@ -51,8 +49,24 @@ export default function AboutMe() {
           />
         </DisplayFlexCenter>
         <Box className="hero--section--content--box about--section--box">
-          <Box className="hero--section--content">
-            <PoppinsThirtySixText sx={{color:"#003C2F"}}>{AboutMeText}</PoppinsThirtySixText>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: {
+                xs: "center",
+                sm: "center",
+                md: "center",
+                lg: "flex-start",
+                xl: "flex-start",
+              },
+              flexDirection: "column",
+              gap: "21.333px",
+            }}
+          >
+            <PoppinsThirtySixText sx={{ color: "#003C2F" }}>
+              {AboutMeText}
+            </PoppinsThirtySixText>
             <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionFirst}
             </PoppinsForteenText>
@@ -63,6 +77,10 @@ export default function AboutMe() {
               <DisplayFlexCenter
                 className="download-button"
                 onClick={handleDownloadClick}
+                sx={{
+                  width: "150px",
+                  marginBottom: "4px",
+                }}
               >
                 {DownloadResume}
               </DisplayFlexCenter>

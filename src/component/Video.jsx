@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Link } from "@mui/material";
 import { PageHeadingText, PoppinsSixteenText, WatchVideoBtn } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -19,6 +19,22 @@ const CustomPrevArrow = (props) => {
 };
 
 export default function Video() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      const screenWidth = window.innerWidth;
+      setIsMobile(screenWidth < 768);
+    };
+    checkIsMobile();
+    // Listen for window resize events to update the mobile status
+    window.addEventListener("resize", checkIsMobile);
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
   const videoTutorial = [
     {
       id: "1",
@@ -48,45 +64,6 @@ export default function Video() {
     autoplay: false,
     autoplaySpeed: 1500,
     pauseOnHover: true,
-    // display: "flex",
-    // alignItems: "center",
-    // justifyContent: "center",
-    responsive: [
-      // {
-      //   breakpoint: 2560,
-      //   settings: {
-      //     slidesToShow: 12,
-      //   },
-      // },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          // centerMode: true,
-          // centerPadding: "54px",
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          // centerPadding: "54px",
-        },
-      },
-    ],
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
   };
@@ -108,7 +85,6 @@ export default function Video() {
           display: "flex",
           flexDirection: "column",
           backgroundColor: "#FAE9DF",
-          // border: "1px solid red",
           padding: {
             xs: "15px 15px",
             sm: "15px 15px",
@@ -117,69 +93,97 @@ export default function Video() {
             xl: "15px 85.333px",
           },
           textAlign: "center",
-          // alignSelf: "stretch",
         }}
       >
         <PageHeadingText sx={{ color: "#003C2F" }}>
           {MyYouTubeVideos}
         </PageHeadingText>
-        <Slider {...settings}>
-          {videoTutorial?.map((item, index) => (
+        {isMobile ? (
+          <>
             <Box
-              key={item.toString()}
               style={{
-                // border: "1px solid blue",
-                borderRadius: "10px",
-                height: "auto",
-                width: "100%",
-                marginBottom: "2rem",
-                cursor: "pointer",
-                background: "#EDE7E1",
+                marginTop: "7%",
+                height: "270",
+                width: "450",
               }}
             >
+              <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                There's a lot more to explore !
+              </PoppinsSixteenText>
+              <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                check out my YouTube channel.
+              </PoppinsSixteenText>
+              <Link
+                href={"https://youtube.com/@techedumeet"}
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
+                <WatchVideoBtn
+                  id="visitNow"
+                  variant="contained"
+                  disableElevation
+                  type="submit"
+                >
+                  Visit Now
+                </WatchVideoBtn>
+              </Link>
+            </Box>
+          </>
+        ) : (
+          <Slider {...settings}>
+            {videoTutorial?.map((item, index) => (
               <Box
+                key={item.toString()}
                 style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                  rowGap: 10,
+                  borderRadius: "10px",
+                  height: "auto",
+                  marginBottom: "2rem",
+                  cursor: "pointer",
+                  background: "#EDE7E1",
                 }}
               >
-                {item?.id === "3" ? (
-                  <Box
-                    style={{
-                      marginTop: "7%",
-                    }}
+                <Box>
+                  {item?.id === "3" ? (
+                    <Box
+                      style={{
+                        marginTop: "7%",
+                        height: "270",
+                        width: "450",
+                      }}
+                    >
+                      <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                        There are many more !
+                      </PoppinsSixteenText>
+                    </Box>
+                  ) : (
+                    <>
+                      <YouTube videoId={item?.videoId} opts={opts} />
+                    </>
+                  )}
+                  <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                    {item?.title}
+                  </PoppinsSixteenText>
+                  <Link
+                    href={item?.videoLink}
+                    target={
+                      item?.id === "3" || item?.id === "2" ? "_blank" : ""
+                    }
+                    rel="noopener noreferrer"
                   >
-                    <PoppinsSixteenText sx={{ color: "#003c2f" }}>
-                      There are many more !
-                    </PoppinsSixteenText>
-                  </Box>
-                ) : (
-                  <YouTube videoId={item?.videoId} opts={opts} />
-                )}
-                <PoppinsSixteenText sx={{ color: "#003c2f" }}>
-                  {item?.title}
-                </PoppinsSixteenText>
-                <Link
-                  href={item?.videoLink}
-                  target={item?.id === "3" || item?.id === "2" ? "_blank" : ""}
-                  rel="noopener noreferrer"
-                >
-                  <WatchVideoBtn
-                    id="hireMe"
-                    variant="contained"
-                    disableElevation
-                    type="submit"
-                  >
-                    {item?.id === "3" ? "Visit Now" : "Watch Video"}
-                  </WatchVideoBtn>
-                </Link>
+                    <WatchVideoBtn
+                      id="hireMe"
+                      variant="contained"
+                      disableElevation
+                      type="submit"
+                    >
+                      {item?.id === "3" ? "Visit Now" : "Watch Video"}
+                    </WatchVideoBtn>
+                  </Link>
+                </Box>
               </Box>
-            </Box>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        )}
         <Box sx={{ mb: "2rem" }}></Box>
       </Box>
     </>

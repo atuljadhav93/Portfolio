@@ -158,7 +158,7 @@ function Footer() {
                 fontFamily: "'Sacramento', cursive",
                 textTransform: "none",
                 fontWeight: 400,
-                color: "#dc143c",
+                color: "#E85122",
                 fontSize: "3em",
               }}
             >
