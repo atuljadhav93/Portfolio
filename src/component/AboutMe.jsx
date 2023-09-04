@@ -96,6 +96,16 @@ export default function AboutMe() {
                 <Box
                   class="downloadicon download_button"
                   onClick={handleDownloadClick}
+                  // sx={{
+                  //   display: "flex",
+                  //   justifyContent: {
+                  //     xs: "center",
+                  //     sm: "center",
+                  //     md: "center",
+                  //     lg: "flex-start",
+                  //     xl: "flex-start",
+                  //   }
+                  // }}
                 >
                   <Box class="cloud">
                     <Box class="arrowdown"></Box>

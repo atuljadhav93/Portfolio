@@ -30,9 +30,13 @@ export default function HeroSection() {
     <Box id="heroSection" className="hero--section">
       <Box className="hero--section--content--box">
         <Box className="hero--section--content">
-          <PoppinsThirtySixText sx={{
-            color:"#003C2F"
-          }}>Atul Jadhav</PoppinsThirtySixText>
+          <PoppinsThirtySixText
+            sx={{
+              color: "#003C2F",
+            }}
+          >
+            Atul Jadhav
+          </PoppinsThirtySixText>
           <Box
             style={{
               display: "flex",
@@ -47,7 +51,7 @@ export default function HeroSection() {
                 fontFamily: "'Nunito', sans-serif",
                 fontWeight: 400,
                 fontSize: "1.5rem",
-                color:"#003C2F"
+                color: "#003C2F",
               }}
             >
               I'm a
@@ -60,7 +64,7 @@ export default function HeroSection() {
                 fontWeight: 400,
                 fontSize: "2rem",
                 // color: "#dc143c",
-                color:"#30AD01"
+                color: "#30AD01",
               }}
             >
               <TypeWriter
@@ -82,48 +86,82 @@ export default function HeroSection() {
             {SelfIntoText}
           </PoppinsForteenText>
         </Box>
-        <ButtonStyle
-          id="hireMe"
-          sx={{
-            height: "48px",
-            fontFamily: "Poppins",
-            fontSize: "18px",
-            fontWeight: 500,
-            width: "10rem",
-          }}
-          variant="contained"
-          disableElevation
-          type="submit"
-          onClick={handleHireMeClick}
-        >
-          {HireMe}
-        </ButtonStyle>
-        <Button
-          style={{
-            visibility: "hidden",
-          }}
-        ></Button>
-        <ButtonStyle
-          id="talk-button"
-          sx={{
-            height: "48px",
-            fontFamily: "Poppins",
-            fontSize: "18px",
-            fontWeight: 500,
-            width: "10rem",
-          }}
-          variant="contained"
-          disableElevation
-          type="submit"
-          onClick={handleLetsTalkClick}
-        >
-          {LetsTalk}
-        </ButtonStyle>
         <Box
-          style={{
+          sx={{
+            display: "flex",
+            justifyContent: {
+              xs: "center",
+              sm: "flex-start",
+              md: "flex-start",
+              lg: "flex-start",
+              xl: "flex-start",
+            },
+            alignItems: {
+              xs: "center",
+              sm: "flex-start",
+              md: "flex-start",
+              lg: "flex-start",
+              xl: "flex-start",
+            },
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+              md: "row",
+              lg: "row",
+              xl: "row",
+            },
+            mt: {
+              xs: "2px",
+              sm: "2px",
+              md: "16px",
+              lg: "16px",
+              xl: "16px",
+            },
+          }}
+        >
+          <ButtonStyle
+            id="hireMe"
+            sx={{
+              height: "48px",
+              fontFamily: "Poppins",
+              fontSize: "18px",
+              fontWeight: 500,
+              width: "10rem",
+            }}
+            variant="contained"
+            disableElevation
+            type="submit"
+            onClick={handleHireMeClick}
+          >
+            {HireMe}
+          </ButtonStyle>
+          <Button
+            style={{
+              visibility: "hidden",
+            }}
+          ></Button>
+          <ButtonStyle
+            id="talk-button"
+            sx={{
+              height: "48px",
+              fontFamily: "Poppins",
+              fontSize: "18px",
+              fontWeight: 500,
+              width: "10rem",
+            }}
+            variant="contained"
+            disableElevation
+            type="submit"
+            onClick={handleLetsTalkClick}
+          >
+            {LetsTalk}
+          </ButtonStyle>
+        </Box>
+        <Box
+          sx={{
             display: "flex",
             width: "auto",
-            marginTop: "24px",
+            marginTop: "24px"
           }}
         >
           <Box className="effect jaques">

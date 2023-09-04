@@ -579,6 +579,7 @@ input[type="checkbox"] {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     display:flex;
+    justify-content: flex-start !important; 
   } */
 }
 
@@ -847,13 +848,15 @@ input[type="checkbox"] {
 
 /* cloud btn */
 .download_button {
-  margin: 15px;
-  display: block;
+  /* margin-left: 30px; */
+  /* display: block; */
   height: 110px;
   cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  /* display: flex !important;
+  justify-content: center !important; */
 }
 
  .filename {
