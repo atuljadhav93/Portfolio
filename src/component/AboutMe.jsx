@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Avatar, Box } from "@mui/material";
 import {
   AboutMeDescriptionFirst,
@@ -15,6 +15,20 @@ import {
 } from "./styles";
 
 export default function AboutMe() {
+  const [isButton, setIsButton] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      const screenWidth = window.innerWidth;
+      setIsButton(screenWidth <= 1024);
+    };
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
   const handleDownloadClick = () => {
     const filePath = "./img/Atul Jadhav Resume.pdf";
     // Create a link element
@@ -29,10 +43,6 @@ export default function AboutMe() {
     // Clean up by removing the link element
     document.body.removeChild(link);
   };
-
-  //based on even and odd date show diff btn
-  const currentDate = new Date();
-  const isEvenDay = currentDate.getDate() % 2 === 0;
 
   return (
     <>
@@ -73,7 +83,7 @@ export default function AboutMe() {
             <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionSecond}
             </PoppinsForteenText>
-            {isEvenDay ? (
+            {isButton ? (
               <DisplayFlexCenter
                 className="download-button"
                 onClick={handleDownloadClick}

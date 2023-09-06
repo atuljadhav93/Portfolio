@@ -174,7 +174,7 @@ function Footer() {
             }}
           >
             Designed and Built in&nbsp;
-            <Tooltip title="India" arrow>
+            <Tooltip title="भारत" arrow>
               <Box
                 style={{
                   marginTop: "4px",

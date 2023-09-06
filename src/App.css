@@ -137,7 +137,10 @@ body {
 .hero--section-description {
   line-height: 36px;
   color: #003c2f;
+  text-align: justify;
 }
+
+
 
 .hero--section--img {
   display: flex;
@@ -441,9 +444,13 @@ input[type="checkbox"] {
     padding-bottom: 70px;
   }
 
-  .hero--section-description,
+  /* .hero--section-description, */
   .footer--content {
     text-align: center;
+  }
+
+  .intro-text{
+    padding: 20px;
   }
 
   .skills--section--container,
@@ -1038,4 +1045,9 @@ input[type="checkbox"] {
   .slick-next {
     display: none;
   }
+}
+
+.sanskrit-font{
+  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Tiro Devanagari Sanskrit', serif; */
 }

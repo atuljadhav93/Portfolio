@@ -7,6 +7,13 @@ export const DisplayFlexCenter = styled(Box)(() => ({
   justifyContent: "center",
 }));
 
+export const DisplayFlexCenterCol = styled(Box)(() => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection:"column"
+}));
+
 export const PoppinsSixteenText = styled(Typography)(() => ({
   fontFamily: "Poppins",
   fontStyle: "normal",

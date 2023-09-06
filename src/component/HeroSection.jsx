@@ -26,9 +26,30 @@ export default function HeroSection() {
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
   };
+
   return (
     <Box id="heroSection" className="hero--section">
-      <Box className="hero--section--content--box">
+      <Box
+        className="hero--section--content--box intro-text"
+        sx={{
+          display: "flex",
+          justifyContent: {
+            xs: "center",
+            sm: "center",
+            md: "flex-start",
+            lg: "flex-start",
+            xl: "flex-start",
+          },
+          alignItems: {
+            xs: "center",
+            sm: "center",
+            md: "flex-start",
+            lg: "flex-start",
+            xl: "flex-start",
+          },
+          flexDirection: "column",
+        }}
+      >
         <Box className="hero--section--content">
           <PoppinsThirtySixText
             sx={{
@@ -38,16 +59,18 @@ export default function HeroSection() {
             Atul Jadhav
           </PoppinsThirtySixText>
           <Box
-            style={{
+            sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              // width: {xs:"250px", sm:"250px", md:"auto", lg:"auto", xl:"auto"},
               width: "auto",
+              overflowWrap: "break-word",
+              wordWrap: "break-word",
             }}
           >
-            <Typography
+            {/* <Typography
               style={{
-                // fontFamily: "'Open Sans', sans-serif",
                 fontFamily: "'Nunito', sans-serif",
                 fontWeight: 400,
                 fontSize: "1.5rem",
@@ -55,16 +78,14 @@ export default function HeroSection() {
               }}
             >
               I'm a
-            </Typography>
-            &ensp;
+            </Typography> */}
             <Typography
               style={{
-                // fontFamily: "'Open Sans', sans-serif",
                 fontFamily: "'Nunito', sans-serif",
                 fontWeight: 400,
                 fontSize: "2rem",
-                // color: "#dc143c",
-                color: "#30AD01",
+                // color: "#30AD01",
+                color: "#FF7722 ",
               }}
             >
               <TypeWriter
@@ -73,16 +94,16 @@ export default function HeroSection() {
                   loop: true,
                   delay: 40,
                   strings: [
-                    "Frontend Developer.",
-                    "YouTuber.",
-                    "Proud Indian.",
+                    "I'm a Frontend Developer.",
+                    "I'm a YouTuber.",
+                    '<span class="sanskrit-font">भारतीय: अहमिति मम गर्व:</span>',
                   ],
                 }}
               />
             </Typography>
           </Box>
 
-          <PoppinsForteenText className="hero--section-description">
+          <PoppinsForteenText className="hero--section-description ">
             {SelfIntoText}
           </PoppinsForteenText>
         </Box>
@@ -159,9 +180,8 @@ export default function HeroSection() {
         </Box>
         <Box
           sx={{
-            display: "flex",
             width: "auto",
-            marginTop: "24px"
+            marginTop: "24px",
           }}
         >
           <Box className="effect jaques">
