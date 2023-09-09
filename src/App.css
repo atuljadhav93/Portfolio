@@ -90,7 +90,7 @@ body {
 /* Navbar Content */
 .navbar--content {
   /* color: var(--darkblue); */
-  color:var(--light-green);
+  color: var(--light-green);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +100,7 @@ body {
 
 .navbar--active-content {
   /* color: var(--primary); */
-  color:var(--green);
+  color: var(--green);
 }
 
 /* Navbar Styler Ends */
@@ -449,7 +449,7 @@ input[type="checkbox"] {
     text-align: center;
   }
 
-  .intro-text{
+  .intro-text {
     padding: 20px;
   }
 
@@ -578,6 +578,7 @@ input[type="checkbox"] {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
+
   /* .download_button {
     display: block;
     height: 110px;
@@ -866,7 +867,7 @@ input[type="checkbox"] {
   justify-content: center !important; */
 }
 
- .filename {
+.filename {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1016,7 +1017,7 @@ input[type="checkbox"] {
 
 .vertical-timeline-element-date {
   color: #FFFFFF;
-  opacity: 9 !important; 
+  opacity: 9 !important;
 }
 
 .vertical-timeline-element--work {
@@ -1041,13 +1042,31 @@ input[type="checkbox"] {
 
 /* Media query to hide arrows on mobile devices */
 @media (max-width: 768px) {
+
   .slick-prev,
   .slick-next {
     display: none;
   }
 }
 
-.sanskrit-font{
-  font-family: 'Nunito Sans', sans-serif;
+.sanskrit-font {
+  /* font-family: 'Nunito Sans', sans-serif; */
   /* font-family: 'Tiro Devanagari Sanskrit', serif; */
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: 'Noto Serif Devanagari', serif;
+  /* font-family: 'Shree Lipi', sans-serif; */
+  /* font-family: 'Mangal', sans-serif; */
+}
+
+.skills-card:hover {
+  border: 1px solid #25AE06;
+  color: #25AE06;
+  opacity: 1;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+.btn-hover-round:hover{
+  border-radius: 25px;
 }

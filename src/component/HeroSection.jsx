@@ -142,6 +142,7 @@ export default function HeroSection() {
         >
           <ButtonStyle
             id="hireMe"
+            className="btn-hover-round"
             sx={{
               height: "48px",
               fontFamily: "Poppins",
@@ -163,6 +164,7 @@ export default function HeroSection() {
           ></Button>
           <ButtonStyle
             id="talk-button"
+            className="btn-hover-round"
             sx={{
               height: "48px",
               fontFamily: "Poppins",

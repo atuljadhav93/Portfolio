@@ -51,55 +51,55 @@ export default function MySkills() {
       id: "1",
       src: <ReactIcon />,
       language: "React",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "2",
       src: <TypeScriptIcon />,
       language: "TypeScript",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "3",
       src: <CSSIcon />,
       language: "CSS",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "4",
       src: <GitIcon />,
       language: "Git",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "5",
       src: <GithubIcon />,
       language: "Github",
-      status: "Medium",
+      status: "Intermediate",
     },
     {
       id: "6",
       src: <JestIcon />,
       language: "Jest",
-      status: "Junior",
+      status: "Intermediate",
     },
     {
       id: "7",
       src: <MUIIcon />,
       language: "Material UI",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "8",
       src: <MYSQLIcon />,
       language: "MySQL",
-      status: "Medium",
+      status: "Intermediate",
     },
     {
       id: "9",
       src: <ReduxIcon />,
       language: "Redux Toolkit",
-      status: "Expert",
+      status: "Intermediate",
     },
     {
       id: "10",
@@ -111,7 +111,7 @@ export default function MySkills() {
       id: "11",
       src: <BootstrapIcon />,
       language: "Bootstrap",
-      status: "Expert",
+      status: "Advanced",
     },
     {
       id: "12",
@@ -123,13 +123,13 @@ export default function MySkills() {
       id: "13",
       src: <TailwindCSSIcon />,
       language: "Tailwind CSS",
-      status: "Medium",
+      status: "Intermediate",
     },
     {
       id: "14",
       src: <JavaScriptIcon />,
       language: "JavaScript",
-      status: "Medium",
+      status: "Intermediate",
     },
     {
       id: "15",
@@ -147,7 +147,7 @@ export default function MySkills() {
       id: "17",
       src: <WordPressIcon />,
       language: "WordPress",
-      status: "Medium",
+      status: "Intermediate",
     },
     {
       id: "18",
@@ -160,11 +160,11 @@ export default function MySkills() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 400,
+    autoplay: true,
+    speed: 800,
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
       // {
@@ -215,13 +215,12 @@ export default function MySkills() {
             <Box key={item.toString()}>
               <Card
                 style={{
-                  // border: "1px solid blue",
                   borderRadius: "10px",
                   height: "auto",
                   width: "13rem",
                   marginBottom: "2rem",
                   cursor: "pointer",
-                  color: "#003C2F"
+                  color: "#003C2F",
                 }}
               >
                 <CardContent
@@ -242,12 +241,17 @@ export default function MySkills() {
                   >
                     {item.src}
                   </Avatar>
-                  <PoppinsSixteenText>
-                    {item.language}
-                  </PoppinsSixteenText>
-                  <Stack spacing={2} alignItems="center">
+                  <PoppinsSixteenText>{item.language}</PoppinsSixteenText>
+                  <Stack
+                    className="skills-card-background"
+                    spacing={2}
+                    alignItems="center"
+                  >
                     <Stack direction="row" spacing={2}>
-                      <PoppinsForteenChipText label={item.status} />
+                      <PoppinsForteenChipText
+                        className="skills-card"
+                        label={item.status}
+                      />
                     </Stack>
                   </Stack>
                 </CardContent>
