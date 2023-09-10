@@ -9,6 +9,7 @@ import {
   Skills,
   ContactMe,
 } from "./constants/Text";
+import { PortfolioLogo } from "./icons/Icons";
 /* eslint-disable */
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -43,20 +44,20 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${navActive ? "active" : ""}`}>
-        <Box>
+      <Link className={`navbar ${navActive ? "active" : ""}`}>
+        <Box className="icon-position">
           <Link to="heroSection">
-            <img src="./img/logo.svg" alt="perfection" />
+            <PortfolioLogo />
           </Link>
         </Box>
-        <a
+        <Link
           className={`nav__hamburger ${navActive ? "active" : ""}`}
           onClick={toggleNav}
         >
-          <span className="nav__hamburger__line"></span>
-          <span className="nav__hamburger__line"></span>
-          <span className="nav__hamburger__line"></span>
-        </a>
+          <Box className="nav__hamburger__line"></Box>
+          <Box className="nav__hamburger__line"></Box>
+          <Box className="nav__hamburger__line"></Box>
+        </Link>
         <Box className={`navbar--items ${navActive ? "active" : ""}`}>
           <ul>
             <li>
@@ -146,7 +147,7 @@ function Navbar() {
             </li>
           </ul>
         </Box>
-      </nav>
+      </Link>
     </>
   );
 }

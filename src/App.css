@@ -89,7 +89,6 @@ body {
 
 /* Navbar Content */
 .navbar--content {
-  /* color: var(--darkblue); */
   color: var(--light-green);
   font-size: 16px;
   font-style: normal;
@@ -99,7 +98,6 @@ body {
 }
 
 .navbar--active-content {
-  /* color: var(--primary); */
   color: var(--green);
 }
 
@@ -499,6 +497,10 @@ input[type="checkbox"] {
   .divider {
     margin: 20px;
   }
+
+  .icon-position {
+    margin-left: -70px;
+  }
 }
 
 /* Hamburger menu  */
@@ -578,17 +580,6 @@ input[type="checkbox"] {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
-
-  /* .download_button {
-    display: block;
-    height: 110px;
-    cursor: pointer;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    display:flex;
-    justify-content: flex-start !important; 
-  } */
 }
 
 /* Responsive Screens Ends*/
@@ -734,22 +725,18 @@ input[type="checkbox"] {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  /* Make it circular */
   overflow: hidden;
-  /* Hide the overflow content */
 }
 
 .profile-picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Maintain aspect ratio and cover the container */
 }
 
 /* carousel css */
 /* CarouselArrows.css */
 .custom-arrow {
-  /* background-color: rgba(209, 20, 20, 0.5); */
   color: black;
   border-radius: 50%;
   cursor: pointer;
@@ -794,14 +781,12 @@ input[type="checkbox"] {
 }
 
 .confetti-button {
-  /* padding: 10px 20px; */
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  /* margin-top: 20px; */
 }
 
 .text-red {
@@ -856,15 +841,11 @@ input[type="checkbox"] {
 
 /* cloud btn */
 .download_button {
-  /* margin-left: 30px; */
-  /* display: block; */
   height: 110px;
   cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  /* display: flex !important;
-  justify-content: center !important; */
 }
 
 .filename {
@@ -876,7 +857,6 @@ input[type="checkbox"] {
 .download_button .downloadicon {
   position: relative;
   float: right;
-  /* margin: 10px; */
   width: 140px;
   height: 50px;
 }
@@ -1067,6 +1047,7 @@ input[type="checkbox"] {
     background-color: #fff;
   }
 }
-.btn-hover-round:hover{
+
+.btn-hover-round:hover {
   border-radius: 25px;
 }
