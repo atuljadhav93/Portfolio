@@ -63,7 +63,6 @@ export default function HeroSection() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              // width: {xs:"250px", sm:"250px", md:"auto", lg:"auto", xl:"auto"},
               width: "auto",
               overflowWrap: "break-word",
               wordWrap: "break-word",
