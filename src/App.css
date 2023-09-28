@@ -38,11 +38,12 @@ body {
   /* color: var(--green); */
 }
 
-.flex--center{
+.flex--center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* Section Titles */
 /* Skills & About Me */
 .section--title {
@@ -283,9 +284,9 @@ body {
   border-radius: 12px;
 }
 
-.portfolio--section--card:hover {
-  border: 1px solid #25AE06;
-}
+/* .portfolio--section--card:hover {
+  border: .1px solid #25AE06;
+} */
 
 .portfolio--section--card--content {
   display: flex;
@@ -297,10 +298,6 @@ body {
 }
 
 .portfolio--link {
-  text-decoration: none;
-  display: flex;
-  padding-bottom: 10.6px;
-  font-weight: 600;
   color: #3087EC;
 }
 
@@ -322,6 +319,11 @@ body {
 
 .text-top {
   margin-top: 20px !important;
+}
+
+.project--card--icon {
+  margin-top: 2px;
+  margin-right: 4px;
 }
 
 /* Portfolio Ends */

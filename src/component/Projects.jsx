@@ -2,12 +2,14 @@ import React from "react";
 import { Box } from "@mui/material";
 import { portfolio } from "../constants/data";
 import {
+  DisplayFlex,
   PageHeadingText,
   PoppinsEighteenText,
   PoppinsForteenText,
-  PoppinsSixteenText,
+  PoppinsSixteenTextLink,
 } from "./styles";
 import { MyWorkText } from "../constants/Text";
+import { ExternalLink, GitHub } from "../assets/icons/Icons";
 
 export default function MyPortfolio() {
   return (
@@ -29,12 +31,30 @@ export default function MyPortfolio() {
                     {item.description}
                   </PoppinsForteenText>
                   <Box className="project--card--link">
-                    <PoppinsSixteenText className="text-color portfolio--link">
-                      {item.github}
-                    </PoppinsSixteenText>
-                    <PoppinsSixteenText className="portfolio--link">
-                      {item.demo}
-                    </PoppinsSixteenText>
+                    <DisplayFlex>
+                      <Box className="project--card--icon">
+                        <GitHub />
+                      </Box>
+                      <PoppinsSixteenTextLink
+                        href="#"
+                        underline="none"
+                        className="text-color portfolio--link"
+                      >
+                        {item.github}
+                      </PoppinsSixteenTextLink>
+                    </DisplayFlex>
+                    <DisplayFlex>
+                      <Box className="project--card--icon">
+                        <ExternalLink />
+                      </Box>
+                      <PoppinsSixteenTextLink
+                        href="#"
+                        underline="none"
+                        className="portfolio--link"
+                      >
+                        {item.demo}
+                      </PoppinsSixteenTextLink>
+                    </DisplayFlex>
                   </Box>
                 </Box>
               </Box>

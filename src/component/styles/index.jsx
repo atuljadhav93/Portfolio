@@ -1,5 +1,10 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 import Chip from "@mui/material/Chip";
+import Link from "@mui/material/Link";
+
+export const DisplayFlex = styled(Box)(() => ({
+  display: "flex",
+}));
 
 export const DisplayFlexCenter = styled(Box)(() => ({
   display: "flex",
@@ -15,6 +20,13 @@ export const DisplayFlexCenterCol = styled(Box)(() => ({
 }));
 
 export const PoppinsSixteenText = styled(Typography)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 500,
+  fontSize: "16px",
+}));
+
+export const PoppinsSixteenTextLink = styled(Link)(() => ({
   fontFamily: "Poppins",
   fontStyle: "normal",
   fontWeight: 500,
