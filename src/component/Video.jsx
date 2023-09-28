@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from "react-slick";
 import YouTube from "react-youtube";
 import { MyYouTubeVideos } from "../constants/Text";
+import { videoTutorial } from "../constants/data";
 
 const CustomNextArrow = (props) => {
   return (
@@ -20,7 +21,6 @@ const CustomPrevArrow = (props) => {
 
 export default function Video() {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const checkIsMobile = () => {
       const screenWidth = window.innerWidth;
@@ -34,26 +34,6 @@ export default function Video() {
       window.removeEventListener("resize", checkIsMobile);
     };
   }, []);
-
-  const videoTutorial = [
-    {
-      id: "1",
-      videoId: "u-TNKBYQV4M",
-      title: "Complete CSS Course For Beginners to Advanced",
-      videoLink: "https://youtu.be/u-TNKBYQV4M?si=pYi3Ac5A42PXTkXO",
-    },
-    {
-      id: "2",
-      videoId: "VZdoe2ShfBU",
-      title: "Complete HTML Course For Beginner To Advanced",
-      videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
-    },
-    {
-      id: "3",
-      title: "Check out all the videos on my Youtube Channel",
-      videoLink: "https://youtube.com/@techedumeet",
-    },
-  ];
 
   const settings = {
     dots: true,

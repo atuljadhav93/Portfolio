@@ -159,3 +159,23 @@ export const skills = [
     status: "Beginner",
   },
 ];
+
+export const videoTutorial = [
+  {
+    id: "1",
+    videoId: "u-TNKBYQV4M",
+    title: "Complete CSS Course For Beginners to Advanced",
+    videoLink: "https://youtu.be/u-TNKBYQV4M?si=pYi3Ac5A42PXTkXO",
+  },
+  {
+    id: "2",
+    videoId: "VZdoe2ShfBU",
+    title: "Complete HTML Course For Beginner To Advanced",
+    videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
+  },
+  {
+    id: "3",
+    title: "Check out all the videos on my Youtube Channel",
+    videoLink: "https://youtube.com/@techedumeet",
+  },
+];

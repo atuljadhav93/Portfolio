@@ -12,14 +12,9 @@ import {
 import confetti from "canvas-confetti";
 import { DisplayFlexCenter, FindText, PoppinsSixteenText } from "./styles";
 import { CopyRightIssueText } from "../constants/Text";
+import { github, instagram, linkedinUrl, whatsappUrl, youtube } from "../constants/const";
 
 function Footer() {
-  const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
-  const whatsappUrl = process.env.REACT_APP_WHATSAPP_URL;
-  const github = process.env.REACT_APP_GITHUB_URL;
-  const youtube = process.env.REACT_APP_YOUTUBE_URL;
-  const instagram = process.env.REACT_APP_INSTAGRAM_URL;
-
   const defaults = {
     origin: { y: 0.5 },
   };

@@ -81,7 +81,7 @@ export default function MySkills() {
       <BoxContainer id="mySkills" style={{}}>
         <PageHeadingText>{MySkillsText}</PageHeadingText>
         <Slider {...settings}>
-          {skills.map((item, index) => (
+          {skills?.map((item, index) => (
             <Box key={item.toString()}>
               <Card
                 style={{

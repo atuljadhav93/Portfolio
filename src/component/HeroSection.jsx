@@ -8,11 +8,10 @@ import {
 import TypeWriter from "typewriter-effect";
 import { HireMe, LetsTalk, SelfIntoText } from "../constants/Text";
 import { WhatsApp, GitHub, Linkedin } from "../assets/icons/Icons";
+import { github, linkedinUrl, whatsappUrl } from "../constants/const";
 
 export default function HeroSection() {
-  const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
-  const whatsappUrl = process.env.REACT_APP_WHATSAPP_URL;
-  const github = process.env.REACT_APP_GITHUB_URL;
+  
   const handleLetsTalkClick = () => {
     const aboutSection = document.getElementById("aboutMe");
     aboutSection.scrollIntoView({ behavior: "smooth" });
