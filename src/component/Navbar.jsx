@@ -8,8 +8,8 @@ import {
   MyWork,
   Skills,
   ContactMe,
-} from "./constants/Text";
-import { PortfolioLogo } from "./icons/Icons";
+} from "../constants/Text";
+import { PortfolioLogo } from "../assets/icons/Icons";
 /* eslint-disable */
 function Navbar() {
   const [navActive, setNavActive] = useState(false);

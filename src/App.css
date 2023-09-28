@@ -29,14 +29,20 @@ body {
 }
 
 .text-color {
-  color: #003c2f;
+  color: #003C2F;
 }
 
 .text-head-color {
   /* color: #FF7722; */
   color: #003C2F;
+  /* color: var(--green); */
 }
 
+.flex--center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Section Titles */
 /* Skills & About Me */
 .section--title {
@@ -253,11 +259,16 @@ body {
 .portfolio--section--img {
   border-radius: 8px;
   width: 100%;
+  transition: all .5s ease-in-out;
 }
 
 .portfolio--section--img>img {
   width: 100%;
   height: 50%;
+}
+
+.portfolio--section--img:hover {
+  transform: scale(1.1);
 }
 
 .portfolio--section--card {
@@ -269,8 +280,11 @@ body {
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px;
+}
+
+.portfolio--section--card:hover {
+  border: 1px solid #25AE06;
 }
 
 .portfolio--section--card--content {

@@ -4,11 +4,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { CodeIcon } from "./icons/Icons";
+import { CodeIcon } from "../assets/icons/Icons";
 import SchoolIcon from "@mui/icons-material/School";
 import { Typography } from "@mui/material";
 import { BoxContainer, PageHeadingText } from "./styles";
-import { MyJourney } from "./constants/Text";
+import { MyJourney } from "../constants/Text";
 
 export default function Timeline() {
   return (

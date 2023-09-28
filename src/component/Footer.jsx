@@ -8,14 +8,10 @@ import {
   WhatsApp,
   GitHub,
   YouTube,
-} from "./icons/Icons";
+} from "../assets/icons/Icons";
 import confetti from "canvas-confetti";
-import {
-  DisplayFlexCenter,
-  FindText,
-  PoppinsSixteenText,
-} from "./styles";
-import { CopyRightIssueText } from "./constants/Text";
+import { DisplayFlexCenter, FindText, PoppinsSixteenText } from "./styles";
+import { CopyRightIssueText } from "../constants/Text";
 
 function Footer() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
@@ -71,7 +67,6 @@ function Footer() {
           display: "flex",
           flexDirection: "row",
           backgroundColor: "#FAE9DF",
-          // border: "1px solid red",
           padding: {
             xs: "15px 15px",
             sm: "15px 15px",
@@ -91,10 +86,7 @@ function Footer() {
           lg={4}
           xl={4}
           style={{
-            // padding: "15px 85.333px",
             lineHeight: "20px",
-            // border: "1px solid blue",
-            // width: "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -102,22 +94,7 @@ function Footer() {
             flexDirection: "column",
           }}
         >
-          <PoppinsSixteenText
-            style={{
-              // display: { md: "flex", lg: "flex", xl: "flex" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              // alignItems: {
-              //   xs: "center",
-              //   sm: "center",
-              //   md: "center",
-              //   lg: "flex-start",
-              //   xl: "flex-start",
-              // },
-              color:"#003c2f"
-            }}
-          >
+          <PoppinsSixteenText className="flex--center text-color">
             No&nbsp;
             <Tooltip
               title="Stay connected to my YouTube channel for engaging content."
@@ -143,7 +120,7 @@ function Footer() {
                 lg: "flex-start",
                 xl: "flex-start",
               },
-              color:"#003c2f"
+              color: "#003c2f",
             }}
           >
             Feel free to reach out to me.
@@ -170,7 +147,7 @@ function Footer() {
               display: { sm: "flex", md: "flex", lg: "flex", xl: "flex" },
               justifyContent: "center",
               alignItems: "center",
-              color:"#003c2f"
+              color: "#003c2f",
             }}
           >
             Designed and Built in&nbsp;
@@ -195,7 +172,7 @@ function Footer() {
                 fontStyle: "normal",
                 fontWeight: 500,
                 fontSize: "16px",
-                color:"#003c2f"
+                color: "#003c2f",
               }}
             >
               You can find me&nbsp;
@@ -208,7 +185,7 @@ function Footer() {
                 fontStyle: "normal",
                 fontWeight: 500,
                 fontSize: "16px",
-                color:"#003c2f"
+                color: "#003c2f",
               }}
             >
               everywhere.

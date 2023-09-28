@@ -4,7 +4,7 @@ import { PageHeadingText, PoppinsSixteenText, WatchVideoBtn } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from "react-slick";
 import YouTube from "react-youtube";
-import { MyYouTubeVideos } from "./constants/Text";
+import { MyYouTubeVideos } from "../constants/Text";
 
 const CustomNextArrow = (props) => {
   return (
@@ -95,7 +95,7 @@ export default function Video() {
           textAlign: "center",
         }}
       >
-        <PageHeadingText sx={{ color: "#003C2F" }}>
+        <PageHeadingText className="text-color">
           {MyYouTubeVideos}
         </PageHeadingText>
         {isMobile ? (
@@ -107,10 +107,10 @@ export default function Video() {
                 width: "450",
               }}
             >
-              <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+              <PoppinsSixteenText className="text-color">
                 There's a lot more to explore !
               </PoppinsSixteenText>
-              <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+              <PoppinsSixteenText className="text-color">
                 check out my YouTube channel.
               </PoppinsSixteenText>
               <Link
@@ -151,7 +151,7 @@ export default function Video() {
                         width: "450",
                       }}
                     >
-                      <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                      <PoppinsSixteenText className="text-color">
                         There are many more !
                       </PoppinsSixteenText>
                     </Box>
@@ -160,7 +160,7 @@ export default function Video() {
                       <YouTube videoId={item?.videoId} opts={opts} />
                     </>
                   )}
-                  <PoppinsSixteenText sx={{ color: "#003c2f" }}>
+                  <PoppinsSixteenText className="text-color">
                     {item?.title}
                   </PoppinsSixteenText>
                   <Link

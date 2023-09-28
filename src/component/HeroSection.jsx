@@ -6,8 +6,8 @@ import {
   PoppinsThirtySixText,
 } from "./styles";
 import TypeWriter from "typewriter-effect";
-import { WhatsApp, GitHub, Linkedin } from "./icons/Icons";
-import { HireMe, LetsTalk, SelfIntoText } from "./constants/Text";
+import { HireMe, LetsTalk, SelfIntoText } from "../constants/Text";
+import { WhatsApp, GitHub, Linkedin } from "../assets/icons/Icons";
 
 export default function HeroSection() {
   const linkedinUrl = process.env.REACT_APP_LINKEDIN_URL;
@@ -68,16 +68,6 @@ export default function HeroSection() {
               wordWrap: "break-word",
             }}
           >
-            {/* <Typography
-              style={{
-                fontFamily: "'Nunito', sans-serif",
-                fontWeight: 400,
-                fontSize: "1.5rem",
-                color: "#003C2F",
-              }}
-            >
-              I'm a
-            </Typography> */}
             <Typography
               style={{
                 fontFamily: "'Nunito', sans-serif",

@@ -11,7 +11,7 @@ export const DisplayFlexCenterCol = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  flexDirection:"column"
+  flexDirection: "column",
 }));
 
 export const PoppinsSixteenText = styled(Typography)(() => ({
@@ -86,7 +86,7 @@ export const PoppinsTwelveText = styled(Typography)(() => ({
 
 export const BoxContainer = styled(Box)(() => ({
   backgroundColor: "#3F70AA",
-  color:"#fff"
+  color: "#fff",
 }));
 
 export const ValidationText = styled(Typography)(() => ({

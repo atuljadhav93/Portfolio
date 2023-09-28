@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Box, Grid, Snackbar, TextField } from "@mui/material";
-import { ButtonStyle,PageHeadingText, ValidationText } from "./styles";
+import { ButtonStyle, PageHeadingText, ValidationText } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { clearForm, setFieldValue } from "../slice/ContactMe";
 import {
@@ -11,7 +11,13 @@ import {
   MessageValidatioText,
   PhoneNumberValidatioText,
   Submit,
-} from "./constants/Text";
+} from "../constants/Text";
+import {
+  emailRegex,
+  firstNameRegex,
+  messageRegex,
+  phoneRegex,
+} from "../constants/ValidationRegEx";
 
 export default function ContactMe() {
   const dispatch = useDispatch();
@@ -24,11 +30,6 @@ export default function ContactMe() {
   const [isPhoneValid, setPhoneValid] = useState(true);
   const [isEmailAddressValid, setEmailAddressValid] = useState(true);
   const [isMessageValid, setMessageValid] = useState(true);
-  const firstNameRegex = /^[a-zA-Z\s]{3,40}$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]+$/;
-  const phoneRegex = /^\d{7,15}$/;
-  const messageRegex = /^[a-zA-Z\s]{5,40}$/;
-
   const [isSnackbarOpen, setSnackbarOpen] = useState(false);
 
   const handleSnackbarClose = () => {
