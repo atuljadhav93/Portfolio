@@ -164,7 +164,7 @@ export default function Video() {
             ))}
           </Slider>
         )}
-        <Box sx={{ mb: "2rem" }}></Box>
+        <Box className="bottom-space"></Box>
       </Box>
     </>
   );

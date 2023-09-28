@@ -1,3 +1,4 @@
+export const DeveloperName = "Atul Jadhav";
 export const Home = "Home";
 export const AboutMe = "About Me";
 export const Journey = "Journey";
@@ -24,7 +25,11 @@ export const MyWorkText = "My Work";
 export const MySkillsText = "My Skills";
 export const ContactMeHeadingText =
   "Reach out today, and let's shape the future together.";
-
+export const RichOut = "Feel free to reach out to me.";
+export const PingMe = "I'm here and ready to help, ping me!";
+export const WhereDesign = "Designed and Built in";
+export const Proud = "with Pride.";
+export const ContactUsSnackBarMsg = "Contact us details successfully submitted";
 export const SelfIntoText =
   "Hello there! I'm Atul Jadhav, a dedicated front-end developer and enthusiastic open-source contributor, driven by a relentless pursuit of crafting exquisite and intuitive digital journeys. My unwavering passion for web development fuels my delight in transforming imaginative designs into immersive realities through the power of code.";
 

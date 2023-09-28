@@ -11,7 +11,7 @@ import {
 } from "../assets/icons/Icons";
 import confetti from "canvas-confetti";
 import { DisplayFlexCenter, FindText, PoppinsSixteenText } from "./styles";
-import { CopyRightIssueText } from "../constants/Text";
+import { CopyRightIssueText, DeveloperName, PingMe, Proud, RichOut, WhereDesign } from "../constants/Text";
 import { github, instagram, linkedinUrl, whatsappUrl, youtube } from "../constants/const";
 
 function Footer() {
@@ -118,9 +118,9 @@ function Footer() {
               color: "#003c2f",
             }}
           >
-            Feel free to reach out to me.
+            {RichOut}
             <br />
-            I'm here and ready to help, ping me!
+            {PingMe} 
           </PoppinsSixteenText>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -134,7 +134,7 @@ function Footer() {
                 fontSize: "3em",
               }}
             >
-              Atul Jadhav
+              {DeveloperName}
             </Typography>
           </Tooltip>
           <PoppinsSixteenText
@@ -145,7 +145,7 @@ function Footer() {
               color: "#003c2f",
             }}
           >
-            Designed and Built in&nbsp;
+            {WhereDesign}&nbsp;
             <Tooltip title="भारत" arrow>
               <Box
                 style={{
@@ -155,7 +155,7 @@ function Footer() {
                 <IndiaFlag />
               </Box>
             </Tooltip>
-            &nbsp;with Pride.
+            &nbsp;{Proud}
           </PoppinsSixteenText>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>

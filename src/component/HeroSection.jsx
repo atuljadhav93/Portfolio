@@ -6,7 +6,7 @@ import {
   PoppinsThirtySixText,
 } from "./styles";
 import TypeWriter from "typewriter-effect";
-import { HireMe, LetsTalk, SelfIntoText } from "../constants/Text";
+import { DeveloperName, HireMe, LetsTalk, SelfIntoText } from "../constants/Text";
 import { WhatsApp, GitHub, Linkedin } from "../assets/icons/Icons";
 import { github, linkedinUrl, whatsappUrl } from "../constants/const";
 
@@ -55,7 +55,7 @@ export default function HeroSection() {
               color: "#003C2F",
             }}
           >
-            Atul Jadhav
+            {DeveloperName}
           </PoppinsThirtySixText>
           <Box
             sx={{

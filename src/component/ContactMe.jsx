@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearForm, setFieldValue } from "../slice/ContactMe";
 import {
   ContactMeHeadingText,
+  ContactUsSnackBarMsg,
   EmailSubjectValidatioText,
   EmailValidatioText,
   FullNameValidatioText,
@@ -147,7 +148,7 @@ export default function ContactMe() {
               color: "#37C977",
             }}
           >
-            Contact us details successfully submitted
+            {ContactUsSnackBarMsg}
           </Alert>
         </Snackbar>
         <PageHeadingText sx={{ color: "#003C2F" }}>
@@ -158,10 +159,6 @@ export default function ContactMe() {
           spacing={1}
           sx={{
             display: "flex",
-            // justifyContent: "center",
-            // alignItems: "center",
-            // columnGap: "10px",
-            // border: "1px solid blue",
             rowGap: "20px",
             width: "auto",
             margin: {
