@@ -22,7 +22,7 @@ import {
 export const portfolio = [
   {
     id: "1",
-    src: "./img/placeholder-image.png",
+    src: "./img/project-front-img.png",
     title: "Home Rental Portal",
     description:
       "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
@@ -31,7 +31,7 @@ export const portfolio = [
   },
   {
     id: "2",
-    src: "./img/placeholder-image.png",
+    src: "./img/project-front-img.png",
     title: "App Dashboard",
     description:
       "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
@@ -40,7 +40,7 @@ export const portfolio = [
   },
   {
     id: "3",
-    src: "./img/placeholder-image.png",
+    src: "./img/project-front-img.png",
     title: "Demo",
     description:
       "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
