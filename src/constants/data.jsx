@@ -23,27 +23,30 @@ export const portfolio = [
   {
     id: "1",
     src: "./img/project-front-img.png",
-    title: "Home Rental Portal",
+    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    title: "Netflix GPT",
     description:
-      "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
+      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
   },
   {
     id: "2",
     src: "./img/project-front-img.png",
-    title: "App Dashboard",
+    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    title: "Netflix GPT",
     description:
-      "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
+      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
   },
   {
     id: "3",
     src: "./img/project-front-img.png",
-    title: "Demo",
+    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    title: "Netflix GPT",
     description:
-      "I accomplished my postgraduate studies at Fergusson College, Pune, earning a Bachelor's degree in Computer Science.",
+      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
   },

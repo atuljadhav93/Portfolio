@@ -32,6 +32,9 @@ body {
   color: #003C2F;
 }
 
+.tech-stack-color{
+  color:var(--green);
+}
 .text-head-color {
   /* color: #FF7722; */
   color: #003C2F;
@@ -1022,7 +1025,7 @@ input[type="checkbox"] {
 }
 
 .vertical-timeline-element--work {
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px !important;

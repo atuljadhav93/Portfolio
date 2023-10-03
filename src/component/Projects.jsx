@@ -7,6 +7,7 @@ import {
   PoppinsEighteenText,
   PoppinsForteenText,
   PoppinsSixteenTextLink,
+  PoppinsSmallText,
 } from "./styles";
 import { MyWorkText } from "../constants/Text";
 import { ExternalLink, GitHub } from "../assets/icons/Icons";
@@ -24,6 +25,9 @@ export default function MyPortfolio() {
                   <Box className="portfolio--section--img">
                     <img src={item.src} alt="Placeholder" />
                   </Box>
+                  <PoppinsSmallText className="tech-stack-color text-top">
+                    {item.techStack}
+                  </PoppinsSmallText>
                   <PoppinsEighteenText className="text-head-color text-top">
                     {item.title}
                   </PoppinsEighteenText>
