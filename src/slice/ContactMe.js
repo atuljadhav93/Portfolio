@@ -6,7 +6,7 @@ const initialState = {
   contactMeData: {
     fullName: '',
     emailAddress: '',
-    phoneNumber: '',
+    phoneNumber: '', 
     emailSubject: '',
     message: '',
   },
