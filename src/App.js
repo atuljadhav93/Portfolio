@@ -7,7 +7,7 @@ import Home from "./content/index";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <div>
           <Navbar />
           <Routes>
@@ -15,7 +15,8 @@ function App() {
             <Route path="*" element={<div>404 Not Found</div>}></Route>
           </Routes>
         </div>
-      </Router>
+      </Router> */}
+      <h1>Hi Ratnesh</h1>
     </div>
   );
 }
