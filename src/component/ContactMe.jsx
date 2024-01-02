@@ -167,7 +167,7 @@ export default function ContactMe() {
               md: "0rem 8rem 0rem 8rem",
               lg: "0rem 18rem 0rem 18rem",
               xl: "0rem 22rem 0rem 22rem",
-            },
+            }
           }}
         >
           <Grid
