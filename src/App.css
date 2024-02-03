@@ -107,7 +107,7 @@ body {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 110px 85.333px 60px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;

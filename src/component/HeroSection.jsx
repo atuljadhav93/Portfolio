@@ -205,7 +205,7 @@ export default function HeroSection() {
         </Box>
       </Box>
       <Box className="hero--section--img">
-        <img src="./img/main-logo.svg" alt="main-icon" />
+        <img src="https://res.cloudinary.com/dtd0guzj1/image/upload/v1706946101/Portfolio/main-logo_vgte4k.svg" alt="main-icon" />
       </Box>
     </Box>
   );

@@ -18,11 +18,12 @@ import {
   // WordPressIcon,
   // AngularIcon,
 } from "../assets/icons/LanguageIcon";
+import { netflix } from "./const";
 
 export const portfolio = [
   {
     id: "1",
-    src: "./img/project-front-img.png",
+    src: netflix,
     techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
@@ -32,7 +33,7 @@ export const portfolio = [
   },
   {
     id: "2",
-    src: "./img/project-front-img.png",
+    src: netflix,
     techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
@@ -42,7 +43,7 @@ export const portfolio = [
   },
   {
     id: "3",
-    src: "./img/project-front-img.png",
+    src: netflix,
     techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
