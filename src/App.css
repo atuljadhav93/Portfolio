@@ -32,9 +32,10 @@ body {
   color: #003C2F;
 }
 
-.tech-stack-color{
-  color:var(--green);
+.tech-stack-color {
+  color: var(--green);
 }
+
 .text-head-color {
   /* color: #FF7722; */
   color: #003C2F;
@@ -324,9 +325,10 @@ body {
   margin-top: 20px !important;
 }
 
-.bottom-space{
+.bottom-space {
   margin-bottom: 2rem;
 }
+
 .project--card--icon {
   margin-top: 2px;
   margin-right: 4px;
@@ -1025,7 +1027,7 @@ input[type="checkbox"] {
 }
 
 .vertical-timeline-element--work {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px !important;
