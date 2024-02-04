@@ -10,6 +10,7 @@ export const DownloadResume = "Download Resume";
 export const DownloadMyResume = "Download My Resume";
 export const LetsTalk = "Let's Talk";
 export const HireMe = "Hire Me";
+export const ViewResumeBtn = "View Resume";
 export const Submit = "Submit";
 export const FullNameValidatioText = "Please enter a minimum 3 to 40 character";
 export const EmailValidatioText = "Please enter a valid email address.";

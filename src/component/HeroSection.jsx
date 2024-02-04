@@ -6,12 +6,22 @@ import {
   PoppinsThirtySixText,
 } from "./styles";
 import TypeWriter from "typewriter-effect";
-import { DeveloperName, HireMe, LetsTalk, SelfIntoText } from "../constants/Text";
+import {
+  DeveloperName,
+  HireMe,
+  LetsTalk,
+  SelfIntoText,
+  ViewResumeBtn,
+} from "../constants/Text";
 import { WhatsApp, GitHub, Linkedin } from "../assets/icons/Icons";
 import { github, linkedinUrl, whatsappUrl } from "../constants/const";
+import { useDispatch, useSelector } from "react-redux";
+import { setPdfViewerFlag } from "../slice/ViewResume";
+import PdfViewer from "./Pdf-viewer";
 
 export default function HeroSection() {
-  
+  const dispatch = useDispatch();
+  const pdfViewerFlag = useSelector((state) => state.ViewResume.pdfViewerFlag);
   const handleLetsTalkClick = () => {
     const aboutSection = document.getElementById("aboutMe");
     aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -26,8 +36,30 @@ export default function HeroSection() {
     window.location.href = mailtoLink;
   };
 
+  const handleViewResume = () => {
+    dispatch(setPdfViewerFlag(true));
+  };
+
+  const dispatchHandler = () => {
+    dispatch(setPdfViewerFlag(false));
+  };
+
+  const handlePDFView = () => {
+    if (pdfViewerFlag) {
+      return (
+        <div className="pdf-viewer-container">
+          <div className="close-button" onClick={dispatchHandler}>
+            <p>Close Preview </p>
+          </div>
+          <PdfViewer />
+        </div>
+      );
+    }
+  };
+
   return (
     <Box id="heroSection" className="hero--section">
+      {handlePDFView()}
       <Box
         className="hero--section--content--box intro-text"
         sx={{
@@ -145,7 +177,7 @@ export default function HeroSection() {
           >
             {HireMe}
           </ButtonStyle>
-          <Button
+          {/* <Button
             style={{
               visibility: "hidden",
             }}
@@ -166,6 +198,28 @@ export default function HeroSection() {
             onClick={handleLetsTalkClick}
           >
             {LetsTalk}
+          </ButtonStyle> */}
+          <Button
+            style={{
+              visibility: "hidden",
+            }}
+          ></Button>
+          <ButtonStyle
+            id="talk-button"
+            className="btn-hover-round"
+            sx={{
+              height: "48px",
+              fontFamily: "Poppins",
+              fontSize: "18px",
+              fontWeight: 500,
+              width: "10rem",
+            }}
+            variant="contained"
+            disableElevation
+            type="submit"
+            onClick={handleViewResume}
+          >
+            {ViewResumeBtn}
           </ButtonStyle>
         </Box>
         <Box
@@ -205,7 +259,10 @@ export default function HeroSection() {
         </Box>
       </Box>
       <Box className="hero--section--img">
-        <img src="./img/main-logo.svg" alt="main-icon" />
+        <img
+          src="https://res.cloudinary.com/dtd0guzj1/image/upload/v1706946101/Portfolio/main-logo_vgte4k.svg"
+          alt="main-icon"
+        />
       </Box>
     </Box>
   );

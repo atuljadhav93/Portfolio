@@ -3,7 +3,6 @@ import { Avatar, Box, Card, CardContent } from "@mui/material";
 import {
   BoxContainer,
   PageHeadingText,
-  PoppinsForteenChipText,
   PoppinsSixteenText,
 } from "./styles";
 import Slider from "react-slick";
@@ -87,7 +86,7 @@ export default function MySkills() {
                 style={{
                   borderRadius: "10px",
                   height: "auto",
-                  width: "13rem",
+                  width: "11rem",
                   marginBottom: "2rem",
                   cursor: "pointer",
                   color: "#003C2F",
@@ -111,18 +110,21 @@ export default function MySkills() {
                   >
                     {item.src}
                   </Avatar>
-                  <PoppinsSixteenText>{item.language}</PoppinsSixteenText>
+                  
                   <Stack
                     className="skills-card-background"
                     spacing={2}
                     alignItems="center"
                   >
-                    <Stack direction="row" spacing={2}>
+                    {/* <Stack direction="row" spacing={2}>
                       <PoppinsForteenChipText
                         className="skills-card"
                         label={item.status}
                       />
-                    </Stack>
+                    </Stack> */}
+                    <PoppinsSixteenText className="skills-card">
+                    {item.language}
+                  </PoppinsSixteenText>
                   </Stack>
                 </CardContent>
               </Card>

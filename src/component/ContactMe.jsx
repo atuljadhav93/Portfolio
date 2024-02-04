@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Alert, Box, Grid, Snackbar, TextField } from "@mui/material";
 import { ButtonStyle, PageHeadingText, ValidationText } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
-import { clearForm, setFieldValue } from "../slice/ContactMe";
+import { clearForm, sendEmail, setFieldValue } from "../slice/ContactMe";
 import {
   ContactMeHeadingText,
   ContactUsSnackBarMsg,
@@ -19,6 +19,7 @@ import {
   messageRegex,
   phoneRegex,
 } from "../constants/ValidationRegEx";
+// import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
   const dispatch = useDispatch();
@@ -112,6 +113,13 @@ export default function ContactMe() {
     ) {
       // all validations are successful, clear the form
       setSnackbarOpen(true);
+      // emailjs.sendForm('service_0in2dp9', 'template_4rb7bmk', '4v_iM7q6V2uFGq9nx')
+      // .then((result) => {
+      //   console.log(result.text);
+      // }, (error) => {
+      //   console.log(error.text);
+      // });
+      dispatch(sendEmail(contactMeForm));
       dispatch(clearForm());
     } else {
       // at least one validation failed, do not clear the form
@@ -167,7 +175,7 @@ export default function ContactMe() {
               md: "0rem 8rem 0rem 8rem",
               lg: "0rem 18rem 0rem 18rem",
               xl: "0rem 22rem 0rem 22rem",
-            },
+            }
           }}
         >
           <Grid

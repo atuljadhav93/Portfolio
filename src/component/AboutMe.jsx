@@ -50,7 +50,7 @@ export default function AboutMe() {
         <DisplayFlexCenter>
           <Avatar
             alt="Atul Jadhav"
-            src="./img/Atul Jadhav2.jpg"
+            src="https://res.cloudinary.com/dtd0guzj1/image/upload/v1706863173/Portfolio/Atul_Jadhav2_ovmnen.jpg"
             sx={{
               width: { xs: 200, sm: 350, md: 350, lg: 350, xl: 350 },
               height: { xs: 200, sm: 350, md: 350, lg: 350, xl: 350 },
