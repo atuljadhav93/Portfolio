@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutMe />
-      <Timeline />
-      <Projects />
       <MySkills />
+      <Projects />
+      <Timeline />
       <ContactMe />
       <YoutubeVideo/>
       <Footer />

@@ -88,7 +88,6 @@ function Navbar() {
                 {AboutMe}
               </Link>
             </li>
-
             <li>
               <Link
                 onClick={closeMenu}
@@ -97,10 +96,10 @@ function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="timeline"
+                to="mySkills"
                 className="navbar--content"
               >
-                {Journey}
+                {Skills}
               </Link>
             </li>
             <li>
@@ -125,10 +124,10 @@ function Navbar() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="mySkills"
+                to="timeline"
                 className="navbar--content"
               >
-                {Skills}
+                {Journey}
               </Link>
             </li>
             <li>

@@ -1065,7 +1065,7 @@ input[type="checkbox"] {
 }
 
 .skills-card:hover {
-  border: 1px solid #25AE06;
+  /* border: 1px solid #25AE06; */
   color: #25AE06;
   opacity: 1;
 
