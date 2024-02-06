@@ -9,7 +9,7 @@ import TypeWriter from "typewriter-effect";
 import {
   DeveloperName,
   HireMe,
-  LetsTalk,
+  // LetsTalk,
   SelfIntoText,
   ViewResumeBtn,
 } from "../constants/Text";
@@ -18,21 +18,17 @@ import { github, linkedinUrl, whatsappUrl } from "../constants/const";
 import { useDispatch, useSelector } from "react-redux";
 import { setPdfViewerFlag } from "../slice/ViewResume";
 import PdfViewer from "./Pdf-viewer";
+import { emailData } from "../constants/data";
 
 export default function HeroSection() {
   const dispatch = useDispatch();
   const pdfViewerFlag = useSelector((state) => state.ViewResume.pdfViewerFlag);
-  const handleLetsTalkClick = () => {
-    const aboutSection = document.getElementById("aboutMe");
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-  };
+  // const handleLetsTalkClick = () => {
+  //   const aboutSection = document.getElementById("aboutMe");
+  //   aboutSection.scrollIntoView({ behavior: "smooth" });
+  // };
   const handleHireMeClick = () => {
-    const recipientEmail = process.env.REACT_APP_MAIL_ID;
-    const subject = "Interested in Hiring";
-    const body = "Hello Atul,\n\n";
-    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:${emailData.recipient}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
     window.location.href = mailtoLink;
   };
 
@@ -115,7 +111,7 @@ export default function HeroSection() {
                   delay: 40,
                   strings: [
                     "I'm a Frontend Developer.",
-                    "I'm a YouTuber.",
+                    "I create content on YouTube.",
                     '<span class="sanskrit-font">भारतीय: अहमिति मम गर्व:</span>',
                   ],
                 }}

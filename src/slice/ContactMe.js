@@ -48,14 +48,19 @@ export const sendEmail = (data) => async (dispatch) => {
     const templateId = 'template_4rb7bmk';
     const userId = '4v_iM7q6V2uFGq9nx';
     //eslint-disable-next-line
-    console.log("check",data)
+    console.log("check",data);
+    //eslint-disable-next-line
+    console.log("check1", data.emailAddress);
     // Replace these placeholders with actual data
     const templateParams = {
+      to_subject: data.emailSubject,
+      to_name: data.fullName,
       to_email: data.emailAddress,
-      subject: data.emailSubject,
+      to_phone: data.phoneNumber,
       message: data.message,
     };
-
+//esling-disable-next-line
+console.log("check2",templateParams);
     // Send email using Email.js
     await emailjs.send(serviceId, templateId, templateParams, userId);
 
