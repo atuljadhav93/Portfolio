@@ -24,7 +24,7 @@ export const portfolio = [
   {
     id: "1",
     src: netflix,
-    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
@@ -34,7 +34,7 @@ export const portfolio = [
   {
     id: "2",
     src: netflix,
-    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
@@ -44,7 +44,7 @@ export const portfolio = [
   {
     id: "3",
     src: netflix,
-    techStack:"React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
@@ -145,6 +145,21 @@ export const skills = [
   //   language: "Angular",
   // },
 ];
+
+export const emailData = {
+  recipient: "atuljadhav618@gmail.com",
+  subject: "Let's Connect!",
+  body: `Hey Atul,
+  I recently discovered your profile and was intrigued.
+  I'm eager to connect with you and gain insights from your experiences.
+  If you're open to a discussion, sharing ideas, or exploring potential job roles, let's connect and exchange thoughts
+  Warm regards,
+  [Your Name]
+  Contact : [Your Phone Number]
+
+  PS : Please feel free to craft your own email and do not forget to remove this line before sending a message
+`,
+};
 
 export const videoTutorial = [
   {

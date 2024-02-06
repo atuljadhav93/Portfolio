@@ -32,7 +32,7 @@ export const WhereDesign = "Designed and Built in";
 export const Proud = "with Pride.";
 export const ContactUsSnackBarMsg = "Contact us details successfully submitted";
 export const SelfIntoText =
-  "Hello there! I'm Atul Jadhav, a dedicated front-end developer and enthusiastic open-source contributor, driven by a relentless pursuit of crafting exquisite and intuitive digital journeys. My unwavering passion for web development fuels my delight in transforming imaginative designs into immersive realities through the power of code.";
+  "Hello there! I'm Atul Jadhav, a dedicated front-end developer driven by a relentless pursuit of crafting exquisite and intuitive digital experiences. My unwavering passion for web development fuels my delight in transforming imaginative designs into immersive realities through the power of code.";
 
 export const AboutMeDescriptionFirst =
   "I am a seasoned software developer focusing on crafting exceptional User Interface Design and Development solutions. My expertise lies in creating interfaces that meet and exceed contemporary web standards, offering a seamless blend of elegance and functionality.";

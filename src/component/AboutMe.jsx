@@ -30,7 +30,7 @@ export default function AboutMe() {
   }, []);
 
   const handleDownloadClick = () => {
-    const filePath = "./img/Atul Jadhav Resume.pdf";
+    const filePath = "../assets/Atul Jadhav Resume.pdf";
     // Create a link element
     const link = document.createElement("a");
     link.href = process.env.PUBLIC_URL + filePath; // Build the absolute URL
