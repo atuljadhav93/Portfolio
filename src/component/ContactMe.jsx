@@ -212,7 +212,7 @@ export default function ContactMe() {
               //     </Typography>
               //   </>
               // }
-              name="name"
+              name="fullName"
               value={contactMeForm.fullName}
               onChange={(e) => handleInputChange("fullName", e.target.value)}
               InputLabelProps={{
@@ -261,6 +261,7 @@ export default function ContactMe() {
               fullWidth
               id="outlined-required"
               label="Enter Your Email"
+              name="emailAddress"
               value={contactMeForm.emailAddress}
               onChange={(e) =>
                 handleInputChange("emailAddress", e.target.value)
@@ -311,6 +312,7 @@ export default function ContactMe() {
               fullWidth
               id="outlined-required"
               label="Phone Number"
+              name="phoneNumber"
               value={contactMeForm.phoneNumber}
               onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
               InputLabelProps={{
@@ -359,6 +361,7 @@ export default function ContactMe() {
               fullWidth
               id="outlined-required"
               label="Enter Subject"
+              name="emailSubject"
               value={contactMeForm.emailSubject}
               onChange={(e) =>
                 handleInputChange("emailSubject", e.target.value)
