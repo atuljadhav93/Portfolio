@@ -19,6 +19,11 @@ export const DisplayFlexCenterCol = styled(Box)(() => ({
   flexDirection: "column",
 }));
 
+export const DisplayFlexSpaceBetween = styled(Box)(() => ({
+  display: "flex",
+  justifyContent: "space-around",
+}));
+
 export const PoppinsSixteenText = styled(Typography)(() => ({
   fontFamily: "Poppins",
   fontStyle: "normal",

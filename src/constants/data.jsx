@@ -18,7 +18,7 @@ import {
   // WordPressIcon,
   // AngularIcon,
 } from "../assets/icons/LanguageIcon";
-import { netflix } from "./const";
+import { atulPortfolio, lancerLink, lancerLinkUrl, netflix, portfolioCode } from "./const";
 
 export const portfolio = [
   {
@@ -30,26 +30,32 @@ export const portfolio = [
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
+    githubUrl: portfolioCode,
+    demoUrl:""
   },
   {
     id: "2",
-    src: netflix,
-    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
-    title: "Netflix GPT",
+    src: lancerLink,
+    techStack: "React | Redux Toolkit | CSS | Azure | ASP.NET",
+    title: "Lancer Link",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
+    githubUrl: "",
+    demoUrl:lancerLinkUrl
   },
   {
     id: "3",
-    src: netflix,
-    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
-    title: "Netflix GPT",
+    src: atulPortfolio,
+    techStack: "React | Redux Toolkit | CSS",
+    title: "Portfolio",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
+    githubUrl: portfolioCode,
+    demoUrl:""
   },
 ];
 

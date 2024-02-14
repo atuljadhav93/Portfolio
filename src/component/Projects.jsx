@@ -40,7 +40,8 @@ export default function MyPortfolio() {
                         <GitHub />
                       </Box>
                       <PoppinsSixteenTextLink
-                        href="#"
+                        href={item.githubUrl}
+                        target="_blank"
                         underline="none"
                         className="text-color portfolio--link"
                       >
@@ -52,7 +53,8 @@ export default function MyPortfolio() {
                         <ExternalLink />
                       </Box>
                       <PoppinsSixteenTextLink
-                        href="#"
+                        href={item.demoUrl}
+                        target="_blank"
                         underline="none"
                         className="portfolio--link"
                       >
