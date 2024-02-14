@@ -1115,3 +1115,7 @@ input[type="checkbox"] {
     cursor: pointer;
     margin: 8px auto;
 }
+
+.text-decoration{
+  text-decoration: none;
+}

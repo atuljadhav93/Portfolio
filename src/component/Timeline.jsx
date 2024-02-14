@@ -6,9 +6,15 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { CodeIcon } from "../assets/icons/Icons";
 import SchoolIcon from "@mui/icons-material/School";
-import { Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { BoxContainer, PageHeadingText } from "./styles";
 import { MyJourney } from "../constants/Text";
+import {
+  companyLinkedinUrl,
+  companyWebsiteUrl,
+  dpCollege,
+  fergussonCollege,
+} from "../constants/const";
 
 export default function Timeline() {
   return (
@@ -29,6 +35,14 @@ export default function Timeline() {
             icon={<CodeIcon />}
             position="right"
           >
+            <Link
+              href={companyWebsiteUrl}
+              target="_blank"
+              variant="h6"
+              style={{ marginBottom: "14px", textDecoration: "none" }}
+            >
+              LogicHive Solution Pvt Ltd
+            </Link>
             <Typography>
               I accomplished my postgraduate studies at Fergusson College, Pune,
               earning a Bachelor's degree in Computer Science. My academic
@@ -36,23 +50,15 @@ export default function Timeline() {
               performance, showcasing my unwavering commitment to attaining
               proficiency and distinction in my selected realm of study.
             </Typography>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#fff", color: "#003c2f" }}
-            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="2021"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<CodeIcon />}
-            position="left"
-          >
-            <Typography>
-              I accomplished my postgraduate studies at Fergusson College, Pune,
-              earning a Bachelor's degree in Computer Science. My academic
-              expedition was characterized by a consistent and admirable 80%
-              performance, showcasing my unwavering commitment to attaining
-              proficiency and distinction in my selected realm of study.
-            </Typography>
+            <Link
+              href={companyLinkedinUrl}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Linkedin Page
+            </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -65,13 +71,9 @@ export default function Timeline() {
             date="2018 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
-            <Typography
-              style={{
-                margin: "2px",
-              }}
-            >
+            <Typography variant="h6" style={{ marginBottom: "8px" }}>
               Postgraduate
             </Typography>
             <Typography>
@@ -81,6 +83,15 @@ export default function Timeline() {
               performance, showcasing my unwavering commitment to attaining
               proficiency and distinction in my selected realm of study.
             </Typography>
+            <Link
+              href={fergussonCollege}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Fergusson College
+            </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -89,9 +100,11 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
-            <Typography>Graduation </Typography>
+            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+              Graduation{" "}
+            </Typography>
             <Typography>
               I graduated from Dada Patil Mahavidyalaya with a Bachelor's degree
               in Computer Science. My academic voyage was marked by a consistent
@@ -99,6 +112,15 @@ export default function Timeline() {
               commitment to mastering and excelling in the realm of my chosen
               field of study.
             </Typography>
+            <Link
+              href={dpCollege}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Dada Patil College
+            </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -107,14 +129,25 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
-            <Typography>HSC</Typography>
+            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+              HSC
+            </Typography>
             <Typography>
               I successfully attained my Higher Secondary School Certificate
               (HSSC) from Dada Patil Mahavidyalaya, securing an impressive score
               of 65% in the process.
             </Typography>
+            <Link
+              href={dpCollege}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Dada Patil College
+            </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -123,9 +156,11 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
-            <Typography>SSC</Typography>
+            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+              SSC
+            </Typography>
             <Typography>
               I successfully concluded my Secondary School Certificate (SSC)
               program at Netaji Subhash Vidyalaya, accomplishing a remarkable
