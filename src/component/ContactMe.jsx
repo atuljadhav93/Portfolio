@@ -19,6 +19,7 @@ import {
   messageRegex,
   phoneRegex,
 } from "../constants/ValidationRegEx";
+import { handleRealisticConfetti } from "../constants/Confetti";
 // import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
@@ -175,7 +176,7 @@ export default function ContactMe() {
               md: "0rem 8rem 0rem 8rem",
               lg: "0rem 18rem 0rem 18rem",
               xl: "0rem 22rem 0rem 22rem",
-            }
+            },
           }}
         >
           <Grid
@@ -465,6 +466,7 @@ export default function ContactMe() {
               disableElevation
               type="submit"
               onClick={handleSubmit}
+              onMouseOver={handleRealisticConfetti}
               disabled={
                 !(
                   contactMeForm.fullName &&

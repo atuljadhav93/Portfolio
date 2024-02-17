@@ -3,7 +3,7 @@ import { Box, Button, Link, Typography } from "@mui/material";
 import {
   ButtonStyle,
   PoppinsForteenText,
-  PoppinsThirtySixText,
+  PoppinsThirtySixTextLink,
 } from "./styles";
 import TypeWriter from "typewriter-effect";
 import {
@@ -13,7 +13,7 @@ import {
   SelfIntoText,
   ViewResumeBtn,
 } from "../constants/Text";
-import { WhatsApp, GitHub, Linkedin } from "../assets/icons/Icons";
+import { WhatsApp, GitHub, Linkedin, Call } from "../assets/icons/Icons";
 import { github, linkedinUrl, whatsappUrl } from "../constants/const";
 import { useDispatch, useSelector } from "react-redux";
 import { setPdfViewerFlag } from "../slice/ViewResume";
@@ -28,7 +28,11 @@ export default function HeroSection() {
   //   aboutSection.scrollIntoView({ behavior: "smooth" });
   // };
   const handleHireMeClick = () => {
-    const mailtoLink = `mailto:${emailData.recipient}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+    const mailtoLink = `mailto:${
+      emailData.recipient
+    }?subject=${encodeURIComponent(
+      emailData.subject
+    )}&body=${encodeURIComponent(emailData.body)}`;
     window.location.href = mailtoLink;
   };
 
@@ -51,6 +55,11 @@ export default function HeroSection() {
         </div>
       );
     }
+  };
+
+  const handleCall = () => {
+    const phoneNumber = "9689671427";
+    window.open(`tel:${phoneNumber}`, "_self");
   };
 
   return (
@@ -78,13 +87,16 @@ export default function HeroSection() {
         }}
       >
         <Box className="hero--section--content">
-          <PoppinsThirtySixText
+          <PoppinsThirtySixTextLink
+            href={linkedinUrl}
+            target="_blank"
             sx={{
               color: "#003C2F",
+              textDecoration: "none",
             }}
           >
             {DeveloperName}
-          </PoppinsThirtySixText>
+          </PoppinsThirtySixTextLink>
           <Box
             sx={{
               display: "flex",
@@ -249,6 +261,15 @@ export default function HeroSection() {
                 className="in"
               >
                 <Linkedin />
+              </Link>
+              <Link
+                href={linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="call"
+                onClick={handleCall}
+              >
+                <Call />
               </Link>
             </Box>
           </Box>

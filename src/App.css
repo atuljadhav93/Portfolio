@@ -139,8 +139,6 @@ body {
   text-align: justify;
 }
 
-
-
 .hero--section--img {
   display: flex;
 }
@@ -148,6 +146,13 @@ body {
 .hero--section--img>img {
   width: 100%;
   height: 100%;
+}
+
+/* Responsive Screens */
+@media only screen and (min-width: 425px) and (max-width:768px) {
+  .hero--section--img {
+    display: none;
+  }
 }
 
 /* Hero Section Style Ends */
@@ -457,15 +462,17 @@ input[type="checkbox"] {
   }
 }
 
+@media only screen and (max-width: 800px) {
+    .hero--section {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 70px;
+    }
+
+}
 @media only screen and (max-width: 1200px) {
   .btn-outline-primary {
     display: none;
-  }
-
-  .hero--section {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 70px;
   }
 
   /* .hero--section-description, */
@@ -708,6 +715,10 @@ input[type="checkbox"] {
 
 .effect a.in {
   background-color: #0072b1;
+}
+
+.effect a.call {
+  background-color: #3087EC;
 }
 
 .effect a.whatsapp {
@@ -1118,4 +1129,11 @@ input[type="checkbox"] {
 
 .text-decoration{
   text-decoration: none;
+}
+
+.PoppinsForteenText{
+  font-family: 'Poppins' !important;
+  font-style: normal !important ;
+  font-weight: 500 !important;
+  font-size: 14px !important;
 }

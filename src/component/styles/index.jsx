@@ -80,6 +80,18 @@ export const PoppinsThirtySixText = styled(Typography)(() => ({
   fontSize: "36px",
 }));
 
+export const PoppinsThirtySixTextLink = styled(Link)(() => ({
+  fontFamily: "Poppins",
+  fontStyle: "normal",
+  fontWeight: 600,
+  fontSize: "36px",
+  color: "initial", // Set initial color
+  transition: "color 0.3s ease", // Add transition for smooth color change
+  '&:hover': {
+    color: "#3087EC", // Change color on hover
+  },
+}));
+
 export const PoppinsEighteenText = styled(Typography)(() => ({
   fontFamily: "Poppins",
   fontStyle: "normal",

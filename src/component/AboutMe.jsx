@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Avatar, Box } from "@mui/material";
 import {
   AboutMeDescriptionFirst,
+  AboutMeDescriptionFour,
   AboutMeDescriptionSecond,
+  AboutMeDescriptionThird,
   AboutMeText,
   DownloadMyResume,
   DownloadResume,
@@ -82,6 +84,12 @@ export default function AboutMe() {
             </PoppinsForteenText>
             <PoppinsForteenText className="hero--section-description">
               {AboutMeDescriptionSecond}
+            </PoppinsForteenText>
+            <PoppinsForteenText className="hero--section-description">
+              {AboutMeDescriptionThird}
+            </PoppinsForteenText>
+            <PoppinsForteenText className="hero--section-description">
+              {AboutMeDescriptionFour}
             </PoppinsForteenText>
             {isButton ? (
               <DisplayFlexCenter
