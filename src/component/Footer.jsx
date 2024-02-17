@@ -9,50 +9,25 @@ import {
   GitHub,
   YouTube,
 } from "../assets/icons/Icons";
-import confetti from "canvas-confetti";
 import { DisplayFlexCenter, FindText, PoppinsSixteenText } from "./styles";
-import { CopyRightIssueText, DeveloperName, PingMe, Proud, RichOut, WhereDesign } from "../constants/Text";
-import { github, instagram, linkedinUrl, whatsappUrl, youtube } from "../constants/const";
+import {
+  CopyRightIssueText,
+  DeveloperName,
+  PingMe,
+  Proud,
+  RichOut,
+  WhereDesign,
+} from "../constants/Text";
+import {
+  github,
+  instagram,
+  linkedinUrl,
+  whatsappUrl,
+  youtube,
+} from "../constants/const";
+import { handleRealisticConfetti } from "../constants/Confetti";
 
 function Footer() {
-  const defaults = {
-    origin: { y: 0.5 },
-  };
-
-  const fire = (particleRatio, opts) => {
-    const count = 200;
-    confetti({
-      ...defaults,
-      ...opts,
-      particleCount: Math.floor(count * particleRatio),
-    });
-  };
-
-  const handleRealisticConfetti = () => {
-    fire(0.25, {
-      spread: 26,
-      startVelocity: 55,
-    });
-    fire(0.2, {
-      spread: 60,
-    });
-    fire(0.35, {
-      spread: 100,
-      decay: 0.91,
-      scalar: 0.8,
-    });
-    fire(0.1, {
-      spread: 120,
-      startVelocity: 25,
-      decay: 0.92,
-      scalar: 1.2,
-    });
-    fire(0.1, {
-      spread: 120,
-      startVelocity: 45,
-    });
-  };
-
   return (
     <>
       <Grid
@@ -120,7 +95,7 @@ function Footer() {
           >
             {RichOut}
             <br />
-            {PingMe} 
+            {PingMe}
           </PoppinsSixteenText>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>

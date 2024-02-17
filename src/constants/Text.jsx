@@ -35,7 +35,13 @@ export const SelfIntoText =
   "Hello there! I'm Atul Jadhav, a dedicated front-end developer driven by a relentless pursuit of crafting exquisite and intuitive digital experiences. My unwavering passion for web development fuels my delight in transforming imaginative designs into immersive realities through the power of code.";
 
 export const AboutMeDescriptionFirst =
-  "I am a seasoned software developer focusing on crafting exceptional User Interface Design and Development solutions. My expertise lies in creating interfaces that meet and exceed contemporary web standards, offering a seamless blend of elegance and functionality.";
+  "👋Hello, my name is Atul Jadhav, and today I would like to share that I have been working in frontend development for the past 2+ years.🚀 During which I've had the opportunity to delve deeply into creating engaging user interfaces and seamless user experiences.";
 
 export const AboutMeDescriptionSecond =
-  "I'm consistently eager to engage with fellow developers, designers, and enthusiasts. Whether it involves brainstorming innovative concepts, partnering on projects, or delving into new opportunities, please don't hesitate to get in touch. Together, we have the potential to enhance the web, making it more enjoyable and accessible for all. Your visit to my portfolio is greatly appreciated, and I anticipate sharing my journey with you in the future...";
+  "My journey began at Fergusson College, Pune, where I earned my master's degree. That's where my interest in the world of tech really took flight, and since then, I've been hooked on learning and exploring the ever-evolving landscape of web development.";
+
+export const AboutMeDescriptionThird =
+  "I have worked on several small to large-scale projects, and while building these projects, I've had to learn and adapt to how new teams function in different working environments.";
+
+export const AboutMeDescriptionFour =
+  "I am passionate about delivering software the right way, such as building projects with full accessibility, depth documentation, and thorough testing.💻";

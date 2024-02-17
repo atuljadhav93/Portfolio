@@ -7,7 +7,12 @@ import "react-vertical-timeline-component/style.min.css";
 import { CodeIcon } from "../assets/icons/Icons";
 import SchoolIcon from "@mui/icons-material/School";
 import { Link, Typography } from "@mui/material";
-import { BoxContainer, PageHeadingText } from "./styles";
+import {
+  BoxContainer,
+  PageHeadingText,
+  PoppinsEighteenText,
+  PoppinsSixteenTextLink,
+} from "./styles";
 import { MyJourney } from "../constants/Text";
 import {
   companyLinkedinUrl,
@@ -43,14 +48,15 @@ export default function Timeline() {
             >
               LogicHive Solution Pvt Ltd
             </Link>
-            <Typography>
-              I accomplished my postgraduate studies at Fergusson College, Pune,
-              earning a Bachelor's degree in Computer Science. My academic
-              expedition was characterized by a consistent and admirable 80%
-              performance, showcasing my unwavering commitment to attaining
-              proficiency and distinction in my selected realm of study.
+            <Typography className="text-color PoppinsForteenText">
+            ✅Responsible for creating user-friendly interfaces, implementing designs, and ensuring pixel-perfect execution.<br/>
+            ✅I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript, Postman and Jest.<br/>
+            ✅Skilled in optimizing website performance.<br/>
+            ✅Experienced in building products from scratch and developing scalable strategies.<br/>
+            ✅Collaborate with APIs and databases to retrieve and display dynamic content.<br/>
+            ✅Work with team members to promote knowledge sharing and maintainable code.<br/>
             </Typography>
-            <Link
+            <PoppinsSixteenTextLink
               href={companyLinkedinUrl}
               target="_blank"
               style={{
@@ -58,7 +64,7 @@ export default function Timeline() {
               }}
             >
               Linkedin Page
-            </Link>
+            </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -73,25 +79,25 @@ export default function Timeline() {
             icon={<SchoolIcon />}
             position="left"
           >
-            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+            <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Postgraduate
-            </Typography>
-            <Typography>
+            </PoppinsEighteenText>
+            <Typography className="text-color PoppinsForteenText">
               I accomplished my postgraduate studies at Fergusson College, Pune,
-              earning a Bachelor's degree in Computer Science. My academic
+              earning a master's degree in Computer Science. My academic
               expedition was characterized by a consistent and admirable 80%
               performance, showcasing my unwavering commitment to attaining
               proficiency and distinction in my selected realm of study.
             </Typography>
-            <Link
+            <PoppinsSixteenTextLink
               href={fergussonCollege}
               target="_blank"
               style={{
                 textDecoration: "none",
               }}
             >
-              Fergusson College
-            </Link>
+              College Website
+            </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -102,25 +108,25 @@ export default function Timeline() {
             icon={<SchoolIcon />}
             position="right"
           >
-            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+            <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Graduation{" "}
-            </Typography>
-            <Typography>
+            </PoppinsEighteenText>
+            <Typography className="text-color PoppinsForteenText">
               I graduated from Dada Patil Mahavidyalaya with a Bachelor's degree
               in Computer Science. My academic voyage was marked by a consistent
               and commendable 80% performance, underscoring my unwavering
               commitment to mastering and excelling in the realm of my chosen
               field of study.
             </Typography>
-            <Link
+            <PoppinsSixteenTextLink
               href={dpCollege}
               target="_blank"
               style={{
                 textDecoration: "none",
               }}
             >
-              Dada Patil College
-            </Link>
+              College Website
+            </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -131,23 +137,23 @@ export default function Timeline() {
             icon={<SchoolIcon />}
             position="left"
           >
-            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+            <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               HSC
-            </Typography>
-            <Typography>
+            </PoppinsEighteenText>
+            <Typography className="text-color PoppinsForteenText">
               I successfully attained my Higher Secondary School Certificate
               (HSSC) from Dada Patil Mahavidyalaya, securing an impressive score
               of 65% in the process.
             </Typography>
-            <Link
+            <PoppinsSixteenTextLink
               href={dpCollege}
               target="_blank"
               style={{
                 textDecoration: "none",
               }}
             >
-              Dada Patil College
-            </Link>
+              College Website
+            </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -158,10 +164,10 @@ export default function Timeline() {
             icon={<SchoolIcon />}
             position="right"
           >
-            <Typography variant="h6" style={{ marginBottom: "8px" }}>
+            <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               SSC
-            </Typography>
-            <Typography>
+            </PoppinsEighteenText>
+            <Typography className="text-color PoppinsForteenText">
               I successfully concluded my Secondary School Certificate (SSC)
               program at Netaji Subhash Vidyalaya, accomplishing a remarkable
               score of 79.45% during this pivotal juncture of my academic
