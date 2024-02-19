@@ -1137,3 +1137,25 @@ input[type="checkbox"] {
   font-weight: 500 !important;
   font-size: 14px !important;
 }
+
+.description-container {
+  max-height: 150px; /* Set your desired fixed height */
+  overflow-x: scroll; /* Hide the scrollbar */
+  /* overflow-y: hidden; */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

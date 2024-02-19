@@ -87,8 +87,9 @@ export const PoppinsThirtySixTextLink = styled(Link)(() => ({
   fontSize: "36px",
   color: "initial", // Set initial color
   transition: "color 0.3s ease", // Add transition for smooth color change
-  '&:hover': {
+  "&:hover": {
     color: "#3087EC", // Change color on hover
+    textDecoration: "underline",
   },
 }));
 
@@ -180,5 +181,21 @@ export const FindText = styled(Typography)`
   cursor:pointer;
   :hover {
     color: #3087ec;
+  }
+`;
+
+export const PlayIconButton = styled(Box)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  :hover {
+    opacity: 1;
   }
 `;
