@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, CircularProgress, IconButton, Typography } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { portfolio } from "../constants/data";
 import {
   DisplayFlex,
@@ -12,21 +12,28 @@ import {
 } from "./styles";
 import { MyWorkText } from "../constants/Text";
 import { ExternalLink, GitHub, PlayIcon } from "../assets/icons/Icons";
-import CustomDialogBox from "./Dialog";
+import { IoCloseOutline } from "react-icons/io5";
+import { BiLoaderAlt } from "react-icons/bi";
+import YouTube from "react-youtube";
 
 export default function MyPortfolio() {
-  // const [showScrollbar, setShowScrollbar] = useState(true);
-  const [openDialog, setOpen] = useState(false);
-
-  const closeDialog = () => {
-    setOpen(false);
+  const [modal, setModal] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(true);
+  // open modal
+  const openModal = () => {
+    setModal(!modal);
+  };
+  // loader
+  const spinner = () => {
+    setVideoLoading(!videoLoading);
   };
 
-  // eslint-disable-next-line 
-  console.log("2", openDialog);
-
-  const handleClickOpen = (id) => () => {
-    setOpen(true);
+  const opts = {
+    height: "270",
+    width: "450",
+    playerVars: {
+      autoplay: 0,
+    },
   };
 
   return (
@@ -47,7 +54,6 @@ export default function MyPortfolio() {
                     <img src={item.src} alt="Placeholder" />
                     <PlayIconButton
                       sx={{
-                        height: 200,
                         opacity: 0,
                         position: "absolute",
                         "&:hover": {
@@ -55,13 +61,48 @@ export default function MyPortfolio() {
                         },
                       }}
                     >
-                      <IconButton
-                      onClick={handleClickOpen(item?.id)}
-                      >
+                      <IconButton onClick={openModal}>
                         <PlayIcon width="50px" height="50px" />
                       </IconButton>
                     </PlayIconButton>
                   </Box>
+                  {modal ? (
+                    <Box className="modal-bg">
+                      <Box className="modal-align">
+                        <Box className="modal-content" modal={modal}>
+                          <IoCloseOutline
+                            className="modal-close"
+                            arial-label="Close modal"
+                            onClick={openModal}
+                          />
+                          <Box className="modal-video-align">
+                            {videoLoading ? (
+                              <Box className="modal-spinner">
+                                <BiLoaderAlt
+                                  className="modal-spinner-style"
+                                  fadeIn="none"
+                                />
+                              </Box>
+                            ) : null}
+                            <iframe
+                              className="modal-video-style"
+                              onLoad={spinner}
+                              loading="lazy"
+                              width="800"
+                              height="500"
+                              src={`https://www.youtube.com/embed/${item.videoLink}`}
+                              // src={item.videoLink}
+                              title="YouTube video player"
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
+                            {/* <YouTube videoId={item?.videoLink} opts={opts} /> */}
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  ) : null}
                   <PoppinsSmallText className="tech-stack-color text-top">
                     {item.techStack}
                   </PoppinsSmallText>
@@ -126,58 +167,6 @@ export default function MyPortfolio() {
           </Box>
         </Box>
       </Box>
-      {/* view recording */}
-      <CustomDialogBox
-        padding="15px 20px"
-        open={openDialog}
-        setOpen={closeDialog}
-        background={"transparent"}
-        closeIconId="close-view-project-btn"
-        width={{
-          xs: "90vw",
-          sm: "600px",
-          md: "600px",
-          lg: "60vw",
-          xl: "65vw",
-        }}
-        height={{
-          xs: "40vh",
-          sm: "60vh",
-          md: "65vh",
-          lg: "85vh",
-          xl: "85vh",
-        }}
-        childrens={
-          <Box
-            sx={{
-              width: "100%",
-              height: "100%",
-              padding: "0",
-              margin: "auto",
-              display: "flex",
-              alignItems: "center",
-            }}
-            id="project"
-          >
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "100%",
-              }}
-            >
-              <CircularProgress />
-              <Typography
-                sx={{ fontFamily: "Poppins", textAlign: "center", mt: 2 }}
-              >
-                Please wait while we are loadin video.
-              </Typography>
-            </Box>
-          </Box>
-        }
-      />
     </>
   );
 }

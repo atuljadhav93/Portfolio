@@ -43,7 +43,7 @@ const CustomDialogBox = ({
         width: width,
         height: height,
         background: background,
-        margin:"auto",
+        margin: "auto",
       }}
       open={open}
     >
@@ -55,7 +55,6 @@ const CustomDialogBox = ({
           padding: padding,
         }}
       >
-        {/* close icon */}
         <IconButton
           id={closeIconId}
           onClick={() => setOpen(false)}

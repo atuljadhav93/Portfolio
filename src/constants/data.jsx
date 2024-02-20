@@ -38,6 +38,7 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
+    videoLink: "u-TNKBYQV4M?si=pYi3Ac5A42PXTkXO",
   },
   {
     id: "2",
@@ -50,6 +51,7 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: "",
     demoUrl: lancerLinkUrl,
+    videoLink: "VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
   },
   {
     id: "3",
@@ -62,6 +64,7 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
+    videoLink: "",
   },
 ];
 
