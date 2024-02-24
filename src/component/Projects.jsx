@@ -13,7 +13,6 @@ import {
 import { MyWorkText } from "../constants/Text";
 import { ExternalLink, GitHub, PlayIcon } from "../assets/icons/Icons";
 import { IoCloseOutline } from "react-icons/io5";
-import { BiLoaderAlt } from "react-icons/bi";
 
 export default function MyPortfolio() {
   const [modal, setModal] = useState(false);
@@ -77,10 +76,7 @@ export default function MyPortfolio() {
                           <Box className="modal-video-align">
                             {videoLoading ? (
                               <Box className="modal-spinner">
-                                <BiLoaderAlt
-                                  className="modal-spinner-style"
-                                  fadeIn="none"
-                                />
+                                <span className="loader"></span>
                               </Box>
                             ) : null}
                             <iframe
