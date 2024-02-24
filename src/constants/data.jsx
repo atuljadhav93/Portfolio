@@ -18,7 +18,13 @@ import {
   // WordPressIcon,
   // AngularIcon,
 } from "../assets/icons/LanguageIcon";
-import { atulPortfolio, lancerLink, lancerLinkUrl, netflix, portfolioCode } from "./const";
+import {
+  atulPortfolio,
+  lancerLink,
+  lancerLinkUrl,
+  netflix,
+  portfolioCode,
+} from "./const";
 
 export const portfolio = [
   {
@@ -31,7 +37,9 @@ export const portfolio = [
     github: "Source Code",
     demo: "Live Demo",
     githubUrl: portfolioCode,
-    demoUrl:""
+    demoUrl: "",
+    videoId: "VZdoe2ShfBU",
+    videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
   },
   {
     id: "2",
@@ -39,11 +47,13 @@ export const portfolio = [
     techStack: "React | Redux Toolkit | CSS | Azure | ASP.NET",
     title: "Lancer Link",
     description:
-      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
+      "The Lancer Link B2B platform enables remote monitoring of drink consumption on a daily, monthly, and yearly basis. This includes beverages such as coffee, cold drinks, and syrup. Consumption reports will be generated based on this data. Additionally, the platform allows for online monitoring of device maintenance status, displaying consumption data in graph format for each device on a daily basis. Users can view both individual and group franchise selling statuses. The platform collects data on drink sales and device status to generate revenue, recurring, top-selling drinks, and device maintenance reports.",
     github: "Source Code",
     demo: "Live Demo",
     githubUrl: "",
-    demoUrl:lancerLinkUrl
+    demoUrl: lancerLinkUrl,
+    videoId: "WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
+    videoLink: "https://youtu.be/WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
   },
   {
     id: "3",
@@ -55,7 +65,9 @@ export const portfolio = [
     github: "Source Code",
     demo: "Live Demo",
     githubUrl: portfolioCode,
-    demoUrl:""
+    demoUrl: "",
+    videoId: "wVdD1GHgoqo?si=1-t5NkQzgL2Lt8aK",
+    videoLink: "https://youtu.be/wVdD1GHgoqo?si=O-fMY5qCV3h0Xj19",
   },
 ];
 
