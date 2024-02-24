@@ -14,26 +14,25 @@ import { MyWorkText } from "../constants/Text";
 import { ExternalLink, GitHub, PlayIcon } from "../assets/icons/Icons";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
-import YouTube from "react-youtube";
 
 export default function MyPortfolio() {
   const [modal, setModal] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
-  // open modal
-  const openModal = () => {
-    setModal(!modal);
+  const [videoId, setVideoId] = useState(null);
+
+  const openModal = (id) => {
+    setModal(true);
+    setVideoId(id);
   };
+
+  const closeModal = () => {
+    setModal(false);
+    setVideoId(null);
+  };
+
   // loader
   const spinner = () => {
     setVideoLoading(!videoLoading);
-  };
-
-  const opts = {
-    height: "270",
-    width: "450",
-    playerVars: {
-      autoplay: 0,
-    },
   };
 
   return (
@@ -61,7 +60,7 @@ export default function MyPortfolio() {
                         },
                       }}
                     >
-                      <IconButton onClick={openModal}>
+                      <IconButton onClick={() => openModal(item.videoId)}>
                         <PlayIcon width="50px" height="50px" />
                       </IconButton>
                     </PlayIconButton>
@@ -73,7 +72,7 @@ export default function MyPortfolio() {
                           <IoCloseOutline
                             className="modal-close"
                             arial-label="Close modal"
-                            onClick={openModal}
+                            onClick={closeModal}
                           />
                           <Box className="modal-video-align">
                             {videoLoading ? (
@@ -90,14 +89,12 @@ export default function MyPortfolio() {
                               loading="lazy"
                               width="800"
                               height="500"
-                              src={`https://www.youtube.com/embed/${item.videoLink}`}
-                              // src={item.videoLink}
+                              src={`https://www.youtube.com/embed/${videoId}`}
                               title="YouTube video player"
                               frameBorder="0"
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                               allowfullscreen
                             ></iframe>
-                            {/* <YouTube videoId={item?.videoLink} opts={opts} /> */}
                           </Box>
                         </Box>
                       </Box>

@@ -38,7 +38,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
-    videoLink: "u-TNKBYQV4M?si=pYi3Ac5A42PXTkXO",
+    videoId: "VZdoe2ShfBU",
+    videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
   },
   {
     id: "2",
@@ -51,7 +52,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: "",
     demoUrl: lancerLinkUrl,
-    videoLink: "VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
+    videoId: "WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
+    videoLink: "https://youtu.be/WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
   },
   {
     id: "3",
@@ -64,7 +66,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
-    videoLink: "",
+    videoId: "wVdD1GHgoqo?si=1-t5NkQzgL2Lt8aK",
+    videoLink: "https://youtu.be/wVdD1GHgoqo?si=O-fMY5qCV3h0Xj19",
   },
 ];
 
