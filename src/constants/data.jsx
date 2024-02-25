@@ -20,10 +20,13 @@ import {
 } from "../assets/icons/LanguageIcon";
 import {
   atulPortfolio,
+  dhruv,
   lancerLink,
   lancerLinkUrl,
+  narendra,
   netflix,
   portfolioCode,
+  tejas,
 } from "./const";
 
 export const portfolio = [
@@ -162,6 +165,45 @@ export const skills = [
   //   src: <AngularIcon />,
   //   language: "Angular",
   // },
+];
+
+export const testimonial = [
+  {
+    id:"1",
+    name: "Narendra M",
+    text: `Working alongside Atul Jadhav on UI development using React and CSS has been an absolute pleasure. Atul's dedication to his work is truly commendable. He consistently demonstrates his expertise in React-based UI development and CSS, ensuring that our projects not only meet but exceed expectations. As a fellow employee at our company, I can confidently say that Atul's contributions have significantly enhanced our team's productivity and the quality of our deliverables. His professionalism and commitment to excellence make him a valuable asset to any team. I highly recommend Atul for his exceptional technical skills and work ethic.`,
+    src: narendra,
+    designation: "Development Team Lead",
+    profileURL: "https://www.linkedin.com/in/narendramn37/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+  },
+  {
+    id:"2",
+    name: "Thejesh M",
+    text: `Atul is the person who is dedicated, adaptable, encouraging and supporting`,
+    src: tejas,
+    designation: "Reporting Manager and Senior Backend Developer",
+    profileURL: "https://www.linkedin.com/in/thejesh-m-5b17a1110/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+  },
+  {
+    id:"3",
+    name: "Dhruv Suhagiya",
+    text: `I've had the pleasure of working closely with Atul at Logichive Solutions for 2.6 years. Atul is an exceptional web developer, consistently delivering high-quality work within tight deadlines. His deep understanding of web development principles, coupled with his proactive and reliable nature, make him a valuable asset to any team. Atul's positive attitude and willingness to go above and beyond ensure the success of our projects. I highly recommend Atul for any web development role; he will undoubtedly continue to excel in his career.`,
+    src: dhruv,
+    designation: "Automation QA Engineer",
+    profileURL: "https://www.linkedin.com/in/dhruv-suhagiya/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+  },
 ];
 
 export const emailData = {
