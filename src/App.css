@@ -314,6 +314,13 @@ body {
   color: var(--light-green);
 }
 
+/* temp disable projects link */
+.portfolio--link.disabled {
+  pointer-events: none; /* Disables click events */
+  color: #999; /* Change color to indicate it's disabled */
+  /* Add any other styles for the disabled state */
+}
+
 .project--card--link {
   display: flex;
   justify-content: space-between;
@@ -587,7 +594,7 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 3rem 0 0.6rem;
+    padding: 2rem 0 0.6rem;
     z-index: -100;
   }
 
@@ -1337,4 +1344,46 @@ input[type="checkbox"] {
   100% {
     transform: rotate(-360deg);
   }
+}
+
+/* dot css */
+/* Custom styles for Slider dots */
+.slider-dots {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.slider-dot {
+  display: inline-block; /* Display dots horizontally */
+  width: 10px; /* Set width of dots */
+  height: 10px; /* Set height of dots */
+  background-color: #ccc; /* Set background color of inactive dots */
+  border-radius: 50%; /* Make dots circular */
+  margin: 0 5px; /* Add spacing between dots */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.slider-dot.active {
+  background-color: #007bff; /* Set background color of active dot */
+}
+
+.custom-dots ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc; /* Default color of dots */
+}
+
+.custom-dots li.slick-active {
+  background-color: #003c2f; /* Active color of dots */
 }

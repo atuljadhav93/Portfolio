@@ -50,19 +50,21 @@ export default function MyPortfolio() {
                     }}
                   >
                     <img src={item.src} alt="Placeholder" />
-                    <PlayIconButton
-                      sx={{
-                        opacity: 0,
-                        position: "absolute",
-                        "&:hover": {
-                          opacity: 1,
-                        },
-                      }}
-                    >
-                      <IconButton onClick={() => openModal(item.videoId)}>
-                        <PlayIcon width="50px" height="50px" />
-                      </IconButton>
-                    </PlayIconButton>
+                    {item.id !== "1" && (
+                      <PlayIconButton
+                        sx={{
+                          opacity: 0,
+                          position: "absolute",
+                          "&:hover": {
+                            opacity: 1,
+                          },
+                        }}
+                      >
+                        <IconButton onClick={() => openModal(item.videoId)}>
+                          <PlayIcon width="50px" height="50px" />
+                        </IconButton>
+                      </PlayIconButton>
+                    )}
                   </Box>
                   {modal ? (
                     <Box className="modal-bg">
@@ -135,7 +137,10 @@ export default function MyPortfolio() {
                         href={item.githubUrl}
                         target="_blank"
                         underline="none"
-                        className="text-color portfolio--link"
+                        // className="text-color portfolio--link"
+                        className={`text-color portfolio--link ${
+                          item.id === "2" ? "disabled" : ""
+                        }`}
                       >
                         {item.github}
                       </PoppinsSixteenTextLink>

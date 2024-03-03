@@ -5,6 +5,7 @@ import {
   // GithubIcon,
   JavaScriptIcon,
   JestIcon,
+  JiraIcon,
   // JQueryIcon,
   MUIIcon,
   // MYSQLIcon,
@@ -41,8 +42,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
-    videoId: "VZdoe2ShfBU",
-    videoLink: "https://youtu.be/VZdoe2ShfBU?si=j45cFWxZzvJCE1Ia",
+    videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+    videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
   },
   {
     id: "2",
@@ -55,8 +56,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: "",
     demoUrl: lancerLinkUrl,
-    videoId: "WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
-    videoLink: "https://youtu.be/WbV3zRgpw_E?si=QWAp6ZVy0WnSjbyE",
+    videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+    videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
   },
   {
     id: "3",
@@ -69,8 +70,8 @@ export const portfolio = [
     demo: "Live Demo",
     githubUrl: portfolioCode,
     demoUrl: "",
-    videoId: "wVdD1GHgoqo?si=1-t5NkQzgL2Lt8aK",
-    videoLink: "https://youtu.be/wVdD1GHgoqo?si=O-fMY5qCV3h0Xj19",
+    videoId: "VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
+    videoLink: "https://youtu.be/VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
   },
 ];
 
@@ -165,11 +166,16 @@ export const skills = [
   //   src: <AngularIcon />,
   //   language: "Angular",
   // },
+  {
+    id: "18",
+    src: <JiraIcon />,
+    language: "Jira Software",
+  },
 ];
 
 export const testimonial = [
   {
-    id:"1",
+    id: "1",
     name: "Narendra M",
     text: `Working alongside Atul Jadhav on UI development using React and CSS has been an absolute pleasure. Atul's dedication to his work is truly commendable. He consistently demonstrates his expertise in React-based UI development and CSS, ensuring that our projects not only meet but exceed expectations. As a fellow employee at our company, I can confidently say that Atul's contributions have significantly enhanced our team's productivity and the quality of our deliverables. His professionalism and commitment to excellence make him a valuable asset to any team. I highly recommend Atul for his exceptional technical skills and work ethic.`,
     src: narendra,
@@ -181,7 +187,7 @@ export const testimonial = [
       "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
   },
   {
-    id:"2",
+    id: "2",
     name: "Thejesh M",
     text: `Atul is the person who is dedicated, adaptable, encouraging and supporting`,
     src: tejas,
@@ -193,7 +199,7 @@ export const testimonial = [
       "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
   },
   {
-    id:"3",
+    id: "3",
     name: "Dhruv Suhagiya",
     text: `I've had the pleasure of working closely with Atul at Logichive Solutions for 2.6 years. Atul is an exceptional web developer, consistently delivering high-quality work within tight deadlines. His deep understanding of web development principles, coupled with his proactive and reliable nature, make him a valuable asset to any team. Atul's positive attitude and willingness to go above and beyond ensure the success of our projects. I highly recommend Atul for any web development role; he will undoubtedly continue to excel in his career.`,
     src: dhruv,
@@ -238,5 +244,77 @@ export const videoTutorial = [
     id: "3",
     title: "Check out all the videos on my Youtube Channel",
     videoLink: "https://youtube.com/@techedumeet",
+  },
+];
+
+export const cardData = [
+  // {
+  //   id: 1,
+  //   title: "Privacy First Design",
+  //   subTitle:
+  //     "Share your screen worry-free with our secure screen-sharing feature, ensuring privacy and peace of mind. Seamlessly share and seek assistance without the fear of accidental disclosures during screensharing.",
+  //   color: "#FFFFFF",
+  //   background: "#E87D63",
+  //   width: "60px",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Scalable Resources",
+  //   subTitle:
+  //     "With our pay-as-you-go, scalable cloud resources, support a variety of operating systems and software, while accessing multiple resources for cross-system proof of concept creation.",
+  //   color: "#FFFFFF",
+  //   background: "#11B698",
+  //   width: "60px",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Observability",
+  //   subTitle:
+  //     "Experience the closeness of in-person interaction – assist participants with a simple click, all while maintaining a disturbance-free environment.",
+  //   color: "#FFFFFF",
+  //   background: "#5A98BB",
+  //   width: "85px",
+  // },
+  {
+    id: "1",
+    color: "#FFFFFF",
+    background: "#E87D63",
+    name: "Narendra M",
+    text: `Working alongside Atul Jadhav on UI development using React and CSS has been an absolute pleasure. Atul's dedication to his work is truly commendable. He consistently demonstrates his expertise in React-based UI development and CSS, ensuring that our projects not only meet but exceed expectations. As a fellow employee at our company, I can confidently say that Atul's contributions have significantly enhanced our team's productivity and the quality of our deliverables. His professionalism and commitment to excellence make him a valuable asset to any team. I highly recommend Atul for his exceptional technical skills and work ethic.`,
+    src: narendra,
+    designation: "Development Team Lead",
+    profileURL: "https://www.linkedin.com/in/narendramn37/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+  },
+  {
+    id: "2",
+    color: "#FFFFFF",
+    background: "#E87D63",
+    name: "Thejesh M",
+    text: `Atul is the person who is dedicated, adaptable, encouraging and supporting`,
+    src: tejas,
+    designation: "Reporting Manager and Senior Backend Developer",
+    profileURL: "https://www.linkedin.com/in/thejesh-m-5b17a1110/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+  },
+  {
+    id: "3",
+    color: "#FFFFFF",
+    background: "#E87D63",
+    name: "Dhruv Suhagiya",
+    text: `I've had the pleasure of working closely with Atul at Logichive Solutions for 2.6 years. Atul is an exceptional web developer, consistently delivering high-quality work within tight deadlines. His deep understanding of web development principles, coupled with his proactive and reliable nature, make him a valuable asset to any team. Atul's positive attitude and willingness to go above and beyond ensure the success of our projects. I highly recommend Atul for any web development role; he will undoubtedly continue to excel in his career.`,
+    src: dhruv,
+    designation: "Automation QA Engineer",
+    profileURL: "https://www.linkedin.com/in/dhruv-suhagiya/",
+    organisation: "Electrum(formarly PickMySolar)",
+    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    orgLogo:
+      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
   },
 ];

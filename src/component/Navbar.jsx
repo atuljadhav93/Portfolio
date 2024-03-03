@@ -8,6 +8,7 @@ import {
   MyWork,
   Skills,
   ContactMe,
+  Testimonial,
 } from "../constants/Text";
 import { PortfolioLogo } from "../assets/icons/Icons";
 
@@ -128,6 +129,20 @@ function Navbar() {
                 className="navbar--content"
               >
                 {Journey}
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={closeMenu}
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="testimonial"
+                className="navbar--content"
+              >
+                {Testimonial}
               </Link>
             </li>
             <li>

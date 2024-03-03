@@ -2,6 +2,7 @@ export const DeveloperName = "Atul Jadhav";
 export const Home = "Home";
 export const AboutMe = "About Me";
 export const Journey = "Journey";
+export const Testimonial = "Testimonial";
 export const MyWork = "My Work";
 export const Skills = "Skills";
 export const ContactMe = "Contact Me";
@@ -39,7 +40,7 @@ export const AboutMeDescriptionFirst =
   "👋Hello, my name is Atul Jadhav, and today I would like to share that I have been working in frontend development for the past 2+ years.🚀During this time, I've had the opportunity to delve deeply into creating engaging user interfaces and seamless user experiences.";
 
 export const AboutMeDescriptionSecond =
-  "🌟My journey began at Fergusson College, Pune, where I earned my master's degree👨‍🎓in Computer Science.👨‍💻That's where my interest in the world of tech really took flight, and since then, I've been hooked on learning and exploring the ever-evolving landscape of web development.🌐";
+  "🌟My journey began at Fergusson College, Pune, where I earned my master's degree👨‍🎓in Computer Applications.👨‍💻That's where my interest in the world of tech really took flight, and since then, I've been hooked on learning and exploring the ever-evolving landscape of web development.🌐";
 
 export const AboutMeDescriptionThird =
   "I have worked on several small to large-scale projects and while building these projects, I've had to learn and adapt to how new teams function in different working environments.";
