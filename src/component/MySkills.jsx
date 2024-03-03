@@ -70,6 +70,16 @@ export default function MySkills() {
           centerPadding: "54px",
         },
       },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "54px",
+          nextArrow: null, // Hide next arrow for mobile devices
+          prevArrow: null, // Hide prev arrow for mobile devices
+        },
+      },
     ],
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,

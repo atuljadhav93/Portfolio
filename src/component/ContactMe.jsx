@@ -160,7 +160,7 @@ export default function ContactMe() {
             {ContactUsSnackBarMsg}
           </Alert>
         </Snackbar>
-        <PageHeadingText sx={{ color: "#003C2F" }}>
+        <PageHeadingText sx={{ color: "#003C2F", textAlign:"center" }}>
           {ContactMeHeadingText}
         </PageHeadingText>
         <Grid

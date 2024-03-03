@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Avatar, Box } from "@mui/material";
 import {
   PageHeadingText,
@@ -13,129 +13,207 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { TestimonialText } from "../constants/Text";
 import { testimonial } from "../constants/data";
 
-const CustomNextArrow = (props) => {
-  return (
-    <div className="custom-arrow custom-next-arrow" onClick={props.onClick} />
-  );
-};
-
-const CustomPrevArrow = (props) => {
-  return (
-    <div className="custom-arrow1 custom-prev-arrow" onClick={props.onClick} />
-  );
-};
-
 export default function Testimonial() {
-  const [showComponent, setShowComponent] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowComponent(window.innerWidth > 320);
-    };
-
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); // Empty dependency array ensures effect only runs once
-
-  const settings = {
-    dots: false,
+  const slidersCards = {
     infinite: true,
-    speed: 400,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    pauseOnHover: true,
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 2560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 3630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+      {
+        breakpoint: 8500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+    ],
+    //  appendDots: dots => <ul>{dots}</ul>,
+    //  customPaging: i => (
+    //    <div className="ft-slick__dots--custom">
+    //      <div className="loading" />
+    //    </div>
+    //  )
   };
 
   return (
-    <>
-      {showComponent && (
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            padding: {
-              xs: "30px 30px",
-              sm: "15px 15px",
-              md: "15px 85.333px",
-              lg: "15px 85.333px",
-              xl: "15px 85.333px",
-            },
-            textAlign: "center",
-          }}
-        >
-          <PageHeadingText sx={{ color: "#003C2F" }}>
-            {TestimonialText}
-          </PageHeadingText>
-          <Slider
-            {...settings}
+    <Box
+      id="testimonial"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        textAlign: "center",
+        overflowX: "hidden",
+        overflowY: "hidden", // Prevent horizontal scrolling
+      }}
+    >
+      <PageHeadingText sx={{ color: "#003C2F" }}>
+        {TestimonialText}
+      </PageHeadingText>
+      <Slider
+        {...slidersCards}
+        style={{
+          maxWidth: "100%", // Ensure Slider doesn't exceed viewport width
+          padding: "20px 40px 40px 40px", // Adjust padding as needed
+          margin: "0 auto", // Center align the Slider
+        }}
+        className="slider-dots"
+        appendDots={(dots) => (
+          <Box
             style={{
-              width: "100%",
-              padding: "10px 80px 20px 80px",
+              textAlign: "center",
+              marginBottom: "20px",
+              left: "20px",
             }}
           >
-            {testimonial?.map((item) => (
+            <ul style={{ margin: "0", padding: "0" }}> {dots} </ul>
+          </Box>
+        )}
+      >
+        {testimonial?.map((item, index) => (
+          <Box key={index} style={{ padding: "20px 20px" }}>
+            <Box
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "center",
+              }}
+            >
+              <Avatar
+                alt={item.name}
+                sx={{
+                  width: "4rem",
+                  height: "4rem",
+                }}
+                src={item?.src}
+              />
               <Box
-                key={item.toString()}
                 style={{
-                  display: "flex",
-                  justifyContent: "row",
+                  textAlign: "left",
+                  justifyContent: "center",
+                  marginLeft: "4px",
                 }}
               >
-                <Box
+                <PoppinsSixteenTextLink
+                  href={item.profileURL}
+                  target="_blank"
                   style={{
-                    display: "flex",
-                    justifyContent: "flex-start",
-                    alignItems: "center",
+                    textDecoration: "none",
                   }}
                 >
-                  <Avatar
-                    alt={item.name}
-                    sx={{
-                      width: "4rem",
-                      height: "4rem",
-                    }}
-                    src={item?.src}
-                  />
-                  <Box
-                    style={{
-                      textAlign: "left",
-                      justifyContent: "center",
-                      marginLeft: "4px",
-                    }}
-                  >
-                    <PoppinsSixteenTextLink
-                      href={item.profileURL}
-                      target="_blank"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      {item.name}
-                    </PoppinsSixteenTextLink>
-                    <PoppinsSmallText className="tech-stack-color">
-                      {item.designation}
-                    </PoppinsSmallText>
-                  </Box>
-                </Box>
-                <Box>
-                  <PoppinsForteenText className="text-color text-top hero--section-description">
-                    {item.text}
-                  </PoppinsForteenText>
-                </Box>
+                  {item.name}
+                </PoppinsSixteenTextLink>
+                <PoppinsSmallText
+                  className="tech-stack-color"
+                  style={{
+                    color: item?.color,
+                  }}
+                >
+                  {item.designation}
+                </PoppinsSmallText>
               </Box>
-            ))}
-          </Slider>
-        </Box>
-      )}
-    </>
+            </Box>
+            <Box>
+              <PoppinsForteenText
+                className="text-color text-top hero--section-description"
+                sx={{
+                  color: item?.color,
+                  height: {
+                    xs: "160px",
+                    sm: "160px",
+                    md: "100px",
+                    lg: "100px",
+                    xl: "100px",
+                  },
+                  overflowY: "hidden",
+                  "&:hover": {
+                    overflowY: "scroll",
+                  },
+                  "&::-webkit-scrollbar": {
+                    width: "8px",
+                    display: "none",
+                  },
+                  "&:hover::-webkit-scrollbar": {
+                    display: "block",
+                  },
+                  "&::-webkit-scrollbar-thumb": {
+                    backgroundColor: "#ffffff",
+                    borderRadius: "14px",
+                  },
+                }}
+              >
+                {item.text}
+              </PoppinsForteenText>
+            </Box>
+          </Box>
+        ))}
+      </Slider>
+    </Box>
   );
 }
