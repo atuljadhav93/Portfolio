@@ -147,7 +147,7 @@ export default function MyPortfolio() {
                         underline="none"
                         // className="text-color portfolio--link"
                         className={`text-color portfolio--link ${
-                          item.id === "2" ? "disabled" : ""
+                          item.id === "2"  ? "disabled" : ""
                         }`}
                       >
                         {item.github}
@@ -161,7 +161,10 @@ export default function MyPortfolio() {
                         href={item.demoUrl}
                         target="_blank"
                         underline="none"
-                        className="portfolio--link"
+                        // className="portfolio--link"
+                        className={`text-color portfolio--link ${
+                          item.id === "1"  ? "disabled" : ""
+                        }`}
                       >
                         {item.demo}
                       </PoppinsSixteenTextLink>

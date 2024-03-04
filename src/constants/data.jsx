@@ -26,6 +26,7 @@ import {
   lancerLinkUrl,
   narendra,
   netflix,
+  netflixCode,
   portfolioCode,
   tejas,
 } from "./const";
@@ -40,7 +41,7 @@ export const portfolio = [
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
     github: "Source Code",
     demo: "Live Demo",
-    githubUrl: portfolioCode,
+    githubUrl: netflixCode,
     demoUrl: "",
     videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
     videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",

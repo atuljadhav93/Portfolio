@@ -15,6 +15,10 @@ export const lancerLinkUrl = process.env.REACT_APP_LANCER_LINK_URL;
 
 // project source codes
 export const portfolioCode = process.env.REACT_APP_PORTFOLIO_CODE;
+export const netflixCode = process.env.REACT_APP_NETFLIX_CODE;
+
+// atul resume link
+export const atulResumeLink = process.env.REACT_APP_ATUL_RESUME;
 
 // Use your Email.js service ID, template ID, and user ID
 export const serviceId = process.env.REACT_APP_SERVICE_ID;

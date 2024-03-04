@@ -49,12 +49,23 @@ export default function Timeline() {
               LogicHive Solution Pvt Ltd
             </Link>
             <Typography className="text-color PoppinsForteenText">
-            ✅Responsible for creating user-friendly interfaces, implementing designs, and ensuring pixel-perfect execution.<br/>
-            ✅I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript, Postman and Jest.<br/>
-            ✅Skilled in optimizing website performance.<br/>
-            ✅Experienced in building products from scratch and developing scalable strategies.<br/>
-            ✅Collaborate with APIs and databases to retrieve and display dynamic content.<br/>
-            ✅Work with team members to promote knowledge sharing and maintainable code.<br/>
+              ✅Responsible for creating user-friendly interfaces, implementing
+              designs, and ensuring pixel-perfect execution.
+              <br />
+              ✅I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
+              Postman and Jest.
+              <br />
+              ✅Skilled in optimizing website performance.
+              <br />
+              ✅Experienced in building products from scratch and developing
+              scalable strategies.
+              <br />
+              ✅Collaborate with APIs and databases to retrieve and display
+              dynamic content.
+              <br />
+              ✅Work with team members to promote knowledge sharing and
+              maintainable code.
+              <br />
             </Typography>
             <PoppinsSixteenTextLink
               href={companyLinkedinUrl}
@@ -114,7 +125,7 @@ export default function Timeline() {
             <Typography className="text-color PoppinsForteenText">
               I graduated from Dada Patil Mahavidyalaya with a Bachelor's degree
               in Computer Science. My academic voyage was marked by a consistent
-              and commendable 80% performance, underscoring my unwavering
+              and commendable 68% performance, underscoring my unwavering
               commitment to mastering and excelling in the realm of my chosen
               field of study.
             </Typography>
