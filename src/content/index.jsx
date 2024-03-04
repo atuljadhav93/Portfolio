@@ -7,6 +7,7 @@ import ContactMe from "../component/ContactMe";
 import Footer from "../component/Footer";
 import YoutubeVideo from "../component/Video";
 import Testimonial from "../component/Testimonial";
+import MoreProject from "../component/MoreProject";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutMe />
       <MySkills />
       <Projects />
+      <MoreProject />
       <Timeline />
       <Testimonial />
       <ContactMe />

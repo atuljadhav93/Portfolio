@@ -3,6 +3,7 @@ import { Box, IconButton } from "@mui/material";
 import { portfolio } from "../constants/data";
 import {
   DisplayFlex,
+  DisplayFlexCenter,
   PageHeadingText,
   PlayIconButton,
   PoppinsEighteenText,
@@ -13,8 +14,11 @@ import {
 import { MyWorkText } from "../constants/Text";
 import { ExternalLink, GitHub, PlayIcon } from "../assets/icons/Icons";
 import { IoCloseOutline } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { setOpenMoreModel } from "../slice/OpenModel";
 
 export default function MyPortfolio() {
+  const dispatch = useDispatch();
   const [modal, setModal] = useState(false);
   const [videoLoading, setVideoLoading] = useState(true);
   const [videoId, setVideoId] = useState(null);
@@ -32,6 +36,10 @@ export default function MyPortfolio() {
   // loader
   const spinner = () => {
     setVideoLoading(!videoLoading);
+  };
+
+  const handleClickOpen = () => {
+    dispatch(setOpenMoreModel(true));
   };
 
   return (
@@ -164,6 +172,18 @@ export default function MyPortfolio() {
             ))}
           </Box>
         </Box>
+        <DisplayFlexCenter>
+          <PoppinsEighteenText
+            sx={{
+              color: "#3087EC",
+              cursor: "pointer",
+              mb: 1,
+            }}
+            onClick={handleClickOpen}
+          >
+            See More...
+          </PoppinsEighteenText>
+        </DisplayFlexCenter>
       </Box>
     </>
   );
