@@ -1,6 +1,7 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 import Chip from "@mui/material/Chip";
 import Link from "@mui/material/Link";
+import Toolbar from "@mui/material/Toolbar";
 
 export const DisplayFlex = styled(Box)(() => ({
   display: "flex",
@@ -22,6 +23,11 @@ export const DisplayFlexCenterCol = styled(Box)(() => ({
 export const DisplayFlexSpaceBetween = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-around",
+}));
+
+export const DisplayFlexEnd = styled(Toolbar)(() => ({
+  display: "flex",
+  justifyContent: "flex-end",
 }));
 
 export const PoppinsSixteenText = styled(Typography)(() => ({
