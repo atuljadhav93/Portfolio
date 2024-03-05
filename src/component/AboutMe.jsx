@@ -15,6 +15,7 @@ import {
   PoppinsSixteenText,
   PoppinsThirtySixText,
 } from "./styles";
+import RESUME_PATH from "../assets/Atul Jadhav Resume.pdf";
 
 export default function AboutMe() {
   const [isButton, setIsButton] = useState(false);
@@ -32,15 +33,13 @@ export default function AboutMe() {
   }, []);
 
   const handleDownloadClick = () => {
-    const filePath = "../assets/Atul Jadhav Resume.pdf";
-    
     // Create a link element
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + filePath; // Build the absolute URL
-    link.setAttribute("download", "Atul Jadhav Resume.pdf"); // Set the desired file name
+    link.href = RESUME_PATH; // Build the absolute URL
+    link.download = "Atul Jadhav Resume.pdf"; // You can change the filename here
+    document.body.appendChild(link);
 
     // Trigger the click event to start the download
-    document.body.appendChild(link);
     link.click();
 
     // Clean up by removing the link element
