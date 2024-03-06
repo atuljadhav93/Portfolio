@@ -20,10 +20,13 @@ import {
   // AngularIcon,
 } from "../assets/icons/LanguageIcon";
 import {
+  adminPortal,
   atulPortfolio,
   dhruv,
+  elPro,
   lancerLink,
   lancerLinkUrl,
+  movieDB,
   narendra,
   netflix,
   netflixCode,
@@ -31,11 +34,11 @@ import {
   tejas,
 } from "./const";
 
-export const portfolio = [
+export const projects = [
   {
     id: "1",
     src: netflix,
-    techStack: "React | Redux Toolkit | Tailwind CSS | Firebase | GitHub",
+    techStack: "React | Redux | Tailwind CSS | Firebase | GitHub",
     title: "Netflix GPT",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
@@ -49,7 +52,7 @@ export const portfolio = [
   {
     id: "2",
     src: lancerLink,
-    techStack: "React | Redux Toolkit | CSS | Azure | ASP.NET",
+    techStack: "React | Redux | CSS | Azure | ASP.NET",
     title: "Lancer Link",
     description:
       "The Lancer Link B2B platform enables remote monitoring of drink consumption on a daily, monthly, and yearly basis. This includes beverages such as coffee, cold drinks, and syrup. Consumption reports will be generated based on this data. Additionally, the platform allows for online monitoring of device maintenance status, displaying consumption data in graph format for each device on a daily basis. Users can view both individual and group franchise selling statuses. The platform collects data on drink sales and device status to generate revenue, recurring, top-selling drinks, and device maintenance reports.",
@@ -63,10 +66,55 @@ export const portfolio = [
   {
     id: "3",
     src: atulPortfolio,
-    techStack: "React | Redux Toolkit | CSS",
+    techStack: "React | Redux | CSS",
     title: "Portfolio",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
+    github: "Source Code",
+    demo: "Live Demo",
+    githubUrl: portfolioCode,
+    demoUrl: "",
+    videoId: "VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
+    videoLink: "https://youtu.be/VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
+  },
+];
+
+export const moreProjects = [
+  {
+    id: "1",
+    src: movieDB,
+    techStack: "React | Redux | JavaScript | CSS",
+    title: "MovieDB",
+    description:
+      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
+    github: "Source Code",
+    demo: "Live Demo",
+    githubUrl: netflixCode,
+    demoUrl: "",
+    videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+    videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+  },
+  {
+    id: "2",
+    src: adminPortal,
+    techStack: "React | Redux | TypeScript | CSS | MUI",
+    title: "Admin Portal",
+    description:
+      "The Admin Portal is an internal operational dashboard platform, designed to efficiently manage various business activities. It includes managing user details, demo requests, payment details, resource information, resource limit requests, learning banks, ongoing and past event details, ongoing and past service statuses, as well as active instances on our platform.",
+    github: "Source Code",
+    demo: "Live Demo",
+    githubUrl: "",
+    demoUrl: lancerLinkUrl,
+    videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+    videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+  },
+  {
+    id: "3",
+    src: elPro,
+    techStack: "React | Redux | TypeScript | CSS | MUI",
+    title: "--------",
+    description:
+      "Introducing a platform that offers personalized virtual desktops on a cloud platform, where you can train and learn, with a pay-as-you-go usage scheme",
     github: "Source Code",
     demo: "Live Demo",
     githubUrl: portfolioCode,

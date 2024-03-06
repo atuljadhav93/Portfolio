@@ -9,9 +9,14 @@ export const instagram = process.env.REACT_APP_INSTAGRAM_URL;
 export const netflix = process.env.REACT_APP_NETFLIX;
 export const lancerLink = process.env.REACT_APP_LANCER_LINK;
 export const atulPortfolio = process.env.REACT_APP_PORTFOLIO;
+export const movieDB = process.env.REACT_APP_MOVIE_WEB;
+export const elPro = process.env.REACT_APP_EL;
+export const adminPortal = process.env.REACT_APP_ADMIN_PORTAL;
 
 // project live urls
 export const lancerLinkUrl = process.env.REACT_APP_LANCER_LINK_URL;
+export const elAdmin = process.env.REACT_APP_EL_ADMIN;
+export const elPortal = process.env.REACT_APP_EL_PORTAL;
 
 // project source codes
 export const portfolioCode = process.env.REACT_APP_PORTFOLIO_CODE;

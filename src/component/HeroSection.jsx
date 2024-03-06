@@ -172,7 +172,7 @@ export default function HeroSection() {
             id="hireMe"
             className="btn-hover-round"
             sx={{
-              height: "48px",
+              height: "44px",
               fontFamily: "Poppins",
               fontSize: "18px",
               fontWeight: 500,
@@ -216,7 +216,7 @@ export default function HeroSection() {
             id="talk-button"
             className="btn-hover-round"
             sx={{
-              height: "48px",
+              height: "44px",
               fontFamily: "Poppins",
               fontSize: "18px",
               fontWeight: 500,

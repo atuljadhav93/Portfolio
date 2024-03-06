@@ -1,15 +1,10 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import AppBar from "@mui/material/AppBar";
-import Slide from "@mui/material/Slide";
 import { useDispatch, useSelector } from "react-redux";
+import { Box, Button, Dialog, AppBar, Slide } from "@mui/material";
 import { setOpenMoreModel } from "../slice/OpenModel";
-import {
-  DisplayFlexCenterCol,
-  DisplayFlexEnd,
-  PoppinsForteenText,
-} from "./styles";
+import { DisplayFlexEnd } from "./styles";
+import { moreProjects } from "../constants/data";
+import ProjectCard from "./ProjectCard";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -22,6 +17,7 @@ export default function MoreProject() {
   const handleClose = () => {
     dispatch(setOpenMoreModel(false));
   };
+
   return (
     <>
       <Dialog
@@ -30,16 +26,24 @@ export default function MoreProject() {
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        <AppBar sx={{ position: "relative" }}>
+        <AppBar sx={{ position: "relative", zIndex: "1" }}>
           <DisplayFlexEnd>
             <Button color="inherit" onClick={handleClose}>
               Close
             </Button>
           </DisplayFlexEnd>
         </AppBar>
-        <DisplayFlexCenterCol sx={{ margin: "auto" }}>
+        {/* <DisplayFlexCenterCol sx={{ margin: "auto" }}>
           <PoppinsForteenText>Comeing soon...</PoppinsForteenText>
-        </DisplayFlexCenterCol>
+        </DisplayFlexCenterCol> */}
+
+        <Box className="portfolio--section margin-auto">
+          <Box className="portfolio--section--container">
+            {moreProjects?.map((item) => (
+              <ProjectCard key={item.id} item={item} />
+            ))}
+          </Box>
+        </Box>
       </Dialog>
     </>
   );

@@ -48,6 +48,10 @@ body {
   align-items: center;
 }
 
+.margin-auto{
+  margin: auto;
+}
+
 /* Section Titles */
 /* Skills & About Me */
 .section--title {
@@ -262,6 +266,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
   gap: 42.6px;
   width: 100%;
 }
@@ -274,7 +279,7 @@ body {
 
 .portfolio--section--img>img {
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .portfolio--section--img:hover {
@@ -1346,44 +1351,63 @@ input[type="checkbox"] {
   }
 }
 
-/* dot css */
-/* Custom styles for Slider dots */
-.slider-dots {
-  list-style: none; /* Remove default list styles */
-  padding: 0;
-  margin: 0;
-  text-align: center;
+/* change txt color */
+.awesome {
+  color:#313131;
+  -webkit-animation:colorchange 20s infinite alternate;
 }
-
-.slider-dot {
-  display: inline-block; /* Display dots horizontally */
-  width: 10px; /* Set width of dots */
-  height: 10px; /* Set height of dots */
-  background-color: #ccc; /* Set background color of inactive dots */
-  border-radius: 50%; /* Make dots circular */
-  margin: 0 5px; /* Add spacing between dots */
-  cursor: pointer; /* Set cursor to pointer */
-}
-
-.slider-dot.active {
-  background-color: #007bff; /* Set background color of active dot */
-}
-
-.custom-dots ul {
-  list-style: none;
-  padding: 0;
-}
-
-.custom-dots li {
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #ccc; /* Default color of dots */
-}
-
-.custom-dots li.slick-active {
-  background-color: #003c2f; /* Active color of dots */
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: blue;
+  }
+  
+  10% {
+    
+    color: #8e44ad;
+  }
+  
+  20% {
+    
+    color: #1abc9c;
+  }
+  
+  30% {
+    
+    color: #d35400;
+  }
+  
+  40% {
+    
+    color: blue;
+  }
+  
+  50% {
+    
+    color: #34495e;
+  }
+  
+  60% {
+    
+    color: blue;
+  }
+  
+  70% {
+    
+    color: #2980b9;
+  }
+  80% {
+ 
+    color: #f1c40f;
+  }
+  
+  90% {
+ 
+    color: #2980b9;
+  }
+  
+  100% {
+    
+    color: pink;
+  }
 }

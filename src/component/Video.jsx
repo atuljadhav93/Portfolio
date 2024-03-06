@@ -103,6 +103,10 @@ export default function Video() {
                   variant="contained"
                   disableElevation
                   type="submit"
+                  sx={{
+                    height: "38px",
+                    width: "7rem",
+                  }}
                 >
                   Visit Now
                 </WatchVideoBtn>
