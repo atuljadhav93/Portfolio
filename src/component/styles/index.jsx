@@ -163,8 +163,8 @@ export const WatchVideoBtn = styled(Button)`
   background-color: #3087ec;
   transition: all 0.3s ease;
   text-transform: none;
-  height: 48px;
-  width: 9rem;
+  height: 42px;
+  width: 8rem;
   font-family: Poppins;
   font-size: 18px,
   font-weight: 500;
