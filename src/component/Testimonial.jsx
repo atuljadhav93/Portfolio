@@ -129,7 +129,7 @@ export default function Testimonial() {
             style={{
               textAlign: "center",
               marginBottom: "20px",
-              left: "20px",
+              left: "10px",
             }}
           >
             <ul style={{ margin: "0", padding: "0" }}> {dots} </ul>

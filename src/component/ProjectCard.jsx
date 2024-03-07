@@ -41,7 +41,7 @@ export default function ProjectCard({ item }) {
           }}
         >
           <img src={item.src} alt="Placeholder" />
-          {item.id !== "1" && (
+          {item.videoStatus === "true" && (
             <PlayIconButton
               sx={{
                 opacity: 0,
@@ -130,7 +130,7 @@ export default function ProjectCard({ item }) {
               underline="none"
               // className="text-color portfolio--link"
               className={`text-color portfolio--link ${
-                item.id === "2" ? "disabled" : ""
+                item.disableGitHubUrl === "true" ? "disabled" : ""
               }`}
             >
               {item.github}
@@ -146,7 +146,7 @@ export default function ProjectCard({ item }) {
               underline="none"
               // className="portfolio--link"
               className={`text-color portfolio--link ${
-                item.id === "1" ? "disabled" : ""
+                item.disableDemoUrl === "true" ? "disabled" : ""
               }`}
             >
               {item.demo}

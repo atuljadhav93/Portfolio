@@ -49,22 +49,22 @@ export default function Timeline() {
               LogicHive Solution Pvt Ltd
             </Link>
             <Typography className="text-color PoppinsForteenText">
-              ✅Responsible for creating user-friendly interfaces, implementing
-              designs, and ensuring pixel-perfect execution.
+              ✅Building a product from scratch and developing strategies to
+              scale it seamlessly.
               <br />
               ✅I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
               Postman and Jest.
               <br />
-              ✅Skilled in optimizing website performance.
+              ✅Implemented designs provided by UI/UX designers.
               <br />
-              ✅Experienced in building products from scratch and developing
-              scalable strategies.
+              ✅Worked with APIs and databases to retrieve and display dynamic
+              content.
               <br />
-              ✅Collaborate with APIs and databases to retrieve and display
-              dynamic content.
+              ✅Identifying and resolving bugs, compatibility issues, and
+              performance bottlenecks efficiently, ensuring smooth operations.
               <br />
-              ✅Work with team members to promote knowledge sharing and
-              maintainable code.
+              ✅Collaborated with fellow developers to write scalable code and
+              reusable code.
               <br />
             </Typography>
             <PoppinsSixteenTextLink
@@ -94,11 +94,11 @@ export default function Timeline() {
               Postgraduate
             </PoppinsEighteenText>
             <Typography className="text-color PoppinsForteenText">
-              I accomplished my postgraduate studies at Fergusson College, Pune,
-              earning a master's degree in Computer Science. My academic
-              expedition was characterized by a consistent and admirable 80%
-              performance, showcasing my unwavering commitment to attaining
-              proficiency and distinction in my selected realm of study.
+              I completed my postgraduate studies at Fergusson College, Pune,
+              where I earned a master's degree in Computer Applications.
+              Throughout my academic journey, I maintained a solid 80% score,
+              demonstrating my dedication to excelling in my chosen field of
+              study.
             </Typography>
             <PoppinsSixteenTextLink
               href={fergussonCollege}
@@ -123,11 +123,11 @@ export default function Timeline() {
               Graduation{" "}
             </PoppinsEighteenText>
             <Typography className="text-color PoppinsForteenText">
-              I graduated from Dada Patil Mahavidyalaya with a Bachelor's degree
-              in Computer Science. My academic voyage was marked by a consistent
-              and commendable 68% performance, underscoring my unwavering
-              commitment to mastering and excelling in the realm of my chosen
-              field of study.
+              I completed my Bachelor's degree in Computer Science from Dada
+              Patil Mahavidyalaya. Throughout my studies, I consistently
+              performed well, maintaining an admirable 68.16% score. This
+              highlights my strong dedication to mastering and excelling in the
+              field of computer science.
             </Typography>
             <PoppinsSixteenTextLink
               href={dpCollege}
@@ -152,9 +152,8 @@ export default function Timeline() {
               HSC
             </PoppinsEighteenText>
             <Typography className="text-color PoppinsForteenText">
-              I successfully attained my Higher Secondary School Certificate
-              (HSSC) from Dada Patil Mahavidyalaya, securing an impressive score
-              of 65% in the process.
+              I completed my Higher Secondary School Certificate (HSSC) from
+              Dada Patil Mahavidyalaya, achieving a commendable score of 65%.
             </Typography>
             <PoppinsSixteenTextLink
               href={dpCollege}
@@ -179,10 +178,8 @@ export default function Timeline() {
               SSC
             </PoppinsEighteenText>
             <Typography className="text-color PoppinsForteenText">
-              I successfully concluded my Secondary School Certificate (SSC)
-              program at Netaji Subhash Vidyalaya, accomplishing a remarkable
-              score of 79.45% during this pivotal juncture of my academic
-              journey.
+              I completed my Secondary School Certificate (SSC) program at
+              Netaji Subhash Vidyalaya with a remarkable score of 79.45%.
             </Typography>
           </VerticalTimelineElement>
         </VerticalTimeline>
