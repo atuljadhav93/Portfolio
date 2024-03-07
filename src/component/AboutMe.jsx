@@ -97,7 +97,7 @@ export default function AboutMe() {
                 onClick={handleDownloadClick}
                 sx={{
                   width: "150px",
-                  marginBottom: "4px",
+                  marginBottom: "14px",
                 }}
               >
                 {DownloadResume}
