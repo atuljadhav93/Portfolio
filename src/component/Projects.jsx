@@ -6,7 +6,7 @@ import {
   PageHeadingText,
   PoppinsEighteenText,
 } from "./styles";
-import { MyWorkText } from "../constants/Text";
+import { MyWorkText, SeeMore } from "../constants/Text";
 import { useDispatch } from "react-redux";
 import { setOpenMoreModel } from "../slice/OpenModel";
 import ProjectCard from "./ProjectCard";
@@ -39,7 +39,7 @@ export default function MyPortfolio() {
             onClick={handleClickOpen}
             className="awesome"
           >
-            See More...
+            {SeeMore}
           </PoppinsEighteenText>
         </DisplayFlexCenter>
       </Box>

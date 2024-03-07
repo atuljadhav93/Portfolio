@@ -123,6 +123,7 @@ function Footer() {
             {WhereDesign}&nbsp;
             <Tooltip title="भारत" arrow>
               <Box
+                onMouseOver={handleRealisticConfetti}
                 style={{
                   marginTop: "4px",
                 }}
