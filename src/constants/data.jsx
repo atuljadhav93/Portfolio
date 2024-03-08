@@ -57,7 +57,7 @@ export const projects = [
   {
     id: "2",
     src: lancerLink,
-    techStack: "React | Redux | CSS | Azure | ASP.NET",
+    techStack: "React | Redux | TypeScript | CSS | Azure | ASP.NET",
     title: "Lancer Link",
     description:
       "The Lancer Link B2B platform enables remote monitoring of drink consumption on a daily, monthly, and yearly basis. This includes beverages such as coffee, cold drinks, and syrup. Consumption reports will be generated based on this data. Additionally, the platform allows for online monitoring of device maintenance status, displaying consumption data in graph format for each device on a daily basis. Users can view both individual and group franchise selling statuses. The platform collects data on drink sales and device status to generate revenue, recurring, top-selling drinks, and device maintenance reports.",
@@ -74,7 +74,7 @@ export const projects = [
   {
     id: "3",
     src: atulPortfolio,
-    techStack: "React | Redux | HTML | CSS | Docker",
+    techStack: "JavaScript | React | Redux | HTML | CSS | Docker",
     title: "Portfolio",
     description:
       "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
@@ -111,7 +111,7 @@ export const moreProjects = [
   {
     id: "2",
     src: adminPortal,
-    techStack: "React | Redux | TypeScript | CSS | MUI",
+    techStack: "React | Redux | TypeScript | CSS | MUI | Python",
     title: "Admin Portal",
     description:
       "The Admin Portal is an internal operational dashboard platform, designed to efficiently manage various business activities. It includes managing user details, demo requests, payment details, resource information, resource limit requests, learning banks, ongoing and past event details, ongoing and past service statuses, as well as active instances on our platform.",
@@ -128,7 +128,7 @@ export const moreProjects = [
   {
     id: "3",
     src: elPro,
-    techStack: "React | Redux | TypeScript | CSS | MUI",
+    techStack: "React | Redux | TypeScript | CSS | MUI | Node Js | Python",
     title: "--------",
     description:
       "Introducing a platform that offers personalized virtual desktops on a cloud platform, where you can train and learn, with a pay-as-you-go usage scheme",

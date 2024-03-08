@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Box, Link } from "@mui/material";
-import { PageHeadingText, PoppinsSixteenText, WatchVideoBtn } from "./styles";
+import {
+  DisplayFlexCenterLink,
+  PageHeadingText,
+  PoppinsSixteenText,
+  WatchVideoBtn,
+} from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slider from "react-slick";
 import YouTube from "react-youtube";
@@ -93,10 +98,11 @@ export default function Video() {
               <PoppinsSixteenText className="text-color">
                 check out my YouTube channel.
               </PoppinsSixteenText>
-              <Link
+              <DisplayFlexCenterLink
                 href={"https://youtube.com/@techedumeet"}
                 target={"_blank"}
                 rel="noopener noreferrer"
+                className="top-space"
               >
                 <WatchVideoBtn
                   id="visitNow"
@@ -110,7 +116,7 @@ export default function Video() {
                 >
                   Visit Now
                 </WatchVideoBtn>
-              </Link>
+              </DisplayFlexCenterLink>
             </Box>
           </>
         ) : (
@@ -121,7 +127,7 @@ export default function Video() {
                 style={{
                   borderRadius: "10px",
                   height: "auto",
-                  marginBottom: "2rem",
+                  marginBottom: "1rem",
                   cursor: "pointer",
                   background: "#EDE7E1",
                 }}
@@ -168,7 +174,7 @@ export default function Video() {
             ))}
           </Slider>
         )}
-        <Box className="bottom-space"></Box>
+        {!isMobile && <Box className="bottom-space"></Box>}
       </Box>
     </>
   );

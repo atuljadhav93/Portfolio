@@ -342,8 +342,12 @@ body {
   margin-top: 20px !important;
 }
 
+.top-space {
+  margin-top: 1rem !important;
+}
+
 .bottom-space {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project--card--icon {
@@ -1104,7 +1108,7 @@ input[type="checkbox"] {
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1113,7 +1117,7 @@ input[type="checkbox"] {
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #02AABD, #00CDAC);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /*pdf viewer*/
@@ -1287,7 +1291,7 @@ input[type="checkbox"] {
   }
 
   .modal-video-style {
-    height: auto;
+    height: 250px;
   }
 }
 
@@ -1354,9 +1358,10 @@ input[type="checkbox"] {
 /* change txt color */
 .awesome {
   color:#313131;
-  -webkit-animation:colorchange 20s infinite alternate;
+  animation: colorchange 20s infinite alternate;
 }
-@-webkit-keyframes colorchange {
+
+@keyframes colorchange {
   0% {
     
     color: blue;
