@@ -49,21 +49,21 @@ export default function Timeline() {
               LogicHive Solution Pvt Ltd
             </Link>
             <Typography className="text-color PoppinsForteenText">
-              ✅Building a product from scratch and developing strategies to
+              ✅ Building a product from scratch and developing strategies to
               scale it seamlessly.
               <br />
-              ✅I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
+              ✅ I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
               Postman and Jest.
               <br />
-              ✅Implemented designs provided by UI/UX designers.
+              ✅ Implemented designs provided by UI/UX designers.
               <br />
-              ✅Worked with APIs and databases to retrieve and display dynamic
+              ✅ Worked with APIs and databases to retrieve and display dynamic
               content.
               <br />
-              ✅Identifying and resolving bugs, compatibility issues, and
+              ✅ Identifying and resolving bugs, compatibility issues, and
               performance bottlenecks efficiently, ensuring smooth operations.
               <br />
-              ✅Collaborated with fellow developers to write scalable code and
+              ✅ Collaborated with fellow developers to write scalable code and
               reusable code.
               <br />
             </Typography>
@@ -96,7 +96,7 @@ export default function Timeline() {
             <Typography className="text-color PoppinsForteenText">
               I completed my postgraduate studies at Fergusson College, Pune,
               where I earned a master's degree in Computer Applications.
-              Throughout my academic journey, I maintained a solid 80% score,
+              Throughout my academic journey, I maintained a solid 82% score,
               demonstrating my dedication to excelling in my chosen field of
               study.
             </Typography>
@@ -179,7 +179,7 @@ export default function Timeline() {
             </PoppinsEighteenText>
             <Typography className="text-color PoppinsForteenText">
               I completed my Secondary School Certificate (SSC) program at
-              Netaji Subhash Vidyalaya with a remarkable score of 79.45%.
+              Netaji Subhash Vidyalaya with a remarkable score of 80%.
             </Typography>
           </VerticalTimelineElement>
         </VerticalTimeline>

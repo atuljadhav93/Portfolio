@@ -13,6 +13,12 @@ export const DisplayFlexCenter = styled(Box)(() => ({
   justifyContent: "center",
 }));
 
+export const DisplayFlexCenterLink = styled(Link)(() => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
+
 export const DisplayFlexCenterCol = styled(Box)(() => ({
   display: "flex",
   alignItems: "center",

@@ -136,9 +136,7 @@ export default function ContactMe() {
     <>
       <Box
         id="Contact"
-        style={{
-          marginBottom: "3rem",
-        }}
+        className="bottom-space"
       >
         <Snackbar
           open={isSnackbarOpen}
