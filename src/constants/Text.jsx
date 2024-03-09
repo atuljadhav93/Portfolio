@@ -38,7 +38,7 @@ export const SelfIntoText =
   "👋Hello! My name is Atul Jadhav, and I'm a front-end developer. I like creating beautiful and easy-to-use websites. I enjoy turning creative designs into real websites using code. My passion for web development keeps me motivated to keep learning and improving.";
 
 export const AboutMeDescriptionFirst =
-  "👋Hello, I'm Atul Jadhav, and I've been working in frontend development for over 2 years now. 🚀 During this time, I've focused on creating user-friendly interfaces and smooth experiences for users.";
+  "👋Hello, I'm Atul Jadhav, and I've been working in frontend development for over 3 years now. 🚀 During this time, I've focused on creating user-friendly interfaces and smooth experiences for users.";
 
 export const AboutMeDescriptionSecond =
   "🌟My journey began at Fergusson College in Pune, where I got my master's degree in Computer Applications. 👨‍💻 That's when I discovered my passion for technology, and ever since I've been excited to learn and explore the world of web development.🌐";
