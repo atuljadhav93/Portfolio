@@ -1,14 +1,16 @@
 import {
   BootstrapIcon,
   CSSIcon,
+  FigmaIcon,
   GitIcon,
+  HTMLIcon,
   // GithubIcon,
   JavaScriptIcon,
   JestIcon,
   JiraIcon,
   // JQueryIcon,
   MUIIcon,
-  // MYSQLIcon,
+  MYSQLIcon,
   // NextJSIcon,
   // PythonIcon,
   ReactIcon,
@@ -68,8 +70,8 @@ export const projects = [
     demoUrl: lancerLinkUrl,
     disableDemoUrl:"false",
     videoStatus:"true",
-    videoId: "u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
-    videoLink: "https://youtu.be/u-TNKBYQV4M?si=E_kFtNo4U48sR_lC",
+    videoId: "KyoLCoQrkfU",
+    videoLink: "https://youtu.be/KyoLCoQrkfU",
   },
   {
     id: "3",
@@ -180,11 +182,11 @@ export const skills = [
     src: <MUIIcon />,
     language: "Material UI",
   },
-  // {
-  //   id: "8",
-  //   src: <MYSQLIcon />,
-  //   language: "MySQL",
-  // },
+  {
+    id: "8",
+    src: <MYSQLIcon />,
+    language: "MySQL",
+  },
   {
     id: "7",
     src: <ReduxIcon />,
@@ -240,6 +242,16 @@ export const skills = [
     src: <JiraIcon />,
     language: "Jira Software",
   },
+  {
+    id: "19",
+    src: <HTMLIcon />,
+    language: "HTML",
+  },
+  {
+    id:"20",
+    src: <FigmaIcon />,
+    language:"Figma"
+  }
 ];
 
 export const testimonial = [

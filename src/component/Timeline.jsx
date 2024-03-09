@@ -52,7 +52,7 @@ export default function Timeline() {
               ✅ Building a product from scratch and developing strategies to
               scale it seamlessly.
               <br />
-              ✅ I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
+              ✅ I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript, MUI, Bootstrap,
               Postman and Jest.
               <br />
               ✅ Implemented designs provided by UI/UX designers.
