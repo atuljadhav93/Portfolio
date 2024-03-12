@@ -79,7 +79,7 @@ export const projects = [
     techStack: "JavaScript | React | Redux | HTML | CSS | Docker",
     title: "Portfolio",
     description:
-      "Introducing a ChatGPT-based entertainment platform with numerous key features designed to enhance your search experience. AI-powered, experience the cutting-edge power of AI, driven by OpenAI's GPT-3.5 and TMDB, ensuring a seamless and intelligent entertainment discovery journey. search more intelligently!",
+      "Design and develop a platform to showcase professional details such as a career summary, about me, skills, educational timeline, work history, and projects I have worked on. This is a single-page application I designed and developed, featuring pages for the hero section, about me, skills, my work, journey, testimonials, contact me, and a footer section. I used React.js, Redux, Material UI, and CSS for the development.",
     github: "Source Code",
     demo: "Live Demo",
     githubUrl: portfolioCode,
