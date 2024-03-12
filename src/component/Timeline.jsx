@@ -16,6 +16,7 @@ import {
 import { MyJourney } from "../constants/Text";
 import {
   companyLinkedinUrl,
+  companyLinkedinWebsiteUrl,
   companyWebsiteUrl,
   dpCollege,
   fergussonCollege,
@@ -35,7 +36,7 @@ export default function Timeline() {
               opacity: 1,
             }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="2021 - Present"
+            date="Jully 2021 - Present"
             iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
             position="right"
@@ -52,8 +53,8 @@ export default function Timeline() {
               ✅ Building a product from scratch and developing strategies to
               scale it seamlessly.
               <br />
-              ✅ I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript, MUI, Bootstrap,
-              Postman and Jest.
+              ✅ I'm working on HTML, CSS, JavaScript, React, Redux, TypeScript,
+              MUI, Bootstrap, Postman and Jest.
               <br />
               ✅ Implemented designs provided by UI/UX designers.
               <br />
@@ -78,6 +79,37 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
+            className="vertical-timeline-element--work vertical-timeline-element-date"
+            contentStyle={{
+              background: "#fff",
+              color: "#003c2f",
+              opacity: 1,
+            }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+            date="Jan 21 - Jun 21"
+            iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
+            icon={<CodeIcon />}
+            position="left"
+          >
+            <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
+              Newton School
+            </PoppinsEighteenText>
+            <Typography className="text-color PoppinsForteenText">
+              ✅ Worked to design responsive web pages using HTML, CSS,
+              JavaScript, and Bootstrap.
+              <br />
+            </Typography>
+            <PoppinsSixteenTextLink
+              href={companyLinkedinWebsiteUrl}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Linkedin Page
+            </PoppinsSixteenTextLink>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{
               background: "#fff",
@@ -88,7 +120,7 @@ export default function Timeline() {
             date="2018 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Postgraduate
@@ -117,7 +149,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Graduation{" "}
@@ -146,7 +178,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               HSC
@@ -172,7 +204,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               SSC

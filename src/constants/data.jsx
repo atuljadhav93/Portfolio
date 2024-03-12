@@ -87,8 +87,8 @@ export const projects = [
     demoUrl: "",
     disableDemoUrl:"false",
     videoStatus:"true",
-    videoId: "VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
-    videoLink: "https://youtu.be/VyfiiwE9HlM?si=B0_0pCFX6iRo9ube",
+    videoId: "Z-ShOLOL_8M",
+    videoLink: "https://youtu.be/Z-ShOLOL_8M",
   },
 ];
 
