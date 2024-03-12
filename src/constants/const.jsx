@@ -40,6 +40,7 @@ export const fergussonCollege = process.env.REACT_APP_FERGUSSON_URL;
 
 // compnay url & website
 export const companyLinkedinUrl = process.env.REACT_APP_LOGICHIVE_LINKEDIN_URL;
+export const companyLinkedinWebsiteUrl = process.env.REACT_APP_URL;
 export const companyWebsiteUrl = process.env.REACT_APP_LOGICHIVE_WEBSITE;
 
 // colleague photo
