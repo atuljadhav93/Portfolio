@@ -131,7 +131,7 @@ export default function HeroSection() {
             </Typography>
           </Box>
 
-          <PoppinsForteenText className="hero--section-description ">
+          <PoppinsForteenText className="hero--section-description no-select-txt">
             {SelfIntoText}
           </PoppinsForteenText>
         </Box>

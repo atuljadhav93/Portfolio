@@ -49,7 +49,7 @@ export default function Timeline() {
             >
               LogicHive Solution Pvt Ltd
             </Link>
-            <Typography className="text-color PoppinsForteenText">
+            <Typography className="text-color PoppinsForteenText no-select-txt">
               ✅ Building a product from scratch and developing strategies to
               scale it seamlessly.
               <br />
@@ -79,7 +79,7 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work vertical-timeline-element-date"
+            className="vertical-timeline-element--work vertical-timeline-element-date no-select-txt"
             contentStyle={{
               background: "#fff",
               color: "#003c2f",
@@ -110,7 +110,7 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work no-select-txt"
             contentStyle={{
               background: "#fff",
               color: "#003c2f",
@@ -143,7 +143,7 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work no-select-txt"
             date="2014 - 2017"
             contentStyle={{ background: "#fff", color: "#003c2f" }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
@@ -172,7 +172,7 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
+            className="vertical-timeline-element--education no-select-txt"
             date="2014"
             contentStyle={{ background: "#fff", color: "#003c2f" }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
@@ -198,7 +198,7 @@ export default function Timeline() {
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
+            className="vertical-timeline-element--education no-select-txt"
             date="2012"
             contentStyle={{ background: "#fff", color: "#003c2f" }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}

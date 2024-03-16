@@ -79,16 +79,16 @@ export default function AboutMe() {
             <PoppinsThirtySixText sx={{ color: "#003C2F" }}>
               {AboutMeText}
             </PoppinsThirtySixText>
-            <PoppinsForteenText className="hero--section-description">
+            <PoppinsForteenText className="hero--section-description no-select-txt">
               {AboutMeDescriptionFirst}
             </PoppinsForteenText>
-            <PoppinsForteenText className="hero--section-description">
+            <PoppinsForteenText className="hero--section-description no-select-txt">
               {AboutMeDescriptionSecond}
             </PoppinsForteenText>
-            <PoppinsForteenText className="hero--section-description">
+            <PoppinsForteenText className="hero--section-description no-select-txt">
               {AboutMeDescriptionThird}
             </PoppinsForteenText>
-            <PoppinsForteenText className="hero--section-description">
+            <PoppinsForteenText className="hero--section-description no-select-txt">
               {AboutMeDescriptionFour}
             </PoppinsForteenText>
             {isButton ? (
