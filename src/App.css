@@ -1416,3 +1416,11 @@ input[type="checkbox"] {
     color: pink;
   }
 }
+
+/* prevent user from copying text */
+.no-select-txt {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

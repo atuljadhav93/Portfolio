@@ -115,7 +115,7 @@ export default function ProjectCard({ item }) {
             },
           }}
         >
-          <PoppinsForteenText className="text-color text-top">
+          <PoppinsForteenText className="text-color text-top no-select-txt">
             {item.description}
           </PoppinsForteenText>
         </Box>

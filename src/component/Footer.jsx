@@ -119,6 +119,7 @@ function Footer() {
               alignItems: "center",
               color: "#003c2f",
             }}
+            className="no-select-txt"
           >
             {WhereDesign}&nbsp;
             <Tooltip title="भारत" arrow>
@@ -126,6 +127,7 @@ function Footer() {
                 onMouseOver={handleRealisticConfetti}
                 style={{
                   marginTop: "4px",
+                  cursor:"pointer"
                 }}
               >
                 <IndiaFlag />
