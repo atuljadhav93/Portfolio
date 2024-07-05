@@ -42,8 +42,10 @@ export const fergussonCollege = process.env.REACT_APP_FERGUSSON_URL;
 export const companyLinkedinUrl = process.env.REACT_APP_LOGICHIVE_LINKEDIN_URL;
 export const companyLinkedinWebsiteUrl = process.env.REACT_APP_URL;
 export const companyWebsiteUrl = process.env.REACT_APP_LOGICHIVE_WEBSITE;
+export const logichiveLogo = process.env.REACT_APP_LOGICHIVE_LOGO;
 
 // colleague photo
 export const narendra = process.env.REACT_APP_NARENDRA_PHOTO;
 export const tejas = process.env.REACT_APP_TEJAS_PHOTO;
 export const dhruv = process.env.REACT_APP_DHRUV_PHOTO;
+export const vinit = process.env.REACT_APP_VINIT_PHOTO;
