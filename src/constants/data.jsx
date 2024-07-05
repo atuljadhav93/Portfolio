@@ -30,12 +30,14 @@ import {
   elPro,
   lancerLink,
   lancerLinkUrl,
+  logichiveLogo,
   movieDB,
   narendra,
   netflix,
   netflixCode,
   portfolioCode,
   tejas,
+  vinit,
 } from "./const";
 
 export const projects = [
@@ -262,10 +264,10 @@ export const testimonial = [
     src: narendra,
     designation: "Development Team Lead",
     profileURL: "https://www.linkedin.com/in/narendramn37/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+      logichiveLogo,
   },
   {
     id: "2",
@@ -274,10 +276,10 @@ export const testimonial = [
     src: tejas,
     designation: "Reporting Manager and Senior Backend Developer",
     profileURL: "https://www.linkedin.com/in/thejesh-m-5b17a1110/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+      logichiveLogo,
   },
   {
     id: "3",
@@ -286,15 +288,27 @@ export const testimonial = [
     src: dhruv,
     designation: "Software Development Engineer",
     profileURL: "https://www.linkedin.com/in/dhruv-suhagiya/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+      logichiveLogo,
+  },
+  {
+    id: "4",
+    name: "Vinit Kumar M",
+    text: `I had the opportunity to witness Atul's exceptional dedication and commitment on his deliverables. Passionate towards frontend development.`,
+    src: vinit,
+    designation: "Software Developer | Technology Consultant",
+    profileURL: "https://www.linkedin.com/in/vineeth-kumar-m-b0987083/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
+    orgLogo:
+      logichiveLogo,
   },
 ];
 
 export const emailData = {
-  recipient: "atuljadhav618@gmail.com",
+  recipient: "atuljadhavbcs@gmail.com",
   subject: "Let's Connect!",
   body: `Hey Atul,
   I recently discovered your profile and was intrigued.
@@ -365,10 +379,10 @@ export const cardData = [
     src: narendra,
     designation: "Development Team Lead",
     profileURL: "https://www.linkedin.com/in/narendramn37/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+    logichiveLogo,
   },
   {
     id: "2",
@@ -379,10 +393,10 @@ export const cardData = [
     src: tejas,
     designation: "Reporting Manager and Senior Backend Developer",
     profileURL: "https://www.linkedin.com/in/thejesh-m-5b17a1110/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+    logichiveLogo,
   },
   {
     id: "3",
@@ -393,9 +407,23 @@ export const cardData = [
     src: dhruv,
     designation: "Software Development Engineer",
     profileURL: "https://www.linkedin.com/in/dhruv-suhagiya/",
-    organisation: "Electrum(formarly PickMySolar)",
-    orgURL: "https://www.linkedin.com/company/pickmysolar/mycompany/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
     orgLogo:
-      "https://assets.solar.com/partner_assets/electrum/electrum-logo.svg",
+    logichiveLogo,
+  },
+  {
+    id: "4",
+    color: "#FFFFFF",
+    background: "#E87D63",
+    name: "Vinit Kumar M",
+    text: `I had the opportunity to witness Atul's exceptional dedication and commitment on his deliverables. Passionate towards frontend development.`,
+    src: vinit,
+    designation: "Software Developer | Technology Consultant",
+    profileURL: "https://www.linkedin.com/in/vineeth-kumar-m-b0987083/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
+    orgLogo:
+    logichiveLogo,
   },
 ];
