@@ -36,6 +36,7 @@ import {
   netflix,
   netflixCode,
   portfolioCode,
+  praful,
   tejas,
   vinit,
 } from "./const";
@@ -305,12 +306,28 @@ export const testimonial = [
     orgLogo:
       logichiveLogo,
   },
+  {
+    id: "5",
+    name: "Praful Patekar",
+    text: `I've had the pleasure of working closely with Atul Jadhav, a talented frontend developer with a strong proficiency in React.js, TypeScript, Next.js, and MQTT. Atul excels in crafting robust frontend solutions with his understanding of micro frontend architecture and strong CSS skills.
+
+Beyond his technical expertise, Atul has demonstrated exceptional leadership by successfully leading a team of 4 frontend developers. Under his guidance, the team consistently delivered high-quality projects, thanks to Atul's clear direction and collaborative approach.
+
+I highly recommend Atul for roles that require a skilled frontend developer with expertise in React.js, TypeScript, Next.js, MQTT, and a proven track record in team leadership. His technical acumen and leadership skills make him a valuable asset to any organization.`,
+    src: praful,
+    designation: "Solutions Engineer(AI/ML) | DevOps Enthusiast",
+    profileURL: "https://www.linkedin.com/in/praful-patekar-aa8245195/",
+    organisation: "LogicHive",
+    orgURL: "https://www.linkedin.com/company/logichive-solutions-pvt-ltd/mycompany/",
+    orgLogo:
+      logichiveLogo,
+  },
 ];
 
 export const emailData = {
-  recipient: "atuljadhavbcs@gmail.com",
+  recipient: "atuljadhav618@gmail.com",
   subject: "Let's Connect!",
-  body: `Hey Atul,
+  body: `Hi Atul,
   I recently discovered your profile and was intrigued.
   I'm eager to connect with you and gain insights from your experiences.
   If you're open to a discussion, sharing ideas, or exploring potential job roles, let's connect and exchange thoughts

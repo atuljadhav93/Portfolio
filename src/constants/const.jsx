@@ -49,3 +49,4 @@ export const narendra = process.env.REACT_APP_NARENDRA_PHOTO;
 export const tejas = process.env.REACT_APP_TEJAS_PHOTO;
 export const dhruv = process.env.REACT_APP_DHRUV_PHOTO;
 export const vinit = process.env.REACT_APP_VINIT_PHOTO;
+export const praful = process.env.REACT_APP_PRAFUL_PATEKAR;
