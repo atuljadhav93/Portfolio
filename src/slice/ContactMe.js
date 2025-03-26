@@ -18,7 +18,7 @@ const initialState = {
   },
 };
 
-const formSlice = createSlice({
+const formSlice = createSlice({ 
   name: 'form',
   initialState,
   reducers: {
