@@ -16,7 +16,7 @@ import {
 import { MyJourney } from "../constants/Text";
 import {
   companyLinkedinUrl,
-  // companyLinkedinWebsiteUrl,
+  companyLinkedinWebsiteUrl,
   companyWebsiteUrl,
   dpCollege,
   fergussonCollege,
@@ -78,7 +78,7 @@ export default function Timeline() {
               Linkedin Page
             </PoppinsSixteenTextLink>
           </VerticalTimelineElement>
-          {/* <VerticalTimelineElement
+          <VerticalTimelineElement
             className="vertical-timeline-element--work vertical-timeline-element-date no-select-txt"
             contentStyle={{
               background: "#fff",
@@ -108,7 +108,7 @@ export default function Timeline() {
             >
               Linkedin Page
             </PoppinsSixteenTextLink>
-          </VerticalTimelineElement> */}
+          </VerticalTimelineElement> 
           <VerticalTimelineElement
             className="vertical-timeline-element--work no-select-txt"
             contentStyle={{
@@ -120,7 +120,7 @@ export default function Timeline() {
             date="2018 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Postgraduate
@@ -149,7 +149,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Graduation{" "}
@@ -178,7 +178,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               HSC
@@ -204,7 +204,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               SSC
