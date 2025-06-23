@@ -125,7 +125,7 @@ export default function HeroSection() {
                     "I'm a Frontend Developer.",
                     "Full-Stack Enthusiast",
                     "I create content on YouTube.",
-                    '<span class="sanskrit-font">भारतीय: अहमिति मम गर्व:</span>',
+                    // '<span class="sanskrit-font">भारतीय: अहमिति मम गर्व:</span>',
                   ],
                 }}
               />
