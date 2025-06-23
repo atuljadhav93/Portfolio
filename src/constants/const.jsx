@@ -40,8 +40,10 @@ export const fergussonCollege = process.env.REACT_APP_FERGUSSON_URL;
 
 // compnay url & website
 export const companyLinkedinUrl = process.env.REACT_APP_LOGICHIVE_LINKEDIN_URL;
+export const extraMilePlayLinkedinUrl = process.env.REACT_APP_EXTRAMILEPLAY_LINKEDIN_URL;
 export const companyLinkedinWebsiteUrl = process.env.REACT_APP_URL;
 export const companyWebsiteUrl = process.env.REACT_APP_LOGICHIVE_WEBSITE;
+export const extramMileWebsiteUrl = process.env.REACT_APP_EXTRAMILEPLAY_WEBSITE;
 export const logichiveLogo = process.env.REACT_APP_LOGICHIVE_LOGO;
 
 // colleague photo
