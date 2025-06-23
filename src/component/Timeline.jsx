@@ -17,7 +17,9 @@ import { MyJourney } from "../constants/Text";
 import {
   companyLinkedinUrl,
   companyLinkedinWebsiteUrl,
+  extraMilePlayLinkedinUrl,
   companyWebsiteUrl,
+  extramMileWebsiteUrl,
   dpCollege,
   fergussonCollege,
 } from "../constants/const";
@@ -36,10 +38,46 @@ export default function Timeline() {
               opacity: 1,
             }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="Jully 2021 - Present"
+            date="Feb 2024 - Present"
             iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
             position="right"
+          >
+            <Link
+              href={extramMileWebsiteUrl}
+              target="_blank"
+              variant="h6"
+              style={{ marginBottom: "14px", textDecoration: "none" }}
+            >
+              ExtraMile Play
+            </Link>
+            <Typography className="text-color PoppinsForteenText no-select-txt">
+              ✅ I am working with the MERN tech stack (MongoDB, Express, React,
+              and Node.js) to develop full-stack web applications.
+              <br />
+            </Typography>
+            <PoppinsSixteenTextLink
+              href={extraMilePlayLinkedinUrl}
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Linkedin Page
+            </PoppinsSixteenTextLink>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work vertical-timeline-element-date"
+            contentStyle={{
+              background: "#fff",
+              color: "#003c2f",
+              opacity: 1,
+            }}
+            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+            date="Jully 2021 - Dec 2024"
+            iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
+            icon={<CodeIcon />}
+            position="left"
           >
             <Link
               href={companyWebsiteUrl}
@@ -89,7 +127,7 @@ export default function Timeline() {
             date="Jan 21 - Jun 21"
             iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Newton School
@@ -108,7 +146,7 @@ export default function Timeline() {
             >
               Linkedin Page
             </PoppinsSixteenTextLink>
-          </VerticalTimelineElement> 
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work no-select-txt"
             contentStyle={{
@@ -120,7 +158,7 @@ export default function Timeline() {
             date="2018 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Postgraduate
@@ -149,7 +187,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               Graduation{" "}
@@ -178,7 +216,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="right"
+            position="left"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               HSC
@@ -204,7 +242,7 @@ export default function Timeline() {
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<SchoolIcon />}
-            position="left"
+            position="right"
           >
             <PoppinsEighteenText variant="h6" style={{ marginBottom: "8px" }}>
               SSC
