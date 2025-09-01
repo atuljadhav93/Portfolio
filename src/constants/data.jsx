@@ -11,14 +11,14 @@ import {
   // JQueryIcon,
   MUIIcon,
   MYSQLIcon,
-  // NextJSIcon,
+  NextJSIcon,
   // PythonIcon,
   ReactIcon,
   ReduxIcon,
   // SassIcon,
   TailwindCSSIcon,
   TypeScriptIcon,
-  // WordPressIcon,
+  WordPressIcon,
   // AngularIcon,
 } from "../assets/icons/LanguageIcon";
 import {
@@ -205,18 +205,18 @@ export const skills = [
     src: <BootstrapIcon />,
     language: "Bootstrap",
   },
-  // {
-  //   id: "12",
-  //   src: <NextJSIcon />,
-  //   language: "Next JS",
-  // },
   {
     id: "9",
+    src: <NextJSIcon />,
+    language: "Next JS",
+  },
+  {
+    id: "10",
     src: <TailwindCSSIcon />,
     language: "Tailwind CSS",
   },
   {
-    id: "10",
+    id: "11",
     src: <JavaScriptIcon />,
     language: "JavaScript",
   },
@@ -230,28 +230,28 @@ export const skills = [
   //   src: <PythonIcon />,
   //   language: "Python",
   // },
-  // {
-  //   id: "17",
-  //   src: <WordPressIcon />,
-  //   language: "WordPress",
-  // },
+  {
+    id: "12",
+    src: <WordPressIcon />,
+    language: "WordPress",
+  },
   // {
   //   id: "18",
   //   src: <AngularIcon />,
   //   language: "Angular",
   // },
   {
-    id: "18",
+    id: "13",
     src: <JiraIcon />,
     language: "Jira Software",
   },
   {
-    id: "19",
+    id: "14",
     src: <HTMLIcon />,
     language: "HTML",
   },
   {
-    id: "20",
+    id: "15",
     src: <FigmaIcon />,
     language: "Figma",
   },
