@@ -16,6 +16,7 @@ export const GitHub = () => {
 };
 
 export const Instagram = () => {
+  
   return (
     <>
       <svg
