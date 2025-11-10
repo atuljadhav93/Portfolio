@@ -134,7 +134,7 @@ export const moreProjects = [
     id: "3",
     src: elPro,
     techStack: "React | Redux | TypeScript | CSS | MUI | Node Js | Python",
-    title: "--------",
+    title: "Einston Platform",
     description:
       "Introducing a platform that offers personalized virtual desktops on a cloud platform, where you can train and learn, with a pay-as-you-go usage scheme",
     github: "Source Code",

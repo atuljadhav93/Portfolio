@@ -38,7 +38,7 @@ export default function Timeline() {
               opacity: 1,
             }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="Feb 2024 - Present"
+            date="Feb 2025 - Nov 2025"
             iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
             position="right"
@@ -52,8 +52,10 @@ export default function Timeline() {
               ExtraMile Play
             </Link>
             <Typography className="text-color PoppinsForteenText no-select-txt">
-              ✅ I am working with the MERN tech stack (MongoDB, Express, React,
-              and Node.js) to develop full-stack web applications.
+              ✅ Worked on developing features according to project requirements.
+              <br/>
+              ✅ Fixing bugs, addressing compatibility issues, and optimising performance to ensure
+smooth operations.
               <br />
             </Typography>
             <PoppinsSixteenTextLink
