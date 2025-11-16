@@ -54,8 +54,8 @@ export default function Timeline() {
             <Typography className="text-color PoppinsForteenText no-select-txt">
               ✅ Worked on developing features according to project requirements.
               <br/>
-              ✅ Fixing bugs, addressing compatibility issues, and optimising performance to ensure
-smooth operations.
+              ✅ Resolved bugs, addressed cross-browser compatibility issues, and optimized
+application performance to ensure smooth operations.
               <br />
             </Typography>
             <PoppinsSixteenTextLink
@@ -104,8 +104,7 @@ smooth operations.
               ✅ Identifying and resolving bugs, compatibility issues, and
               performance bottlenecks efficiently, ensuring smooth operations.
               <br />
-              ✅ Collaborated with fellow developers to write scalable code and
-              reusable code.
+              ✅ Wrote reusable and modular components to streamline future development
               <br />
             </Typography>
             <PoppinsSixteenTextLink

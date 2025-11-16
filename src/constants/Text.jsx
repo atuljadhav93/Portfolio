@@ -35,10 +35,9 @@ export const WhereDesign = "Designed and Built in";
 export const Proud = "with Pride.";
 export const ContactUsSnackBarMsg = "Contact us details successfully submitted";
 export const SelfIntoText =
-  "👋Hello! My name is Atul Jadhav, and I’m a Front-End Developer and Full-Stack Enthusiast. I like creating beautiful and easy-to-use websites. I enjoy turning creative designs into real websites using code. My passion for web development keeps me motivated to keep learning and improving.";
-
+"👋Hi, I'm Atul Jadhav—a Frontend Developer with a passion for building elegant, user-friendly websites. I bridge the gap between design and code, transforming ideas into seamless digital experiences while continuously expanding my full-stack capabilities."
 export const AboutMeDescriptionFirst =
-  "👋Hello, I'm Atul Jadhav, and I've been working in front-end development for over 4 years while also exploring backend technologies. 🚀 During this time, I've focused on creating user-friendly interfaces and seamless user experiences.";
+  "👋Hey, I'm Atul Jadhav! I'm a Software Developer with 4 years crafting beautiful frontends and diving into backend technologies. My passion? Building interfaces that users love and experiences that just work. 🚀"
 
 export const AboutMeDescriptionSecond =
   "🌟My journey began at Fergusson College in Pune, where I got my master's degree in Computer Applications. 👨‍💻 That's when I discovered my passion for technology, and ever since I've been excited to learn and explore the world of web development.🌐";
