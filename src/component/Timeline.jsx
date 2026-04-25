@@ -38,7 +38,7 @@ export default function Timeline() {
               opacity: 1,
             }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-            date="March 2025 - Nov 2025"
+            date="Jan 2025 - Nov 2025"
             iconStyle={{ background: "rgb(33, 150, 243", color: "#fff" }}
             icon={<CodeIcon />}
             position="right"
